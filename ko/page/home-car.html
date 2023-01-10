@@ -1,0 +1,2542 @@
+<!DOCTYPE html>
+<html lang="ko" class="">
+
+<!-- Mirrored from mytravel.bookingcore.org/ko/page/home-car by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2023 17:48:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="csrf-token" content="40Pg4KM1lQroJUlA4Gjyj0zTK2kc09l1KxuZtXkt">
+<link rel="icon" type="image/png" href="https://mytravel.bookingcore.org/uploads/mytravel/general/favicon.png" />
+<title>Home Car - My Travel</title>
+<meta name="description" content="" />
+<meta property="og:url" content="https://mytravel.bookingcore.org/ko/page/home-car" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Home Car" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Home Car">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="">
+<link rel="canonical" href="https://mytravel.bookingcore.org/ko/page/home-car" />
+<link href="https://mytravel.bookingcore.org/libs/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="https://mytravel.bookingcore.org/libs/font-awesome/css/font-awesome.css" rel="stylesheet">
+<link href="https://mytravel.bookingcore.org/libs/ionicons/css/ionicons.min.css" rel="stylesheet">
+<link href="https://mytravel.bookingcore.org/libs/icofont/icofont.min.css" rel="stylesheet">
+<link href="https://mytravel.bookingcore.org/libs/select2/css/select2.min.css" rel="stylesheet">
+<link href="https://mytravel.bookingcore.org/themes/mytravel/libs/fancybox/jquery.fancybox.css" rel="stylesheet">
+<link href="https://mytravel.bookingcore.org/themes/mytravel/libs/slick/slick.css" rel="stylesheet">
+<link href="https://mytravel.bookingcore.org/themes/mytravel/libs/custombox/custombox.min.css" rel="stylesheet">
+<link href="https://mytravel.bookingcore.org/themes/mytravel/dist/frontend/css/notification.css" rel="newest stylesheet">
+<link href="https://mytravel.bookingcore.org/themes/mytravel/dist/frontend/css/app.css?_ver=2.0.0" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://mytravel.bookingcore.org/libs/daterange/daterangepicker.css">
+
+<link rel="dns-prefetch" href="http://fonts.gstatic.com/">
+
+<link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&amp;display=swap" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,200,300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://mytravel.bookingcore.org/themes/mytravel/libs/bootstrap-select/dist/css/bootstrap-select.min.css">
+<link href="https://mytravel.bookingcore.org/libs/ion_rangeslider/css/ion.rangeSlider.css" rel="stylesheet">
+<script>
+    var bookingCore = {
+        url:'https://mytravel.bookingcore.org/ko',
+        url_root:'https://mytravel.bookingcore.org',
+        admin_url:'https://mytravel.bookingcore.org/admin',
+        booking_decimals:0,
+        thousand_separator:'.',
+        decimal_separator:',',
+        currency_position:'right_space',
+        currency_symbol:'¥',
+        currency_rate:'0.00917113',
+        date_format:'MM/DD/YYYY',
+        map_provider:'gmap',
+        map_gmap_key:'',
+        map_options:{
+            map_lat_default:'',
+            map_lng_default:'',
+            map_clustering:'on',
+            map_fit_bounds:'on',
+        },
+        routes:{
+            login:'https://mytravel.bookingcore.org/ko/login',
+            register:'https://mytravel.bookingcore.org/ko/register',
+            checkout:'https://mytravel.bookingcore.org/ko/booking/doCheckout'
+        },
+        module:{
+            hotel:'https://mytravel.bookingcore.org/ko/hotel',
+            car:'https://mytravel.bookingcore.org/ko/car',
+            tour:'https://mytravel.bookingcore.org/ko/tour',
+            space:'https://mytravel.bookingcore.org/ko/space',
+            flight:"https://mytravel.bookingcore.org/ko/flight"
+        },
+        currentUser: 0,
+        isAdmin : 0,
+        rtl: false,
+        markAsRead:'https://mytravel.bookingcore.org/ko/notify/markAsRead',
+        markAllAsRead:'https://mytravel.bookingcore.org/ko/notify/markAllAsRead',
+        loadNotify : 'https://mytravel.bookingcore.org/ko/notify/notifications',
+        pusher_api_key : '',
+        pusher_cluster : '',
+        language: 'ko',
+    };
+        var i18n = {
+        warning:"Warning",
+        success:"Success",
+        confirm_delete:"Do you want to delete?",
+        confirm:"Confirm",
+        cancel:"Cancel",
+    };
+    var daterangepickerLocale = {
+        "applyLabel": "Apply",
+        "cancelLabel": "Cancel",
+        "fromLabel": "From",
+        "toLabel": "To",
+        "customRangeLabel": "Custom",
+        "weekLabel": "W",
+        "first_day_of_week": 1,
+        "daysOfWeek": [
+            "Su",
+            "Mo",
+            "Tu",
+            "We",
+            "Th",
+            "Fr",
+            "Sa"
+        ],
+        "monthNames": [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+        ],
+    };
+</script>
+
+<link href="https://mytravel.bookingcore.org/ko/custom-css" rel="stylesheet">
+<link href="https://mytravel.bookingcore.org/libs/carousel-2/owl.carousel.css" rel="stylesheet">
+</head>
+<body dir="ltr" class="frontend-page page  header_transparent   ">
+<div class="bravo_wrap">
+<header id="header" class="            u-header u-header--abs-top u-header--white-nav-links-xl u-header--bg-transparent u-header--show-hide border-bottom border-xl-bottom-0 border-color-white
+        " data-header-fix-moment="500" data-header-fix-effect="slide">
+<div class="u-header__section u-header__shadow-on-show-hide">
+<div class="bravo_topbar u-header__hide-content u-header__topbar u-header__topbar-lg border-bottom border-color-white ">
+<div class="container">
+<div class="d-flex align-items-center">
+<div class="list-inline u-header__topbar-nav-divider mb-0 topbar_left_text font-size-14  ">
+<div class="socials">
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-linkedin"></i></a>
+<a href="#"><i class="fa fa-google-plus"></i></a>
+</div>
+<span class="line"></span>
+<a href="https://mytravel.bookingcore.org/cdn-cgi/l/email-protection#a6c5c9c8d2c7c5d2e6cbdfd2d4c7d0c3ca88c5c9cb"><span class="__cf_email__" data-cfemail="5b3834352f3a382f1b36222f293a2d3e3775383436">[email&#160;protected]</span></a>
+</div>
+<div class="ml-auto d-flex align-items-center">
+<div class="d-flex align-items-center text-white px-3">
+<i class="flaticon-phone-call mr-2 ml-1 font-size-18"></i>
+<span class="d-inline-block font-size-14 mr-1">(+84) 666-888-999</span>
+</div>
+<div class="position-relative px-3 u-header__login-form dropdown-connector-xl u-header__topbar-divider currency-select">
+<div class="d-flex align-items-center text-white py-3 dropdown">
+<span class="d-inline-block font-size-14 mr-1 dropdown-nav-link " data-toggle="dropdown">
+JPY
+</span>
+<ul class="dropdown-menu text-left width-auto min-width-100">
+<li>
+<a href="https://mytravel.bookingcore.org/ko/page/home-car?set_currency=eur">
+EUR
+ </a>
+</li>
+<li>
+<a href="https://mytravel.bookingcore.org/ko/page/home-car?set_currency=eur">
+EUR
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="position-relative px-3 u-header__login-form dropdown-connector-xl u-header__topbar-divider currency-select">
+<div class="d-flex align-items-center text-white py-3 dropdown">
+<span class="d-inline-block font-size-14 mr-1 dropdown-nav-link " data-toggle="dropdown">
+<span class="flag-icon flag-icon-kr"></span>
+kr
+</span>
+<ul class="dropdown-menu dropdown-menu-user text-left width-auto">
+<li>
+<a href="https://mytravel.bookingcore.org/ko/page/home-car?set_lang=en" class="d-flex">
+<span class="flag-icon flag-icon-gb mr-2"></span>
+English
+</a>
+</li>
+<li>
+<a href="https://mytravel.bookingcore.org/ko/page/home-car?set_lang=ja" class="d-flex">
+<span class="flag-icon flag-icon-jp mr-2"></span>
+Japanese
+</a>
+</li>
+<li>
+<a href="https://mytravel.bookingcore.org/ko/page/home-car?set_lang=egy" class="d-flex">
+<span class="flag-icon flag-icon-eg mr-2"></span>
+Egyptian
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="position-relative px-3 u-header__login-form dropdown-connector-xl u-header__topbar-divider">
+<a href="javascript:;" class="d-flex align-items-center text-white py-3" data-toggle="modal" data-target="#login">
+<i class="flaticon-user mr-2 ml-1 font-size-18"></i>
+<span class="d-inline-block font-size-14 mr-1">Sign in or Register</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bravo_header">
+<div class="container">
+<div class="content">
+<div class="header-left">
+<a href="https://mytravel.bookingcore.org/ko" class="bravo-logo navbar-brand u-header__navbar-brand-default u-header__navbar-brand-center u-header__navbar-brand-text-white mr-0 mr-xl-5">
+<img src="https://mytravel.bookingcore.org/uploads/mytravel/general/logo_white.svg" alt="My Travel">
+<span class="u-header__navbar-brand-text">MyTravel</span>
+</a>
+<a class="bravo-logo navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-on-scroll" href="https://mytravel.bookingcore.org/ko">
+<img src="https://mytravel.bookingcore.org/uploads/mytravel/general/logo.svg" alt="My Travel">
+<span class="u-header__navbar-brand-text">MyTravel</span>
+</a>
+<div class="bravo-menu">
+<ul class="main-menu menu-generated"><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/">Home <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/">Home Page</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/page/home-v2">Home v2</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/page/home-hotel">Home Hotel</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/page/home-tour">Home Tour</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/page/home-space">Home Space</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/page/home-event">Home Event</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/page/home-car">Home Car</a></li></ul></li><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/hotel">Hotel <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/hotel">Hotel List</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/hotel?_layout=map">Hotel Map</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/hotel/parian-holiday-villas">Hotel Detail</a></li></ul></li><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/tour">Tours <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/tour">Tour List</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/tour?_layout=map">Tour Map</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/tour/paris-vacation-travel">Tour Detail</a></li></ul></li><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/space">Space <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/space">Space List</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/space?_layout=map">Space Map</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/space/stay-greenwich-village">Space Detail</a></li></ul></li><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/car">Car <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/car">Car List</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/car?_layout=map">Car Map</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/car/vinfast-lux-a20-plus">Car Detail</a></li></ul></li><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/event">Event <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/event">Event List</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/event?_layout=map">Event Map</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/event/aspen-glade-weddings-events">Event Detail</a></li></ul></li><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/flight">Flight</a></li><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/boat">Boat <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/boat">Boat List</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/boat?_layout=map">Boat Map</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/boat/blue-moon-yc-300">Boat Detail</a></li></ul></li><li class=" depth-0"><a target="" href="#">Pages <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/plan">Plan</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/news">News List</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/news/morning-in-the-northern-sea">News Detail</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/location/paris">Location Detail</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/page/become-a-vendor">Become a vendor</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/contact">Contact</a></li></ul></li></ul> </div>
+</div>
+<div class="header-right">
+<button class="bravo-more-menu">
+<i class="fa fa-bars"></i>
+</button>
+</div>
+</div>
+</div>
+<div class="bravo-menu-mobile" style="display:none;">
+<div class="user-profile">
+<div class="b-close"><i class="icofont-scroll-left"></i></div>
+<div class="avatar"></div>
+<ul>
+<li>
+<a href="#login" data-toggle="modal" data-target="#login" class="login">Login</a>
+</li>
+<li>
+<a href="#register" data-toggle="modal" data-target="#register" class="signup">Sign Up</a>
+</li>
+</ul>
+<ul class="multi-lang">
+<li class="dropdown">
+<a href="#" data-toggle="dropdown" class="is_login">
+JPY
+<i class="fa fa-angle-down"></i>
+</a>
+<ul class="dropdown-menu text-left width-auto">
+<li>
+<a href="https://mytravel.bookingcore.org/ko/page/home-car?set_currency=eur" class="is_login">
+EUR
+</a>
+</li>
+<li>
+<a href="https://mytravel.bookingcore.org/ko/page/home-car?set_currency=eur" class="is_login">
+EUR
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="multi-lang">
+<li class="dropdown">
+<a href="#" data-toggle="dropdown" class="is_login">
+<span class="flag-icon flag-icon-kr"></span>
+kr
+<i class="fa fa-angle-down"></i>
+</a>
+<ul class="dropdown-menu text-left">
+<li>
+<a href="https://mytravel.bookingcore.org/ko/page/home-car?set_lang=en" class="is_login">
+<span class="flag-icon flag-icon-gb"></span>
+English
+</a>
+</li>
+<li>
+<a href="https://mytravel.bookingcore.org/ko/page/home-car?set_lang=ja" class="is_login">
+<span class="flag-icon flag-icon-jp"></span>
+Japanese
+</a>
+</li>
+<li>
+<a href="https://mytravel.bookingcore.org/ko/page/home-car?set_lang=egy" class="is_login">
+<span class="flag-icon flag-icon-eg"></span>
+Egyptian
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="g-menu">
+<ul class="main-menu menu-generated"><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/">Home <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/">Home Page</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/page/home-v2">Home v2</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/page/home-hotel">Home Hotel</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/page/home-tour">Home Tour</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/page/home-space">Home Space</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/page/home-event">Home Event</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/page/home-car">Home Car</a></li></ul></li><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/hotel">Hotel <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/hotel">Hotel List</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/hotel?_layout=map">Hotel Map</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/hotel/parian-holiday-villas">Hotel Detail</a></li></ul></li><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/tour">Tours <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/tour">Tour List</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/tour?_layout=map">Tour Map</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/tour/paris-vacation-travel">Tour Detail</a></li></ul></li><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/space">Space <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/space">Space List</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/space?_layout=map">Space Map</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/space/stay-greenwich-village">Space Detail</a></li></ul></li><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/car">Car <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/car">Car List</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/car?_layout=map">Car Map</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/car/vinfast-lux-a20-plus">Car Detail</a></li></ul></li><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/event">Event <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/event">Event List</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/event?_layout=map">Event Map</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/event/aspen-glade-weddings-events">Event Detail</a></li></ul></li><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/flight">Flight</a></li><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/boat">Boat <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/boat">Boat List</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/boat?_layout=map">Boat Map</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/boat/blue-moon-yc-300">Boat Detail</a></li></ul></li><li class=" depth-0"><a target="" href="#">Pages <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/plan">Plan</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/news">News List</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/news/morning-in-the-northern-sea">News Detail</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/location/paris">Location Detail</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/page/become-a-vendor">Become a vendor</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/contact">Contact</a></li></ul></li></ul> </div>
+</div>
+</div>
+</div>
+</header>
+<div class="page-template-content">
+<div class="bravo-form-search-all hero-block hero-v1 bg-img-hero-bottom gradient-overlay-half-black-gradient text-center z-index-2" style="background-image: url('https://mytravel.bookingcore.org/uploads/mytravel/general/home-car-banner.jpg') !important;">
+<div class="container space-2 space-top-xl-4">
+<div class="row justify-content-center pb-xl-8">
+<div class="py-8 py-xl-10 pb-5">
+<h1 class="font-size-60 font-size-xs-30 text-white font-weight-bold">Discover The World With MyCars</h1>
+<p class="font-size-20 font-weight-normal text-white"></p>
+</div>
+</div>
+<div class="mb-lg-n1">
+<ul class="nav tab-nav-rounded flex-nowrap pb-2 pb-md-4 tab-nav  d-none " role="tablist">
+</ul>
+<div class="tab-content hero-tab-pane">
+</div>
+</div>
+</div>
+</div>
+<div class="bravo-list-term-car border-bottom border-color-8">
+<div class="container space-1">
+<div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mt-4">
+<h2 class="section-title text-black font-size-30 font-weight-bold mb-0">Select by Category</h2>
+</div>
+<div class="row">
+<div class="col-md-6 col-xl-3">
+<div class="mb-5">
+<a class="d-block position-50-hover text-center overflow-hidden" href="https://mytravel.bookingcore.org/ko/car?terms=61">
+<div class="bg-img-hero rounded-xs bg-gray-23 min-height-200">
+<div class="pt-4 mb-5">
+<h6 class="mb-0 font-size-17 font-weight-bold text-dark-1">Convertibles</h6>
+</div>
+<img class="img-fluid position-50-horizontal" src="https://mytravel.bookingcore.org/uploads/mytravel/car/terms/convertibles.jpg" alt="Convertibles">
+</div>
+</a>
+</div>
+</div>
+<div class="col-md-6 col-xl-3">
+<div class="mb-5">
+<a class="d-block position-50-hover text-center overflow-hidden" href="https://mytravel.bookingcore.org/ko/car?terms=62">
+<div class="bg-img-hero rounded-xs bg-gray-23 min-height-200">
+<div class="pt-4 mb-5">
+<h6 class="mb-0 font-size-17 font-weight-bold text-dark-1">Coupes</h6>
+</div>
+<img class="img-fluid position-50-horizontal" src="https://mytravel.bookingcore.org/uploads/mytravel/car/terms/couple.jpg" alt="Coupes">
+</div>
+</a>
+</div>
+</div>
+<div class="col-md-6 col-xl-3">
+<div class="mb-5">
+<a class="d-block position-50-hover text-center overflow-hidden" href="https://mytravel.bookingcore.org/ko/car?terms=63">
+<div class="bg-img-hero rounded-xs bg-gray-23 min-height-200">
+<div class="pt-4 mb-5">
+<h6 class="mb-0 font-size-17 font-weight-bold text-dark-1">Hatchbacks</h6>
+</div>
+<img class="img-fluid position-50-horizontal" src="https://mytravel.bookingcore.org/uploads/mytravel/car/terms/hatchback.jpg" alt="Hatchbacks">
+</div>
+</a>
+</div>
+</div>
+<div class="col-md-6 col-xl-3">
+<div class="mb-5">
+<a class="d-block position-50-hover text-center overflow-hidden" href="https://mytravel.bookingcore.org/ko/car?terms=64">
+<div class="bg-img-hero rounded-xs bg-gray-23 min-height-200">
+<div class="pt-4 mb-5">
+<h6 class="mb-0 font-size-17 font-weight-bold text-dark-1">Minivans</h6>
+</div>
+<img class="img-fluid position-50-horizontal" src="https://mytravel.bookingcore.org/uploads/mytravel/car/terms/minivans.jpg" alt="Minivans">
+</div>
+</a>
+</div>
+</div>
+<div class="col-md-6 col-xl-3">
+<div class="mb-5">
+<a class="d-block position-50-hover text-center overflow-hidden" href="https://mytravel.bookingcore.org/ko/car?terms=65">
+<div class="bg-img-hero rounded-xs bg-gray-23 min-height-200">
+<div class="pt-4 mb-5">
+<h6 class="mb-0 font-size-17 font-weight-bold text-dark-1">Sedan</h6>
+</div>
+<img class="img-fluid position-50-horizontal" src="https://mytravel.bookingcore.org/uploads/mytravel/car/terms/sedan.jpg" alt="Sedan">
+</div>
+</a>
+</div>
+</div>
+<div class="col-md-6 col-xl-3">
+<div class="mb-5">
+<a class="d-block position-50-hover text-center overflow-hidden" href="https://mytravel.bookingcore.org/ko/car?terms=66">
+<div class="bg-img-hero rounded-xs bg-gray-23 min-height-200">
+<div class="pt-4 mb-5">
+<h6 class="mb-0 font-size-17 font-weight-bold text-dark-1">SUVs</h6>
+</div>
+<img class="img-fluid position-50-horizontal" src="https://mytravel.bookingcore.org/uploads/mytravel/car/terms/suv.jpg" alt="SUVs">
+</div>
+</a>
+</div>
+</div>
+<div class="col-md-6 col-xl-3">
+<div class="mb-5">
+<a class="d-block position-50-hover text-center overflow-hidden" href="https://mytravel.bookingcore.org/ko/car?terms=67">
+<div class="bg-img-hero rounded-xs bg-gray-23 min-height-200">
+<div class="pt-4 mb-5">
+<h6 class="mb-0 font-size-17 font-weight-bold text-dark-1">Trucks</h6>
+</div>
+<img class="img-fluid position-50-horizontal" src="https://mytravel.bookingcore.org/uploads/mytravel/car/terms/trucks.jpg" alt="Trucks">
+</div>
+</a>
+</div>
+</div>
+<div class="col-md-6 col-xl-3">
+<div class="mb-5">
+<a class="d-block position-50-hover text-center overflow-hidden" href="https://mytravel.bookingcore.org/ko/car?terms=68">
+<div class="bg-img-hero rounded-xs bg-gray-23 min-height-200">
+<div class="pt-4 mb-5">
+<h6 class="mb-0 font-size-17 font-weight-bold text-dark-1">Wagons</h6>
+</div>
+<img class="img-fluid position-50-horizontal" src="https://mytravel.bookingcore.org/uploads/mytravel/car/terms/wagons.jpg" alt="Wagons">
+</div>
+</a>
+ </div>
+</div>
+</div>
+</div>
+</div>
+<div class="bravo-list-car">
+<div class="container space-1">
+<div class="w-md-80 w-lg-50 text-center mx-md-auto mt-3">
+<h2 class="section-title text-black font-size-30 font-weight-bold mb-0">Top Hire Cars</h2>
+</div>
+<div class="travel-slick-carousel u-slick u-slick--equal-height u-slick--gutters-3 mb-4 pb-1" data-arrows-classes="d-lg-inline-block u-slick__arrow-classic u-slick__arrow-classic--v2 u-slick__arrow-centered--y rounded-circle" data-arrow-left-classes="flaticon-back u-slick__arrow-classic-inner u-slick__arrow-classic-inner--left ml-xl-n8" data-arrow-right-classes="flaticon-next u-slick__arrow-classic-inner u-slick__arrow-classic-inner--right mr-xl-n8" data-infinite="true" data-slides-show="4" data-slides-scroll="4" data-center-mode="false" data-pagi-classes="text-center u-slick__pagination mt-5 mb-0" data-responsive='[{
+                        "breakpoint": 1025,
+                        "settings": {
+                        "slidesToShow": 3,
+                        "slidesToScroll":3
+                    }
+                    }, {
+                        "breakpoint": 992,
+                        "settings": {
+                        "slidesToShow": 2,
+                        "slidesToScroll":2
+                    }
+                    }, {
+                        "breakpoint": 768,
+                        "settings": {
+                        "slidesToShow": 1,
+                        "slidesToScroll":1,
+                        "dots": false
+                    }
+                    }]'>
+<div class="item mt-5">
+<div class="card transition-3d-hover shadow-hover-2 item-loop w-100 ">
+<div class="position-relative">
+<a href="https://mytravel.bookingcore.org/ko/car/vinfast-fadil-standard" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="card-img-top" src="https://mytravel.bookingcore.org/uploads/mytravel/car/car-12.jpg" alt="Vinfast Fadil Standard">
+</a>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="13" data-type="car" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<a href="https://mytravel.bookingcore.org/ko/car/vinfast-fadil-standard">
+<span class="text-white font-weight-bold font-size-17">Vinfast Fadil Standard</span>
+</a>
+<div class="text-white my-2">
+<small class="mr-1 font-size-14">From</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+</small>
+<span class="font-weight-bold font-size-19">43.615 ¥</span>
+</div>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="https://mytravel.bookingcore.org/ko/location/paris" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> Paris
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+</div>
+<div class="card-body px-3 py-3 border-bottom">
+<a href="https://mytravel.bookingcore.org/ko/car/vinfast-fadil-standard" class="d-block location">
+<div class="d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> Paris
+</div>
+</a>
+<a href="https://mytravel.bookingcore.org/ko/car/vinfast-fadil-standard" class="d-none title">
+<span class="font-weight-bold font-size-17">Vinfast Fadil Standard</span>
+</a>
+<div class="mt-1 service-review">
+<span class="py-1 font-size-14 border-radius-3 font-weight-normal pagination-v2-arrow-color rate">
+4.5/5 <span class="rate-text">Excellent</span>
+</span>
+<span class="font-size-14 text-gray-1 ml-2 review">
+4 reviews
+</span>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">from</span>
+</div>
+<div class="price">
+<span class="onsale"></span>
+<span class="text-price">43.615 ¥</span>
+</div>
+</div>
+</div>
+<div class="px-3 pt-3 pb-2 type-attribute">
+<div class="row">
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class=" field-icon icon-passenger font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+7 <small>Seats</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-gear font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+Auto
+</div>
+</li>
+</ul>
+</div>
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-baggage font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+8 <small>Baggage</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-door font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+4 <small>Door</small>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="item mt-5">
+<div class="card transition-3d-hover shadow-hover-2 item-loop w-100 ">
+<div class="position-relative">
+<a href="https://mytravel.bookingcore.org/ko/car/vinfast-lux-a20-plus" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="card-img-top" src="https://mytravel.bookingcore.org/uploads/mytravel/car/car-11.jpg" alt="Vinfast Lux A2.0 Plus">
+</a>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="12" data-type="car" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<a href="https://mytravel.bookingcore.org/ko/car/vinfast-lux-a20-plus">
+<span class="text-white font-weight-bold font-size-17">Vinfast Lux A2.0 Plus</span>
+</a>
+<div class="text-white my-2">
+<small class="mr-1 font-size-14">From</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+</small>
+<span class="font-weight-bold font-size-19">38.163 ¥</span>
+</div>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="https://mytravel.bookingcore.org/ko/location/california" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> California
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+</div>
+<div class="card-body px-3 py-3 border-bottom">
+<a href="https://mytravel.bookingcore.org/ko/car/vinfast-lux-a20-plus" class="d-block location">
+<div class="d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> California
+</div>
+</a>
+<a href="https://mytravel.bookingcore.org/ko/car/vinfast-lux-a20-plus" class="d-none title">
+<span class="font-weight-bold font-size-17">Vinfast Lux A2.0 Plus</span>
+</a>
+<div class="mt-1 service-review">
+<span class="py-1 font-size-14 border-radius-3 font-weight-normal pagination-v2-arrow-color rate">
+4.3/5 <span class="rate-text">Very Good</span>
+</span>
+<span class="font-size-14 text-gray-1 ml-2 review">
+4 reviews
+</span>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">from</span>
+</div>
+<div class="price">
+<span class="onsale"></span>
+<span class="text-price">38.163 ¥</span>
+</div>
+</div>
+</div>
+<div class="px-3 pt-3 pb-2 type-attribute">
+<div class="row">
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class=" field-icon icon-passenger font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+7 <small>Seats</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-gear font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+Auto
+</div>
+</li>
+</ul>
+</div>
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-baggage font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+10 <small>Baggage</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-door font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+4 <small>Door</small>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="item mt-5">
+<div class="card transition-3d-hover shadow-hover-2 item-loop w-100 ">
+<div class="position-relative">
+<a href="https://mytravel.bookingcore.org/ko/car/vinfast-lux-v8-suv" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="card-img-top" src="https://mytravel.bookingcore.org/uploads/mytravel/car/car-10.jpg" alt="Vinfast Lux V8 (SUV)">
+</a>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="11" data-type="car" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<a href="https://mytravel.bookingcore.org/ko/car/vinfast-lux-v8-suv">
+<span class="text-white font-weight-bold font-size-17">Vinfast Lux V8 (SUV)</span>
+</a>
+<div class="text-white my-2">
+<small class="mr-1 font-size-14">From</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+</small>
+<span class="font-weight-bold font-size-19">27.259 ¥</span>
+</div>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="https://mytravel.bookingcore.org/ko/location/virginia" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> Virginia
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+<span class="badge badge-pill bg-white text-primary px-4 mr-3 py-2 font-size-14 font-weight-normal">Featured</span>
+</div>
+<div class="card-body px-3 py-3 border-bottom">
+<a href="https://mytravel.bookingcore.org/ko/car/vinfast-lux-v8-suv" class="d-block location">
+<div class="d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> Virginia
+</div>
+</a>
+<a href="https://mytravel.bookingcore.org/ko/car/vinfast-lux-v8-suv" class="d-none title">
+<span class="font-weight-bold font-size-17">Vinfast Lux V8 (SUV)</span>
+</a>
+<div class="mt-1 service-review">
+<span class="py-1 font-size-14 border-radius-3 font-weight-normal pagination-v2-arrow-color rate">
+5.0/5 <span class="rate-text">Excellent</span>
+</span>
+<span class="font-size-14 text-gray-1 ml-2 review">
+2 reviews
+</span>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">from</span>
+</div>
+<div class="price">
+<span class="onsale"></span>
+<span class="text-price">27.259 ¥</span>
+</div>
+</div>
+</div>
+<div class="px-3 pt-3 pb-2 type-attribute">
+<div class="row">
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class=" field-icon icon-passenger font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+6 <small>Seats</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-gear font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+Auto
+</div>
+</li>
+</ul>
+</div>
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-baggage font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+8 <small>Baggage</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-door font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+4 <small>Door</small>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="item mt-5">
+<div class="card transition-3d-hover shadow-hover-2 item-loop w-100 ">
+<div class="position-relative">
+<a href="https://mytravel.bookingcore.org/ko/car/toyota-prius-plus" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="card-img-top" src="https://mytravel.bookingcore.org/uploads/mytravel/car/car-9.jpg" alt="Toyota Prius Plus">
+</a>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="10" data-type="car" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<a href="https://mytravel.bookingcore.org/ko/car/toyota-prius-plus">
+<span class="text-white font-weight-bold font-size-17">Toyota Prius Plus</span>
+</a>
+<div class="text-white my-2">
+<small class="mr-1 font-size-14">From</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+</small>
+<span class="font-weight-bold font-size-19">21.699 ¥</span>
+</div>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="https://mytravel.bookingcore.org/ko/location/san-francisco" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> San Francisco
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+<span class="badge badge-pill bg-white text-primary px-4 mr-3 py-2 font-size-14 font-weight-normal">Featured</span>
+</div>
+<div class="card-body px-3 py-3 border-bottom">
+<a href="https://mytravel.bookingcore.org/ko/car/toyota-prius-plus" class="d-block location">
+<div class="d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> San Francisco
+</div>
+</a>
+<a href="https://mytravel.bookingcore.org/ko/car/toyota-prius-plus" class="d-none title">
+<span class="font-weight-bold font-size-17">Toyota Prius Plus</span>
+</a>
+<div class="mt-1 service-review">
+<span class="py-1 font-size-14 border-radius-3 font-weight-normal pagination-v2-arrow-color rate">
+4.8/5 <span class="rate-text">Excellent</span>
+</span>
+<span class="font-size-14 text-gray-1 ml-2 review">
+4 reviews
+</span>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">from</span>
+</div>
+<div class="price">
+<span class="onsale"></span>
+<span class="text-price">21.699 ¥</span>
+</div>
+</div>
+</div>
+<div class="px-3 pt-3 pb-2 type-attribute">
+<div class="row">
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class=" field-icon icon-passenger font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+9 <small>Seats</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-gear font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+Auto
+</div>
+</li>
+</ul>
+</div>
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-baggage font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+6 <small>Baggage</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-door font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+4 <small>Door</small>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="item mt-5">
+<div class="card transition-3d-hover shadow-hover-2 item-loop w-100 ">
+<div class="position-relative">
+<a href="https://mytravel.bookingcore.org/ko/car/honda-civic" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="card-img-top" src="https://mytravel.bookingcore.org/uploads/mytravel/car/car-8.jpg" alt="Honda Civic">
+</a>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="9" data-type="car" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<a href="https://mytravel.bookingcore.org/ko/car/honda-civic">
+<span class="text-white font-weight-bold font-size-17">Honda Civic</span>
+</a>
+<div class="text-white my-2">
+<small class="mr-1 font-size-14">From</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+</small>
+<span class="font-weight-bold font-size-19">49.067 ¥</span>
+</div>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="https://mytravel.bookingcore.org/ko/location/new-jersey" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> New Jersey
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+</div>
+<div class="card-body px-3 py-3 border-bottom">
+<a href="https://mytravel.bookingcore.org/ko/car/honda-civic" class="d-block location">
+<div class="d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> New Jersey
+</div>
+</a>
+<a href="https://mytravel.bookingcore.org/ko/car/honda-civic" class="d-none title">
+<span class="font-weight-bold font-size-17">Honda Civic</span>
+</a>
+<div class="mt-1 service-review">
+<span class="py-1 font-size-14 border-radius-3 font-weight-normal pagination-v2-arrow-color rate">
+4.8/5 <span class="rate-text">Excellent</span>
+</span>
+<span class="font-size-14 text-gray-1 ml-2 review">
+4 reviews
+</span>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">from</span>
+</div>
+<div class="price">
+<span class="onsale"></span>
+<span class="text-price">49.067 ¥</span>
+</div>
+</div>
+</div>
+<div class="px-3 pt-3 pb-2 type-attribute">
+<div class="row">
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class=" field-icon icon-passenger font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+ 6 <small>Seats</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-gear font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+Auto
+</div>
+</li>
+</ul>
+</div>
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-baggage font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+10 <small>Baggage</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-door font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+4 <small>Door</small>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="item mt-5">
+<div class="card transition-3d-hover shadow-hover-2 item-loop w-100 ">
+<div class="position-relative">
+<a href="https://mytravel.bookingcore.org/ko/car/vinfast-lux-sa20-plus" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="card-img-top" src="https://mytravel.bookingcore.org/uploads/mytravel/car/car-7.jpg" alt="Vinfast Lux SA2.0 Plus">
+</a>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="8" data-type="car" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<a href="https://mytravel.bookingcore.org/ko/car/vinfast-lux-sa20-plus">
+<span class="text-white font-weight-bold font-size-17">Vinfast Lux SA2.0 Plus</span>
+</a>
+<div class="text-white my-2">
+<small class="mr-1 font-size-14">From</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+</small>
+<span class="font-weight-bold font-size-19">65.423 ¥</span>
+</div>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="https://mytravel.bookingcore.org/ko/location/paris" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> Paris
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+</div>
+<div class="card-body px-3 py-3 border-bottom">
+<a href="https://mytravel.bookingcore.org/ko/car/vinfast-lux-sa20-plus" class="d-block location">
+<div class="d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> Paris
+</div>
+</a>
+<a href="https://mytravel.bookingcore.org/ko/car/vinfast-lux-sa20-plus" class="d-none title">
+<span class="font-weight-bold font-size-17">Vinfast Lux SA2.0 Plus</span>
+</a>
+<div class="mt-1 service-review">
+<span class="py-1 font-size-14 border-radius-3 font-weight-normal pagination-v2-arrow-color rate">
+4.8/5 <span class="rate-text">Excellent</span>
+</span>
+<span class="font-size-14 text-gray-1 ml-2 review">
+4 reviews
+</span>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">from</span>
+</div>
+<div class="price">
+<span class="onsale"></span>
+<span class="text-price">65.423 ¥</span>
+</div>
+</div>
+</div>
+<div class="px-3 pt-3 pb-2 type-attribute">
+<div class="row">
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class=" field-icon icon-passenger font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+3 <small>Seats</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-gear font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+Auto
+</div>
+</li>
+</ul>
+</div>
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-baggage font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+9 <small>Baggage</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-door font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+4 <small>Door</small>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="item mt-5">
+<div class="card transition-3d-hover shadow-hover-2 item-loop w-100 ">
+<div class="position-relative">
+<a href="https://mytravel.bookingcore.org/ko/car/mercedes-benz" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="card-img-top" src="https://mytravel.bookingcore.org/uploads/mytravel/car/car-6.jpg" alt="Mercedes Benz">
+</a>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="7" data-type="car" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<a href="https://mytravel.bookingcore.org/ko/car/mercedes-benz">
+<span class="text-white font-weight-bold font-size-17">Mercedes Benz</span>
+</a>
+<div class="text-white my-2">
+<small class="mr-1 font-size-14">From</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+</small>
+<span class="font-weight-bold font-size-19">21.808 ¥</span>
+</div>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="https://mytravel.bookingcore.org/ko/location/paris" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> Paris
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+</div>
+<div class="card-body px-3 py-3 border-bottom">
+<a href="https://mytravel.bookingcore.org/ko/car/mercedes-benz" class="d-block location">
+<div class="d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> Paris
+</div>
+</a>
+<a href="https://mytravel.bookingcore.org/ko/car/mercedes-benz" class="d-none title">
+<span class="font-weight-bold font-size-17">Mercedes Benz</span>
+</a>
+<div class="mt-1 service-review">
+<span class="py-1 font-size-14 border-radius-3 font-weight-normal pagination-v2-arrow-color rate">
+5.0/5 <span class="rate-text">Excellent</span>
+</span>
+<span class="font-size-14 text-gray-1 ml-2 review">
+2 reviews
+</span>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">from</span>
+</div>
+<div class="price">
+<span class="onsale"></span>
+<span class="text-price">21.808 ¥</span>
+</div>
+</div>
+</div>
+<div class="px-3 pt-3 pb-2 type-attribute">
+<div class="row">
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class=" field-icon icon-passenger font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+6 <small>Seats</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-gear font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+Auto
+</div>
+</li>
+</ul>
+</div>
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-baggage font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+6 <small>Baggage</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-door font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+4 <small>Door</small>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="item mt-5">
+<div class="card transition-3d-hover shadow-hover-2 item-loop w-100 ">
+<div class="position-relative">
+<a href="https://mytravel.bookingcore.org/ko/car/vinfast-fadil-plus" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="card-img-top" src="https://mytravel.bookingcore.org/uploads/mytravel/car/car-5.jpg" alt="Vinfast Fadil Plus">
+</a>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="6" data-type="car" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<a href="https://mytravel.bookingcore.org/ko/car/vinfast-fadil-plus">
+<span class="text-white font-weight-bold font-size-17">Vinfast Fadil Plus</span>
+</a>
+<div class="text-white my-2">
+<small class="mr-1 font-size-14">From</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+</small>
+<span class="font-weight-bold font-size-19">43.615 ¥</span>
+</div>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="https://mytravel.bookingcore.org/ko/location/paris" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> Paris
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+</div>
+<div class="card-body px-3 py-3 border-bottom">
+<a href="https://mytravel.bookingcore.org/ko/car/vinfast-fadil-plus" class="d-block location">
+<div class="d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> Paris
+</div>
+</a>
+<a href="https://mytravel.bookingcore.org/ko/car/vinfast-fadil-plus" class="d-none title">
+<span class="font-weight-bold font-size-17">Vinfast Fadil Plus</span>
+</a>
+<div class="mt-1 service-review">
+<span class="py-1 font-size-14 border-radius-3 font-weight-normal pagination-v2-arrow-color rate">
+5.0/5 <span class="rate-text">Excellent</span>
+</span>
+<span class="font-size-14 text-gray-1 ml-2 review">
+3 reviews
+</span>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">from</span>
+</div>
+<div class="price">
+<span class="onsale"></span>
+<span class="text-price">43.615 ¥</span>
+</div>
+</div>
+</div>
+<div class="px-3 pt-3 pb-2 type-attribute">
+ <div class="row">
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class=" field-icon icon-passenger font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+5 <small>Seats</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-gear font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+Auto
+</div>
+</li>
+</ul>
+</div>
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-baggage font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+6 <small>Baggage</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-door font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+4 <small>Door</small>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="item mt-5">
+<div class="card transition-3d-hover shadow-hover-2 item-loop w-100 ">
+<div class="position-relative">
+<a href="https://mytravel.bookingcore.org/ko/car/2019-audi-s3" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="card-img-top" src="https://mytravel.bookingcore.org/uploads/mytravel/car/car-4.jpg" alt="2019 Audi S3">
+</a>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="5" data-type="car" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<a href="https://mytravel.bookingcore.org/ko/car/2019-audi-s3">
+<span class="text-white font-weight-bold font-size-17">2019 Audi S3</span>
+</a>
+<div class="text-white my-2">
+<small class="mr-1 font-size-14">From</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+</small>
+<span class="font-weight-bold font-size-19">32.711 ¥</span>
+</div>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="https://mytravel.bookingcore.org/ko/location/los-angeles" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> Los Angeles
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+<span class="badge badge-pill bg-white text-primary px-4 mr-3 py-2 font-size-14 font-weight-normal">Featured</span>
+</div>
+<div class="card-body px-3 py-3 border-bottom">
+<a href="https://mytravel.bookingcore.org/ko/car/2019-audi-s3" class="d-block location">
+<div class="d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> Los Angeles
+</div>
+</a>
+<a href="https://mytravel.bookingcore.org/ko/car/2019-audi-s3" class="d-none title">
+<span class="font-weight-bold font-size-17">2019 Audi S3</span>
+</a>
+<div class="mt-1 service-review">
+<span class="py-1 font-size-14 border-radius-3 font-weight-normal pagination-v2-arrow-color rate">
+4.0/5 <span class="rate-text">Very Good</span>
+</span>
+<span class="font-size-14 text-gray-1 ml-2 review">
+1 review
+</span>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">from</span>
+</div>
+<div class="price">
+<span class="onsale"></span>
+<span class="text-price">32.711 ¥</span>
+</div>
+</div>
+</div>
+<div class="px-3 pt-3 pb-2 type-attribute">
+<div class="row">
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class=" field-icon icon-passenger font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+3 <small>Seats</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-gear font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+Auto
+</div>
+</li>
+</ul>
+</div>
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-baggage font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+5 <small>Baggage</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-door font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+4 <small>Door</small>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="item mt-5">
+<div class="card transition-3d-hover shadow-hover-2 item-loop w-100 ">
+<div class="position-relative">
+<a href="https://mytravel.bookingcore.org/ko/car/2019-bmw-m6-gran-coupe" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="card-img-top" src="https://mytravel.bookingcore.org/uploads/mytravel/car/car-3.jpg" alt="2019 BMW M6 Gran Coupe">
+</a>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="4" data-type="car" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<a href="https://mytravel.bookingcore.org/ko/car/2019-bmw-m6-gran-coupe">
+<span class="text-white font-weight-bold font-size-17">2019 BMW M6 Gran Coupe</span>
+</a>
+<div class="text-white my-2">
+<small class="mr-1 font-size-14">From</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+</small>
+<span class="font-weight-bold font-size-19">32.711 ¥</span>
+</div>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="https://mytravel.bookingcore.org/ko/location/paris" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> Paris
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+</div>
+<div class="card-body px-3 py-3 border-bottom">
+<a href="https://mytravel.bookingcore.org/ko/car/2019-bmw-m6-gran-coupe" class="d-block location">
+<div class="d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> Paris
+</div>
+</a>
+<a href="https://mytravel.bookingcore.org/ko/car/2019-bmw-m6-gran-coupe" class="d-none title">
+<span class="font-weight-bold font-size-17">2019 BMW M6 Gran Coupe</span>
+</a>
+<div class="mt-1 service-review">
+<span class="py-1 font-size-14 border-radius-3 font-weight-normal pagination-v2-arrow-color rate">
+5.0/5 <span class="rate-text">Excellent</span>
+</span>
+<span class="font-size-14 text-gray-1 ml-2 review">
+1 review
+</span>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">from</span>
+</div>
+<div class="price">
+<span class="onsale"></span>
+<span class="text-price">32.711 ¥</span>
+</div>
+</div>
+</div>
+<div class="px-3 pt-3 pb-2 type-attribute">
+<div class="row">
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class=" field-icon icon-passenger font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+6 <small>Seats</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-gear font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+Auto
+</div>
+</li>
+</ul>
+ </div>
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-baggage font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+5 <small>Baggage</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-door font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+4 <small>Door</small>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="item mt-5">
+<div class="card transition-3d-hover shadow-hover-2 item-loop w-100 ">
+<div class="position-relative">
+<a href="https://mytravel.bookingcore.org/ko/car/2019-honda-clarityt" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="card-img-top" src="https://mytravel.bookingcore.org/uploads/mytravel/car/car-2.jpg" alt="2019 Honda Clarity">
+</a>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="3" data-type="car" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<a href="https://mytravel.bookingcore.org/ko/car/2019-honda-clarityt">
+<span class="text-white font-weight-bold font-size-17">2019 Honda Clarity</span>
+</a>
+<div class="text-white my-2">
+<small class="mr-1 font-size-14">From</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+</small>
+<span class="font-weight-bold font-size-19">32.711 ¥</span>
+</div>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="https://mytravel.bookingcore.org/ko/location/california" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> California
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+</div>
+<div class="card-body px-3 py-3 border-bottom">
+<a href="https://mytravel.bookingcore.org/ko/car/2019-honda-clarityt" class="d-block location">
+<div class="d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> California
+</div>
+</a>
+<a href="https://mytravel.bookingcore.org/ko/car/2019-honda-clarityt" class="d-none title">
+<span class="font-weight-bold font-size-17">2019 Honda Clarity</span>
+</a>
+<div class="mt-1 service-review">
+<span class="py-1 font-size-14 border-radius-3 font-weight-normal pagination-v2-arrow-color rate">
+4.5/5 <span class="rate-text">Excellent</span>
+</span>
+<span class="font-size-14 text-gray-1 ml-2 review">
+2 reviews
+</span>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">from</span>
+</div>
+<div class="price">
+<span class="onsale"></span>
+<span class="text-price">32.711 ¥</span>
+</div>
+</div>
+</div>
+<div class="px-3 pt-3 pb-2 type-attribute">
+<div class="row">
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class=" field-icon icon-passenger font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+8 <small>Seats</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-gear font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+Auto
+</div>
+</li>
+</ul>
+</div>
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-baggage font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+5 <small>Baggage</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-door font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+4 <small>Door</small>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="item mt-5">
+<div class="card transition-3d-hover shadow-hover-2 item-loop w-100 ">
+<div class="position-relative">
+<a href="https://mytravel.bookingcore.org/ko/car/2019-honda-clarityt-1" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="card-img-top" src="https://mytravel.bookingcore.org/uploads/mytravel/car/car-2.jpg" alt="2019 Honda Clarity">
+</a>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="2" data-type="car" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<a href="https://mytravel.bookingcore.org/ko/car/2019-honda-clarityt-1">
+<span class="text-white font-weight-bold font-size-17">2019 Honda Clarity</span>
+</a>
+<div class="text-white my-2">
+<small class="mr-1 font-size-14">From</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+</small>
+<span class="font-weight-bold font-size-19">32.711 ¥</span>
+</div>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="https://mytravel.bookingcore.org/ko/location/paris" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> Paris
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+</div>
+<div class="card-body px-3 py-3 border-bottom">
+<a href="https://mytravel.bookingcore.org/ko/car/2019-honda-clarityt-1" class="d-block location">
+<div class="d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> Paris
+</div>
+</a>
+<a href="https://mytravel.bookingcore.org/ko/car/2019-honda-clarityt-1" class="d-none title">
+<span class="font-weight-bold font-size-17">2019 Honda Clarity</span>
+</a>
+<div class="mt-1 service-review">
+<span class="py-1 font-size-14 border-radius-3 font-weight-normal pagination-v2-arrow-color rate">
+4.5/5 <span class="rate-text">Excellent</span>
+</span>
+<span class="font-size-14 text-gray-1 ml-2 review">
+4 reviews
+</span>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">from</span>
+</div>
+<div class="price">
+<span class="onsale"></span>
+<span class="text-price">32.711 ¥</span>
+</div>
+</div>
+</div>
+<div class="px-3 pt-3 pb-2 type-attribute">
+<div class="row">
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class=" field-icon icon-passenger font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+6 <small>Seats</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-gear font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+Auto
+</div>
+</li>
+</ul>
+</div>
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-baggage font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+9 <small>Baggage</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-door font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+4 <small>Door</small>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="item mt-5">
+<div class="card transition-3d-hover shadow-hover-2 item-loop w-100 ">
+<div class="position-relative">
+<a href="https://mytravel.bookingcore.org/ko/car/bmw-x6-facelift" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="card-img-top" src="https://mytravel.bookingcore.org/uploads/mytravel/car/car-1.jpg" alt="BMW-X6-facelift">
+</a>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="1" data-type="car" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<a href="https://mytravel.bookingcore.org/ko/car/bmw-x6-facelift">
+<span class="text-white font-weight-bold font-size-17">BMW-X6-facelift</span>
+</a>
+<div class="text-white my-2">
+<small class="mr-1 font-size-14">From</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+54.519 ¥
+</small>
+<span class="font-weight-bold font-size-19">31.512 ¥</span>
+</div>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="https://mytravel.bookingcore.org/ko/location/paris" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> Paris
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+<span class="badge badge-pill bg-white text-primary px-4 mr-3 py-2 font-size-14 font-weight-normal">Featured</span>
+<span class="badge badge-pill bg-white text-danger px-3  py-2 font-size-14 font-weight-normal">42%</span>
+</div>
+<div class="card-body px-3 py-3 border-bottom">
+<a href="https://mytravel.bookingcore.org/ko/car/bmw-x6-facelift" class="d-block location">
+<div class="d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> Paris
+</div>
+</a>
+<a href="https://mytravel.bookingcore.org/ko/car/bmw-x6-facelift" class="d-none title">
+<span class="font-weight-bold font-size-17">BMW-X6-facelift</span>
+</a>
+<div class="mt-1 service-review">
+<span class="py-1 font-size-14 border-radius-3 font-weight-normal pagination-v2-arrow-color rate">
+5.0/5 <span class="rate-text">Excellent</span>
+</span>
+<span class="font-size-14 text-gray-1 ml-2 review">
+2 reviews
+</span>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">from</span>
+</div>
+<div class="price">
+<span class="onsale">54.519 ¥</span>
+<span class="text-price">31.512 ¥</span>
+</div>
+</div>
+</div>
+<div class="px-3 pt-3 pb-2 type-attribute">
+<div class="row">
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class=" field-icon icon-passenger font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+6 <small>Seats</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-gear font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+Auto
+</div>
+</li>
+</ul>
+</div>
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-baggage font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+6 <small>Baggage</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-door font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+4 <small>Door</small>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="gradient-overlay-half-bg-dark bravo-call-to-action banner-block banner-v1 bg-img-hero space-3 style_1" style="background-image: url(https://mytravel.bookingcore.org/uploads/mytravel/general/call-to-action-bg-6.jpg) !important;">
+<div class="container">
+<div class="mx-auto text-center mt-xl-5 mb-xl-2 px-3 px-md-0">
+<h6 class="text-white font-size-40 font-weight-bold mb-1">Tell us where you would like to go.</h6>
+<p class="text-white font-size-18 font-weight-normal mb-4 pb-1 px-md-3 px-lg-0">
+3,000+ VIP Transport Options!
+</p>
+<a class="btn btn-outline-white border-width-2 rounded-xs min-width-200 font-weight-normal transition-3d-hover" href="#">
+Search Options
+</a>
+</div>
+</div>
+</div>
+<div class="bravo-list-locations destinantion-block destinantion-v1 border-bottom border-color-8 mt-6">
+<div class="container space-bottom-1">
+<div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mt-4">
+<h2 class="section-title text-black font-size-30 font-weight-bold mb-0">Top Destination</h2>
+</div>
+<div class="row mb-1">
+<div class="col-md-4 col-lg-6 col-xl-2dot4 mb-3 mb-md-4 pb-1">
+<div class="min-height-240 bg-img-hero rounded-border p-5 gradient-overlay-half-bg-gradient transition-3d-hover shadow-hover-2 border-0 dropdown" style="background-image: url(https://mytravel.bookingcore.org/uploads/mytravel/location/location-1.jpg);">
+<div class="w-100 d-flex justify-content-between mb-2">
+<div class="position-relative">
+<a href="https://mytravel.bookingcore.org/ko/location/germany" class="destination text-white font-weight-bold font-size-21 pb-3 mb-3 text-lh-1 d-block">
+Germany
+</a>
+<div class="destination-dropdown v1">
+<div class="desc">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+ <div class="col-md-4 col-lg-6 col-xl-2dot4 mb-3 mb-md-4 pb-1">
+<div class="min-height-240 bg-img-hero rounded-border p-5 gradient-overlay-half-bg-gradient transition-3d-hover shadow-hover-2 border-0 dropdown" style="background-image: url(https://mytravel.bookingcore.org/uploads/mytravel/location/location-2.jpg);">
+<div class="w-100 d-flex justify-content-between mb-2">
+<div class="position-relative">
+<a href="https://mytravel.bookingcore.org/ko/location/london" class="destination text-white font-weight-bold font-size-21 pb-3 mb-3 text-lh-1 d-block">
+London
+</a>
+<div class="destination-dropdown v1">
+<div class="desc">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-lg-6 col-xl-2dot4 mb-3 mb-md-4 pb-1">
+<div class="min-height-240 bg-img-hero rounded-border p-5 gradient-overlay-half-bg-gradient transition-3d-hover shadow-hover-2 border-0 dropdown" style="background-image: url(https://mytravel.bookingcore.org/uploads/mytravel/location/location-3.jpg);">
+<div class="w-100 d-flex justify-content-between mb-2">
+<div class="position-relative">
+<a href="https://mytravel.bookingcore.org/ko/location/virginia" class="destination text-white font-weight-bold font-size-21 pb-3 mb-3 text-lh-1 d-block">
+Virginia
+</a>
+<div class="destination-dropdown v1">
+<div class="desc">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-lg-6 col-xl-2dot4 mb-3 mb-md-4 pb-1">
+<div class="min-height-240 bg-img-hero rounded-border p-5 gradient-overlay-half-bg-gradient transition-3d-hover shadow-hover-2 border-0 dropdown" style="background-image: url(https://mytravel.bookingcore.org/uploads/mytravel/location/location-2.jpg);">
+<div class="w-100 d-flex justify-content-between mb-2">
+<div class="position-relative">
+<a href="https://mytravel.bookingcore.org/ko/location/san-francisco" class="destination text-white font-weight-bold font-size-21 pb-3 mb-3 text-lh-1 d-block">
+San Francisco
+</a>
+<div class="destination-dropdown v1">
+<div class="desc">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-lg-6 col-xl-2dot4 mb-3 mb-md-4 pb-1">
+<div class="min-height-240 bg-img-hero rounded-border p-5 gradient-overlay-half-bg-gradient transition-3d-hover shadow-hover-2 border-0 dropdown" style="background-image: url(https://mytravel.bookingcore.org/uploads/mytravel/location/location-1.jpg);">
+<div class="w-100 d-flex justify-content-between mb-2">
+<div class="position-relative">
+<a href="https://mytravel.bookingcore.org/ko/location/new-jersey" class="destination text-white font-weight-bold font-size-21 pb-3 mb-3 text-lh-1 d-block">
+New Jersey
+</a>
+<div class="destination-dropdown v1">
+<div class="desc">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-lg-6 col-xl-2dot4 mb-3 mb-md-4 pb-1">
+<div class="min-height-240 bg-img-hero rounded-border p-5 gradient-overlay-half-bg-gradient transition-3d-hover shadow-hover-2 border-0 dropdown" style="background-image: url(https://mytravel.bookingcore.org/uploads/mytravel/location/location-5.jpg);">
+<div class="w-100 d-flex justify-content-between mb-2">
+<div class="position-relative">
+<a href="https://mytravel.bookingcore.org/ko/location/los-angeles" class="destination text-white font-weight-bold font-size-21 pb-3 mb-3 text-lh-1 d-block">
+Los Angeles
+</a>
+<div class="destination-dropdown v1">
+<div class="desc">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-lg-6 col-xl-2dot4 mb-3 mb-md-4 pb-1">
+<div class="min-height-240 bg-img-hero rounded-border p-5 gradient-overlay-half-bg-gradient transition-3d-hover shadow-hover-2 border-0 dropdown" style="background-image: url(https://mytravel.bookingcore.org/uploads/mytravel/location/location-4.jpg);">
+<div class="w-100 d-flex justify-content-between mb-2">
+<div class="position-relative">
+<a href="https://mytravel.bookingcore.org/ko/location/united-states" class="destination text-white font-weight-bold font-size-21 pb-3 mb-3 text-lh-1 d-block">
+United States
+</a>
+<div class="destination-dropdown v1">
+<div class="desc">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-lg-6 col-xl-2dot4 mb-3 mb-md-4 pb-1">
+<div class="min-height-240 bg-img-hero rounded-border p-5 gradient-overlay-half-bg-gradient transition-3d-hover shadow-hover-2 border-0 dropdown" style="background-image: url(https://mytravel.bookingcore.org/uploads/mytravel/location/location-3.jpg);">
+<div class="w-100 d-flex justify-content-between mb-2">
+<div class="position-relative">
+<a href="https://mytravel.bookingcore.org/ko/location/california" class="destination text-white font-weight-bold font-size-21 pb-3 mb-3 text-lh-1 d-block">
+California
+</a>
+<div class="destination-dropdown v1">
+<div class="desc">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-lg-6 col-xl-2dot4 mb-3 mb-md-4 pb-1">
+<div class="min-height-240 bg-img-hero rounded-border p-5 gradient-overlay-half-bg-gradient transition-3d-hover shadow-hover-2 border-0 dropdown" style="background-image: url(https://mytravel.bookingcore.org/uploads/mytravel/location/location-2.jpg);">
+<div class="w-100 d-flex justify-content-between mb-2">
+<div class="position-relative">
+<a href="https://mytravel.bookingcore.org/ko/location/new-york-united-states" class="destination text-white font-weight-bold font-size-21 pb-3 mb-3 text-lh-1 d-block">
+New York, United States
+</a>
+<div class="destination-dropdown v1">
+<div class="desc">
+ </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-lg-6 col-xl-2dot4 mb-3 mb-md-4 pb-1">
+<div class="min-height-240 bg-img-hero rounded-border p-5 gradient-overlay-half-bg-gradient transition-3d-hover shadow-hover-2 border-0 dropdown" style="background-image: url(https://mytravel.bookingcore.org/uploads/mytravel/location/location-6.jpg);">
+<div class="w-100 d-flex justify-content-between mb-2">
+<div class="position-relative">
+<a href="https://mytravel.bookingcore.org/ko/location/paris" class="destination text-white font-weight-bold font-size-21 pb-3 mb-3 text-lh-1 d-block">
+Paris
+</a>
+<div class="destination-dropdown v1">
+<div class="desc">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bravo-list-news">
+<div class="deals-carousel-block deals-carousel-v1 border-color-8">
+<div class="container space-1">
+<h2 class="section-title text-center mb-5 mt-3">Recent Article</h2>
+<div class="travel-slick-carousel u-slick u-slick--gutters-3" data-slides-show="3" data-arrows-classes="d-none d-lg-inline-block u-slick__arrow-classic u-slick__arrow-classic--v2 u-slick__arrow-centered--y rounded-circle" data-arrow-left-classes="flaticon-back u-slick__arrow-classic-inner u-slick__arrow-classic-inner--left ml-xl-n8" data-arrow-right-classes="flaticon-next u-slick__arrow-classic-inner u-slick__arrow-classic-inner--right mr-xl-n8" data-pagi-classes="d-lg-none text-center u-slick__pagination mt-4" data-responsive='[ { "breakpoint": 1025, "settings": { "slidesToShow": 3 } }, { "breakpoint": 992, "settings": { "slidesToShow": 2 } }, { "breakpoint": 768, "settings": { "slidesToShow": 1 } }, { "breakpoint": 554, "settings": { "slidesToShow": 1 } } ]'>
+<div class="col-lg-4 col-md-6">
+<div class="item mb-4">
+<a class="d-block rounded-xs overflow-hidden mb-3" href="https://mytravel.bookingcore.org/ko/news/morning-in-the-northern-sea">
+<img class='img-fluid w-100 lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/news/news-2.jpg alt='Morning in the Northern sea'>
+</a>
+<h6 class="font-size-17 pt-xl-1 font-weight-bold font-weight-bold mb-1 text-gray-6">
+<a href="https://mytravel.bookingcore.org/ko/news/morning-in-the-northern-sea">
+Morning in the Northern sea
+</a>
+</h6>
+<a class="text-gray-1" href="https://mytravel.bookingcore.org/ko/news/morning-in-the-northern-sea">
+<span> From the iconic to the unexpected, the city of San Francisco never ceases to...</span>
+</a>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="item mb-4">
+<a class="d-block rounded-xs overflow-hidden mb-3" href="https://mytravel.bookingcore.org/ko/news/america-national-parks-with-denver">
+<img class='img-fluid w-100 lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/news/news-7.jpg alt='America  National Parks with Denver'>
+</a>
+<h6 class="font-size-17 pt-xl-1 font-weight-bold font-weight-bold mb-1 text-gray-6">
+<a href="https://mytravel.bookingcore.org/ko/news/america-national-parks-with-denver">
+America National Parks with Denver
+</a>
+</h6>
+<a class="text-gray-1" href="https://mytravel.bookingcore.org/ko/news/america-national-parks-with-denver">
+<span> From the iconic to the unexpected, the city of San Francisco never ceases to...</span>
+</a>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="item mb-4">
+<a class="d-block rounded-xs overflow-hidden mb-3" href="https://mytravel.bookingcore.org/ko/news/a-seaside-reset-in-laguna-beach">
+<img class='img-fluid w-100 lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/news/news-6.jpg alt='A Seaside Reset in Laguna Beach'>
+</a>
+<h6 class="font-size-17 pt-xl-1 font-weight-bold font-weight-bold mb-1 text-gray-6">
+<a href="https://mytravel.bookingcore.org/ko/news/a-seaside-reset-in-laguna-beach">
+A Seaside Reset in Laguna Beach
+</a>
+</h6>
+<a class="text-gray-1" href="https://mytravel.bookingcore.org/ko/news/a-seaside-reset-in-laguna-beach">
+<span> From the iconic to the unexpected, the city of San Francisco never ceases to...</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bravo_footer mt-4 border-top">
+<div class="main-footer">
+<div class="container">
+<div class="row justify-content-xl-between">
+<div class="col-12 col-lg-4 col-xl-3dot1 mb-6 mb-md-10 mb-xl-0">
+<div class="d-md-flex d-lg-block">
+<div class="mb-5 mr-md-7 mr-lg-0">
+<h4 class="h6 mb-4 font-weight-bold">Need My Travel Help?</h4>
+<a href="tel:8420666888999">
+</a><div class="d-flex align-items-center"><a href="tel:8420666888999">
+</a><div class="mr-4"><a href="tel:8420666888999">
+<i class="fa fa-phone font-size-50"></i>
+</a></div><a href="tel:8420666888999">
+</a><div><a href="tel:8420666888999">
+</a><div class="mb-2 h6 font-weight-normal text-gray-1"><a href="tel:8420666888999">Got Questions ? Call us 24/7</a></div><a href="tel:8420666888999">
+<small class="d-block font-size-16 font-weight-normal text-primary">Call Us: <span class="text-primary font-weight-semi-bold">(+84) 666-888-999</span></small>
+</a></div><a href="tel:8420666888999">
+</a></div><a href="tel:8420666888999">
+</a>
+</div>
+<div class="ml-md-6 ml-lg-0">
+<div class="mb-4">
+<h4 class="h6 font-weight-bold mb-2 font-size-17">Contact Info</h4>
+<address class="pr-4">
+<span class="mb-2 h6 font-weight-normal text-gray-1">
+PO Box CT16122 Collins Street West, Victoria 8007,Australia.
+</span>
+</address>
+</div>
+<ul class="list-inline mb-0"><li class="list-inline-item mr-2">
+<a class="btn btn-icon btn-social btn-bg-transparent" href="#">
+<span class="fa fa-facebook-f btn-icon__inner"></span>
+</a>
+</li>
+<li class="list-inline-item mr-2">
+<a class="btn btn-icon btn-social btn-bg-transparent" href="#">
+<span class="fa fa-twitter btn-icon__inner"></span>
+</a>
+</li>
+<li class="list-inline-item mr-2">
+<a class="btn btn-icon btn-social btn-bg-transparent" href="#">
+<span class="fa fa-instagram btn-icon__inner"></span>
+</a>
+</li>
+<li class="list-inline-item mr-2">
+<a class="btn btn-icon btn-social btn-bg-transparent" href="#">
+<span class="fa fa-linkedin btn-icon__inner"></span>
+</a>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-1dot8 mb-6 mb-md-10 mb-xl-0">
+<div class="nav-footer">
+<h4 class="h6 font-weight-bold mb-2 mb-xl-4">Company</h4>
+<ul class="list-group list-group-flush list-group-borderless mb-0"><li><a class="text-decoration-on-hover list-group-item list-group-item-action" href="#">About us</a></li>
+<li><a class="text-decoration-on-hover list-group-item list-group-item-action" href="#">Careers</a></li>
+<li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Terms of Use</a></li>
+<li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Privacy Statement</a></li>
+<li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Give Us Feedbacks</a></li>
+</ul>
+</div>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-1dot8 mb-6 mb-md-10 mb-xl-0">
+<div class="nav-footer">
+<h4 class="h6 font-weight-bold mb-2 mb-xl-4">Other Services</h4>
+<ul class="list-group list-group-flush list-group-borderless mb-0"><li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Investor Relations</a></li>
+<li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Rewards Program</a></li>
+<li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">PointsPLUS</a></li>
+<li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Partners</a></li>
+<li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">List My Hotel</a></li>
+</ul>
+</div>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-1dot8 mb-6 mb-md-10 mb-xl-0">
+<div class="nav-footer">
+<h4 class="h6 font-weight-bold mb-2 mb-xl-4">Support</h4>
+<ul class="list-group list-group-flush list-group-borderless mb-0"><li>
+<a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Account</a>
+</li>
+<li>
+<a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Legal</a>
+</li>
+<li>
+<a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Contact</a>
+</li>
+<li>
+<a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Affiliate Program</a>
+</li>
+<li>
+<a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Privacy Policy</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-12 col-md-6 col-lg col-xl-3dot1">
+<div class="mb-4 mb-xl-2">
+<h4 class="h6 font-weight-bold mb-2 mb-xl-4">Mailing List</h4>
+<p class="m-0 text-gray-1">Sign up for our mailing list to get latest updates and offers.</p>
+</div>
+<form action="https://mytravel.bookingcore.org/ko/newsletter/subscribe" class="subcribe-form bravo-subscribe-form bravo-form">
+<input type="hidden" name="_token" value="40Pg4KM1lQroJUlA4Gjyj0zTK2kc09l1KxuZtXkt"> <div class="input-group">
+<input type="text" name="email" class="form-control height-54 font-size-14 border-radius-3 border-width-2 border-color-8 email-input" placeholder="Your Email">
+<div class="input-group-append ml-3">
+<button type="submit" class="btn-submit btn btn-sea-green border-radius-3 height-54 min-width-112 font-size-14">Subscribe
+<i class="fa fa-spinner fa-pulse fa-fw"></i>
+</button>
+</div>
+</div>
+<div class="form-mess"></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="border-top border-bottom border-color-8 space-1">
+<div class="container">
+<div class="sub-footer d-flex align-items-center justify-content-between">
+<a class="d-inline-flex align-items-center" href="https://mytravel.bookingcore.org/" aria-label="MyTravel">
+<img class=' lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/general/logo.svg alt=''>
+<span class="brand brand-dark">MyTravel</span>
+</a>
+<div class="footer-select bravo_topbar d-flex align-items-center">
+<div class="mr-3">
+<div class="position-relative px-3 u-header__login-form dropdown-connector-xl u-header__topbar-divider currency-select">
+<div class="d-flex align-items-center text-white py-3 dropdown">
+<span class="d-inline-block font-size-14 mr-1 dropdown-nav-link " data-toggle="dropdown">
+<span class="flag-icon flag-icon-kr"></span>
+kr
+</span>
+<ul class="dropdown-menu dropdown-menu-user text-left width-auto">
+<li>
+<a href="https://mytravel.bookingcore.org/ko/page/home-car?set_lang=en" class="d-flex">
+<span class="flag-icon flag-icon-gb mr-2"></span>
+English
+</a>
+</li>
+<li>
+<a href="https://mytravel.bookingcore.org/ko/page/home-car?set_lang=ja" class="d-flex">
+<span class="flag-icon flag-icon-jp mr-2"></span>
+Japanese
+</a>
+</li>
+<li>
+<a href="https://mytravel.bookingcore.org/ko/page/home-car?set_lang=egy" class="d-flex">
+<span class="flag-icon flag-icon-eg mr-2"></span>
+Egyptian
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="position-relative px-3 u-header__login-form dropdown-connector-xl u-header__topbar-divider currency-select">
+<div class="d-flex align-items-center text-white py-3 dropdown">
+<span class="d-inline-block font-size-14 mr-1 dropdown-nav-link " data-toggle="dropdown">
+JPY
+</span>
+<ul class="dropdown-menu text-left width-auto min-width-100">
+<li>
+<a href="https://mytravel.bookingcore.org/ko/page/home-car?set_currency=eur">
+EUR
+</a>
+</li>
+ <li>
+<a href="https://mytravel.bookingcore.org/ko/page/home-car?set_currency=eur">
+EUR
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="copy-right">
+<div class="container context">
+<div class="row">
+<div class="col-md-12">
+© 2021 MyTravel. All rights reserved
+<div class="f-visa">
+MyTravel
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a class="travel-go-to u-go-to-modern" href="#" data-position='{"bottom": 15, "right": 15 }' data-type="fixed" data-offset-top="400" data-compensation="#header" data-show-effect="slideInUp" data-hide-effect="slideOutDown">
+<span class="flaticon-arrow u-go-to-modern__inner"></span>
+</a>
+<div class="modal fade login" id="login" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content relative">
+<div class="modal-header">
+<h4 class="modal-title">Log In</h4>
+<span class="c-pointer" data-dismiss="modal" aria-label="Close">
+<i class="input-icon field-icon fa">
+<img src="https://mytravel.bookingcore.org/images/ico_close.svg" alt="close">
+</i>
+</span>
+</div>
+<div class="modal-body relative">
+<form class="bravo-form-login" method="POST" action="https://mytravel.bookingcore.org/ko/login">
+<input type="hidden" name="redirect" value="">
+<input type="hidden" name="_token" value="40Pg4KM1lQroJUlA4Gjyj0zTK2kc09l1KxuZtXkt"> <div class="form-group">
+<input type="text" class="form-control" name="email" autocomplete="off" placeholder="Email address">
+<i class="input-icon icofont-mail"></i>
+<span class="invalid-feedback error error-email"></span>
+</div>
+<div class="form-group">
+<input type="password" class="form-control" name="password" autocomplete="off" placeholder="Password">
+<i class="input-icon icofont-ui-password"></i>
+<span class="invalid-feedback error error-password"></span>
+</div>
+<div class="form-group">
+<div class="d-flex justify-content-between">
+<label for="remember-me" class="mb0">
+<input type="checkbox" name="remember" id="remember-me" value="1"> Remember me <span class="checkmark fcheckbox"></span>
+</label>
+<a href="https://mytravel.bookingcore.org/ko/forgot-password">Forgot Password?</a>
+</div>
+</div>
+<div class="error message-error invalid-feedback"></div>
+<div class="form-group">
+<button class="btn btn-primary form-submit" type="submit">
+Login
+<span class="spinner-grow spinner-grow-sm icon-loading" role="status" aria-hidden="true"></span>
+</button>
+</div>
+<div class="advanced">
+<p class="text-center f14 c-grey">or continue with</p>
+<div class="row">
+<div class="col-xs-12 col-sm-4">
+<a href="https://mytravel.bookingcore.org/social-login/facebook" class="btn btn_login_fb_link" data-channel="facebook">
+<i class="input-icon fa fa-facebook"></i>
+Facebook
+</a>
+</div>
+</div>
+</div>
+<div class="c-grey font-medium f14 text-center"> Do not have an account? <a href="#" data-target="#register" data-toggle="modal">Sign Up</a></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade login" id="register" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content relative">
+<div class="modal-header">
+<h4 class="modal-title">Sign Up</h4>
+<span class="c-pointer" data-dismiss="modal" aria-label="Close">
+<i class="input-icon field-icon fa">
+<img src="https://mytravel.bookingcore.org/images/ico_close.svg" alt="close">
+</i>
+</span>
+</div>
+<div class="modal-body">
+<form class="form bravo-form-register" method="post" action="https://mytravel.bookingcore.org/ko/register">
+<input type="hidden" name="_token" value="40Pg4KM1lQroJUlA4Gjyj0zTK2kc09l1KxuZtXkt"> <div class="row">
+<div class="col-lg-6 col-md-12">
+<div class="form-group">
+<input type="text" class="form-control" name="first_name" autocomplete="off" placeholder="First Name">
+<i class="input-icon field-icon icofont-waiter-alt"></i>
+<span class="invalid-feedback error error-first_name"></span>
+</div>
+</div>
+<div class="col-lg-6 col-md-12">
+<div class="form-group">
+<input type="text" class="form-control" name="last_name" autocomplete="off" placeholder="Last Name">
+<i class="input-icon field-icon icofont-waiter-alt"></i>
+<span class="invalid-feedback error error-last_name"></span>
+</div>
+</div>
+</div>
+<div class="form-group">
+<input type="text" class="form-control" name="phone" autocomplete="off" placeholder="Phone">
+<i class="input-icon field-icon icofont-ui-touch-phone"></i>
+<span class="invalid-feedback error error-phone"></span>
+</div>
+<div class="form-group">
+<input type="email" class="form-control" name="email" autocomplete="off" placeholder="Email address">
+<i class="input-icon field-icon icofont-mail"></i>
+<span class="invalid-feedback error error-email"></span>
+</div>
+<div class="form-group">
+<input type="password" class="form-control" name="password" autocomplete="off" placeholder="Password">
+<i class="input-icon field-icon icofont-ui-password"></i>
+<span class="invalid-feedback error error-password"></span>
+</div>
+<div class="form-group">
+<label for="term">
+<input id="term" type="checkbox" name="term" class="mr5">
+I have read and accept the <a href='#' target='_blank'>Terms and Privacy Policy</a>
+<span class="checkmark fcheckbox"></span>
+</label>
+<div><span class="invalid-feedback error error-term"></span></div>
+</div>
+<div class="error message-error invalid-feedback"></div>
+<div class="form-group">
+<button type="submit" class="btn btn-primary form-submit">
+Sign Up
+<span class="spinner-grow spinner-grow-sm icon-loading" role="status" aria-hidden="true"></span>
+</button>
+</div>
+<div class="advanced">
+<p class="text-center f14 c-grey">or continue with</p>
+<div class="row">
+<div class="col-xs-12 col-sm-4">
+<a href="https://mytravel.bookingcore.org/social-login/facebook" class="btn btn_login_fb_link" data-channel="facebook">
+<i class="input-icon fa fa-facebook"></i>
+Facebook
+</a>
+</div>
+</div>
+</div>
+<div class="c-grey f14 text-center">
+Already have an account?
+<a href="#" data-target="#login" data-toggle="modal">Log In</a>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div><link rel="stylesheet" href="https://mytravel.bookingcore.org/libs/flags/css/flag-icon.min.css">
+<script data-cfasync="false" src="https://mytravel.bookingcore.org/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://mytravel.bookingcore.org/libs/lazy-load/intersection-observer.js"></script>
+<script async src="https://mytravel.bookingcore.org/libs/lazy-load/lazyload.min.js"></script>
+<script>
+    // Set the options to make LazyLoad self-initialize
+    window.lazyLoadOptions = {
+        elements_selector: ".lazy",
+        // ... more custom settings?
+    };
+
+    // Listen to the initialization event and get the instance of LazyLoad
+    window.addEventListener('LazyLoad::Initialized', function (event) {
+        window.lazyLoadInstance = event.detail.instance;
+    }, false);
+</script>
+<script src="https://mytravel.bookingcore.org/libs/jquery-3.6.0.min.js"></script>
+<script src="https://mytravel.bookingcore.org/themes/mytravel/libs/jquery-migrate/jquery-migrate.min.js"></script>
+<script src="https://mytravel.bookingcore.org/themes/mytravel/libs/header.js"></script>
+<script>
+    $(document).on('ready', function () {
+        $.MyTravelHeader.init($('#header'));
+    });
+</script>
+<script src="https://mytravel.bookingcore.org/libs/lodash.min.js"></script>
+<script src="https://mytravel.bookingcore.org/libs/vue/vue.min.js"></script>
+<script src="https://mytravel.bookingcore.org/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://mytravel.bookingcore.org/libs/bootbox/bootbox.min.js"></script>
+<script src="https://mytravel.bookingcore.org/themes/mytravel/libs/fancybox/jquery.fancybox.min.js"></script>
+<script src="https://mytravel.bookingcore.org/themes/mytravel/libs/slick/slick.js"></script>
+<script src="https://mytravel.bookingcore.org/libs/carousel-2/owl.carousel.min.js"></script>
+<script type="text/javascript" src="https://mytravel.bookingcore.org/libs/daterange/moment.min.js"></script>
+<script type="text/javascript" src="https://mytravel.bookingcore.org/libs/daterange/daterangepicker.min.js"></script>
+<script src="https://mytravel.bookingcore.org/libs/select2/js/select2.min.js"></script>
+<script src="https://mytravel.bookingcore.org/themes/mytravel/js/functions.js?_ver=2.0.0"></script>
+<script src="https://mytravel.bookingcore.org/themes/mytravel/libs/custombox/custombox.min.js"></script>
+<script src="https://mytravel.bookingcore.org/themes/mytravel/libs/custombox/custombox.legacy.min.js"></script>
+<script src="https://mytravel.bookingcore.org/themes/mytravel/libs/custombox/window.modal.js"></script>
+<script src="https://mytravel.bookingcore.org/libs/pusher.min.js"></script>
+<script src="https://mytravel.bookingcore.org/themes/mytravel/js/home.js?_ver=2.0.0"></script>
+</div>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W7B5HJJ');</script>
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7B5HJJ"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+<div id="fb-root"></div>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            xfbml            : true,
+            version          : 'v3.3'
+        });
+    };
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+
+<div class="fb-customerchat" attribution=setup_tool page_id="2280007165584589">
+</div>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115740936-4"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-115740936-4');
+</script>
+<style>
+    .bravo-buy-button{
+        text-align: center;
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        background-color: #0072bc;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding: 10px 20px 8px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        font-weight: 600;
+        z-index: 99;
+    }
+    .bravo-buy-button:hover{
+        text-decoration: none;
+        color: #fff;
+    }
+    .bravo-buy-button .tf-text{
+        background-image: url('https://mytravel.bookingcore.org/landing/img/logoen.png');
+        width: 66px;
+        height: 12px;
+        display: inline-block;
+        background-repeat: no-repeat;
+
+    }
+</style>
+<a class="sticky-button bravo-buy-button" target="_blank" href="https://codecanyon.net/item/mytravel-ultimate-laravel-booking-system/32680572">
+<span>Buy on <span class="tf-text"></span> for $59</span>
+</a>
+</body>
+
+<!-- Mirrored from mytravel.bookingcore.org/ko/page/home-car by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2023 17:48:22 GMT -->
+</html>

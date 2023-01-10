@@ -1,0 +1,4951 @@
+<!DOCTYPE html>
+<html lang="ja" class="">
+
+<!-- Mirrored from mytravel.bookingcore.org/ja by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2023 17:39:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="csrf-token" content="40Pg4KM1lQroJUlA4Gjyj0zTK2kc09l1KxuZtXkt">
+<link rel="icon" type="image/png" href="uploads/mytravel/general/favicon.png" />
+<title>Home Page</title>
+<meta name="description" content="" />
+<meta property="og:url" content="index.html" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Home Page" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Home Page">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="">
+<link rel="canonical" href="index.html" />
+<link href="libs/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="libs/font-awesome/css/font-awesome.css" rel="stylesheet">
+<link href="libs/ionicons/css/ionicons.min.css" rel="stylesheet">
+<link href="libs/icofont/icofont.min.css" rel="stylesheet">
+<link href="libs/select2/css/select2.min.css" rel="stylesheet">
+<link href="themes/mytravel/libs/fancybox/jquery.fancybox.css" rel="stylesheet">
+<link href="themes/mytravel/libs/slick/slick.css" rel="stylesheet">
+<link href="themes/mytravel/libs/custombox/custombox.min.css" rel="stylesheet">
+<link href="themes/mytravel/dist/frontend/css/notification.css" rel="newest stylesheet">
+<link href="themes/mytravel/dist/frontend/css/app265f.css?_ver=2.0.0" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="libs/daterange/daterangepicker.css">
+
+<link rel="dns-prefetch" href="http://fonts.gstatic.com/">
+
+<link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&amp;display=swap" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,200,300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="themes/mytravel/libs/bootstrap-select/dist/css/bootstrap-select.min.css">
+<link href="libs/ion_rangeslider/css/ion.rangeSlider.css" rel="stylesheet">
+<script>
+    var bookingCore = {
+        url:'https://mytravel.bookingcore.org/ja',
+        url_root:'https://mytravel.bookingcore.org',
+        admin_url:'https://mytravel.bookingcore.org/admin',
+        booking_decimals:2,
+        thousand_separator:'.',
+        decimal_separator:',',
+        currency_position:'left',
+        currency_symbol:'€',
+        currency_rate:'0.902807',
+        date_format:'MM/DD/YYYY',
+        map_provider:'gmap',
+        map_gmap_key:'',
+        map_options:{
+            map_lat_default:'',
+            map_lng_default:'',
+            map_clustering:'on',
+            map_fit_bounds:'on',
+        },
+        routes:{
+            login:'https://mytravel.bookingcore.org/ja/login',
+            register:'https://mytravel.bookingcore.org/ja/register',
+            checkout:'https://mytravel.bookingcore.org/ja/booking/doCheckout'
+        },
+        module:{
+            hotel:'https://mytravel.bookingcore.org/ja/hotel',
+            car:'https://mytravel.bookingcore.org/ja/car',
+            tour:'https://mytravel.bookingcore.org/ja/tour',
+            space:'https://mytravel.bookingcore.org/ja/space',
+            flight:"https://mytravel.bookingcore.org/ja/flight"
+        },
+        currentUser: 0,
+        isAdmin : 0,
+        rtl: false,
+        markAsRead:'https://mytravel.bookingcore.org/ja/notify/markAsRead',
+        markAllAsRead:'https://mytravel.bookingcore.org/ja/notify/markAllAsRead',
+        loadNotify : 'https://mytravel.bookingcore.org/ja/notify/notifications',
+        pusher_api_key : '',
+        pusher_cluster : '',
+        language: 'ja',
+    };
+        var i18n = {
+        warning:"Warning",
+        success:"Success",
+        confirm_delete:"Do you want to delete?",
+        confirm:"Confirm",
+        cancel:"キャンセル",
+    };
+    var daterangepickerLocale = {
+        "applyLabel": "適用する",
+        "cancelLabel": "キャンセル",
+        "fromLabel": "から",
+        "toLabel": "に",
+        "customRangeLabel": "Custom",
+        "weekLabel": "W",
+        "first_day_of_week": 1,
+        "daysOfWeek": [
+            "Su",
+            "Mo",
+            "Tu",
+            "We",
+            "Th",
+            "Fr",
+            "Sa"
+        ],
+        "monthNames": [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+        ],
+    };
+</script>
+
+<link href="ja/custom-css.css" rel="stylesheet">
+<link href="libs/carousel-2/owl.carousel.css" rel="stylesheet">
+</head>
+<body dir="ltr" class="frontend-page   header_transparent   ">
+<div class="bravo_wrap">
+<header id="header" class="            u-header u-header--abs-top u-header--white-nav-links-xl u-header--bg-transparent u-header--show-hide border-bottom border-xl-bottom-0 border-color-white
+        " data-header-fix-moment="500" data-header-fix-effect="slide">
+<div class="u-header__section u-header__shadow-on-show-hide">
+<div class="bravo_topbar u-header__hide-content u-header__topbar u-header__topbar-lg border-bottom border-color-white ">
+<div class="container">
+<div class="d-flex align-items-center">
+<div class="list-inline u-header__topbar-nav-divider mb-0 topbar_left_text font-size-14  ">
+<div class="socials">
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-linkedin"></i></a>
+<a href="#"><i class="fa fa-google-plus"></i></a>
+</div>
+<span class="line"></span>
+<a href="cdn-cgi/l/email-protection.html#2f4c40415b4e4c5b6f42565b5d4e594a43014c4042"><span class="__cf_email__" data-cfemail="b6d5d9d8c2d7d5c2f6dbcfc2c4d7c0d3da98d5d9db">[email&#160;protected]</span></a>
+</div>
+<div class="ml-auto d-flex align-items-center">
+<div class="d-flex align-items-center text-white px-3">
+<i class="flaticon-phone-call mr-2 ml-1 font-size-18"></i>
+<span class="d-inline-block font-size-14 mr-1">(+84) 666-888-999</span>
+</div>
+<div class="position-relative px-3 u-header__login-form dropdown-connector-xl u-header__topbar-divider currency-select">
+<div class="d-flex align-items-center text-white py-3 dropdown">
+<span class="d-inline-block font-size-14 mr-1 dropdown-nav-link " data-toggle="dropdown">
+EUR
+EUR
+</span>
+<ul class="dropdown-menu text-left width-auto min-width-100">
+<li>
+<a href="ja.html?set_currency=jpy">
+ JPY
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="position-relative px-3 u-header__login-form dropdown-connector-xl u-header__topbar-divider currency-select">
+<div class="d-flex align-items-center text-white py-3 dropdown">
+<span class="d-inline-block font-size-14 mr-1 dropdown-nav-link " data-toggle="dropdown">
+<span class="flag-icon flag-icon-jp"></span>
+Japanese
+</span>
+<ul class="dropdown-menu dropdown-menu-user text-left width-auto">
+<li>
+<a href="index.html?set_lang=en" class="d-flex">
+<span class="flag-icon flag-icon-gb mr-2"></span>
+English
+</a>
+</li>
+<li>
+<a href="egy.html?set_lang=egy" class="d-flex">
+<span class="flag-icon flag-icon-eg mr-2"></span>
+Egyptian
+</a>
+</li>
+<li>
+<a href="ko.html?set_lang=ko" class="d-flex">
+<span class="flag-icon flag-icon-kr mr-2"></span>
+kr
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="position-relative px-3 u-header__login-form dropdown-connector-xl u-header__topbar-divider">
+<a href="javascript:;" class="d-flex align-items-center text-white py-3" data-toggle="modal" data-target="#login">
+<i class="flaticon-user mr-2 ml-1 font-size-18"></i>
+<span class="d-inline-block font-size-14 mr-1">Sign in or Register</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bravo_header">
+<div class="container">
+<div class="content">
+<div class="header-left">
+<a href="ja.html" class="bravo-logo navbar-brand u-header__navbar-brand-default u-header__navbar-brand-center u-header__navbar-brand-text-white mr-0 mr-xl-5">
+<img src="uploads/mytravel/general/logo_white.svg" alt="My Travel">
+<span class="u-header__navbar-brand-text">MyTravel</span>
+</a>
+<a class="bravo-logo navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-on-scroll" href="ja.html">
+<img src="uploads/mytravel/general/logo.svg" alt="My Travel">
+ <span class="u-header__navbar-brand-text">MyTravel</span>
+</a>
+<div class="bravo-menu">
+<ul class="main-menu menu-generated"><li class=" depth-0"><a target="" href="index.html">Home <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="index.html">Home Page</a></li><li class=" depth-1"><a target="" href="page/home-v2.html">Home v2</a></li><li class=" depth-1"><a target="" href="page/home-hotel.html">Home Hotel</a></li><li class=" depth-1"><a target="" href="page/home-tour.html">Home Tour</a></li><li class=" depth-1"><a target="" href="page/home-space.html">Home Space</a></li><li class=" depth-1"><a target="" href="page/home-event.html">Home Event</a></li><li class=" depth-1"><a target="" href="page/home-car.html">Home Car</a></li></ul></li><li class=" depth-0"><a target="" href="ja/hotel.html">Hotel <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="ja/hotel.html">Hotel List</a></li><li class=" depth-1"><a target="" href="ja/hotel76a0.html?_layout=map">Hotel Map</a></li><li class=" depth-1"><a target="" href="ja/hotel/parian-holiday-villas.html">Hotel Detail</a></li></ul></li><li class=" depth-0"><a target="" href="ja/tour.html">Tours <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="ja/tour.html">Tour List</a></li><li class=" depth-1"><a target="" href="ja/tour76a0.html?_layout=map">Tour Map</a></li><li class=" depth-1"><a target="" href="ja/tour/paris-vacation-travel.html">Tour Detail</a></li></ul></li><li class=" depth-0"><a target="" href="index.html">Space <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="index.html">Space List</a></li><li class=" depth-1"><a target="" href="index.html?_layout=map">Space Map</a></li><li class=" depth-1"><a target="" href="index.html">Space Detail</a></li></ul></li><li class=" depth-0"><a target="" href="index.html">Car <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="index.html">Car List</a></li><li class=" depth-1"><a target="" href="index.html?_layout=map">Car Map</a></li><li class=" depth-1"><a target="" href="index.html">Car Detail</a></li></ul></li><li class=" depth-0"><a target="" href="ja/event.html">Event <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="ja/event.html">Event List</a></li><li class=" depth-1"><a target="" href="ja/event76a0.html?_layout=map">Event Map</a></li><li class=" depth-1"><a target="" href="ja/event/aspen-glade-weddings-events.html">Event Detail</a></li></ul></li><li class=" depth-0"><a target="" href="ja/flight.html">Flight</a></li><li class=" depth-0"><a target="" href="ja/boat.html">Boat <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="ja/boat.html">Boat List</a></li><li class=" depth-1"><a target="" href="ja/boat76a0.html?_layout=map">Boat Map</a></li><li class=" depth-1"><a target="" href="ja/boat/blue-moon-yc-300.html">Boat Detail</a></li></ul></li><li class=" depth-0"><a target="" href="#">Pages <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="ja/login.html">Plan</a></li><li class=" depth-1"><a target="" href="ja/news.html">News List</a></li><li class=" depth-1"><a target="" href="ja/news/morning-in-the-northern-sea.html">News Detail</a></li><li class=" depth-1"><a target="" href="ja/location/paris.html">Location Detail</a></li><li class=" depth-1"><a target="" href="ja/page/become-a-vendor.html">Become a vendor</a></li><li class=" depth-1"><a target="" href="ja/contact.html">Contact</a></li></ul></li></ul> </div>
+</div>
+<div class="header-right">
+ <button class="bravo-more-menu">
+<i class="fa fa-bars"></i>
+</button>
+</div>
+</div>
+</div>
+<div class="bravo-menu-mobile" style="display:none;">
+<div class="user-profile">
+<div class="b-close"><i class="icofont-scroll-left"></i></div>
+<div class="avatar"></div>
+<ul>
+<li>
+<a href="#login" data-toggle="modal" data-target="#login" class="login">ログイン</a>
+</li>
+<li>
+<a href="#register" data-toggle="modal" data-target="#register" class="signup">サインアップ</a>
+</li>
+</ul>
+<ul class="multi-lang">
+<li class="dropdown">
+<a href="#" data-toggle="dropdown" class="is_login">
+EUR
+<i class="fa fa-angle-down"></i>
+</a>
+<a href="#" data-toggle="dropdown" class="is_login">
+EUR
+<i class="fa fa-angle-down"></i>
+</a>
+<ul class="dropdown-menu text-left width-auto">
+<li>
+<a href="ja.html?set_currency=jpy" class="is_login">
+JPY
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="multi-lang">
+<li class="dropdown">
+<a href="#" data-toggle="dropdown" class="is_login">
+<span class="flag-icon flag-icon-jp"></span>
+Japanese
+<i class="fa fa-angle-down"></i>
+</a>
+<ul class="dropdown-menu text-left">
+<li>
+<a href="index.html?set_lang=en" class="is_login">
+<span class="flag-icon flag-icon-gb"></span>
+English
+</a>
+</li>
+<li>
+<a href="egy.html?set_lang=egy" class="is_login">
+<span class="flag-icon flag-icon-eg"></span>
+Egyptian
+</a>
+</li>
+<li>
+<a href="ko.html?set_lang=ko" class="is_login">
+<span class="flag-icon flag-icon-kr"></span>
+kr
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="g-menu">
+<ul class="main-menu menu-generated"><li class=" depth-0"><a target="" href="index.html">Home <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="index.html">Home Page</a></li><li class=" depth-1"><a target="" href="page/home-v2.html">Home v2</a></li><li class=" depth-1"><a target="" href="page/home-hotel.html">Home Hotel</a></li><li class=" depth-1"><a target="" href="page/home-tour.html">Home Tour</a></li><li class=" depth-1"><a target="" href="page/home-space.html">Home Space</a></li><li class=" depth-1"><a target="" href="page/home-event.html">Home Event</a></li><li class=" depth-1"><a target="" href="page/home-car.html">Home Car</a></li></ul></li><li class=" depth-0"><a target="" href="ja/hotel.html">Hotel <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="ja/hotel.html">Hotel List</a></li><li class=" depth-1"><a target="" href="ja/hotel76a0.html?_layout=map">Hotel Map</a></li><li class=" depth-1"><a target="" href="ja/hotel/parian-holiday-villas.html">Hotel Detail</a></li></ul></li><li class=" depth-0"><a target="" href="ja/tour.html">Tours <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="ja/tour.html">Tour List</a></li><li class=" depth-1"><a target="" href="ja/tour76a0.html?_layout=map">Tour Map</a></li><li class=" depth-1"><a target="" href="ja/tour/paris-vacation-travel.html">Tour Detail</a></li></ul></li><li class=" depth-0"><a target="" href="index.html">Space <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="index.html">Space List</a></li><li class=" depth-1"><a target="" href="index.html?_layout=map">Space Map</a></li><li class=" depth-1"><a target="" href="index.html">Space Detail</a></li></ul></li><li class=" depth-0"><a target="" href="index.html">Car <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="index.html">Car List</a></li><li class=" depth-1"><a target="" href="index.html?_layout=map">Car Map</a></li><li class=" depth-1"><a target="" href="index.html">Car Detail</a></li></ul></li><li class=" depth-0"><a target="" href="ja/event.html">Event <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="ja/event.html">Event List</a></li><li class=" depth-1"><a target="" href="ja/event76a0.html?_layout=map">Event Map</a></li><li class=" depth-1"><a target="" href="ja/event/aspen-glade-weddings-events.html">Event Detail</a></li></ul></li><li class=" depth-0"><a target="" href="ja/flight.html">Flight</a></li><li class=" depth-0"><a target="" href="ja/boat.html">Boat <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="ja/boat.html">Boat List</a></li><li class=" depth-1"><a target="" href="ja/boat76a0.html?_layout=map">Boat Map</a></li><li class=" depth-1"><a target="" href="ja/boat/blue-moon-yc-300.html">Boat Detail</a></li></ul></li><li class=" depth-0"><a target="" href="#">Pages <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="ja/login.html">Plan</a></li><li class=" depth-1"><a target="" href="ja/news.html">News List</a></li><li class=" depth-1"><a target="" href="ja/news/morning-in-the-northern-sea.html">News Detail</a></li><li class=" depth-1"><a target="" href="ja/location/paris.html">Location Detail</a></li><li class=" depth-1"><a target="" href="ja/page/become-a-vendor.html">Become a vendor</a></li><li class=" depth-1"><a target="" href="ja/contact.html">Contact</a></li></ul></li></ul> </div>
+</div>
+</div>
+</div>
+</header>
+<div class="page-template-content">
+<div class="bravo-form-search-all hero-block hero-v1 bg-img-hero-bottom gradient-overlay-half-black-gradient text-center z-index-2" style="background-image: url('uploads/mytravel/general/home-mix.jpg') !important;">
+<div class="container space-2 space-top-xl-4">
+<div class="row justify-content-center pb-xl-8">
+<div class="py-8 py-xl-10 pb-5">
+<h1 class="font-size-60 font-size-xs-30 text-white font-weight-bold">Hello language test</h1>
+<p class="font-size-20 font-weight-normal text-white">Hello language test</p>
+</div>
+</div>
+<div class="mb-lg-n1">
+<ul class="nav tab-nav flex-nowrap tab-nav-shadow justify-content-start " role="tablist">
+<li class="nav-item" role="bravo_hotel">
+<a class="nav-link font-weight-medium  active  pl-md-5 pl-3" id="bravo_hotel-tab" data-toggle="pill" href="#bravo_hotel" role="tab" aria-controls="bravo_hotel" aria-selected="true">
+<div class="d-flex flex-column flex-md-row  position-relative text-white align-items-center">
+<figure class="ie-height-40 d-md-block mr-md-3">
+<i class="icon fa fa-building-o font-size-3"></i>
+</figure>
+<span class="tabtext mt-2 mt-md-0 font-weight-semi-bold">
+Hello language test
+</span>
+</div>
+</a>
+</li>
+<li class="nav-item" role="bravo_tour">
+<a class="nav-link font-weight-medium  pl-md-5 pl-3" id="bravo_tour-tab" data-toggle="pill" href="#bravo_tour" role="tab" aria-controls="bravo_tour" aria-selected="true">
+<div class="d-flex flex-column flex-md-row  position-relative text-white align-items-center">
+<figure class="ie-height-40 d-md-block mr-md-3">
+<i class="icon icofont-island-alt font-size-3"></i>
+</figure>
+<span class="tabtext mt-2 mt-md-0 font-weight-semi-bold">
+Hello language test
+</span>
+</div>
+</a>
+</li>
+<li class="nav-item" role="bravo_event">
+<a class="nav-link font-weight-medium  pl-md-5 pl-3" id="bravo_event-tab" data-toggle="pill" href="#bravo_event" role="tab" aria-controls="bravo_event" aria-selected="true">
+<div class="d-flex flex-column flex-md-row  position-relative text-white align-items-center">
+<figure class="ie-height-40 d-md-block mr-md-3">
+<i class="icon icofont-ticket font-size-3"></i>
+</figure>
+<span class="tabtext mt-2 mt-md-0 font-weight-semi-bold">
+Hello language test
+</span>
+</div>
+</a>
+</li>
+<li class="nav-item" role="bravo_flight">
+<a class="nav-link font-weight-medium  pl-md-5 pl-3" id="bravo_flight-tab" data-toggle="pill" href="#bravo_flight" role="tab" aria-controls="bravo_flight" aria-selected="true">
+<div class="d-flex flex-column flex-md-row  position-relative text-white align-items-center">
+<figure class="ie-height-40 d-md-block mr-md-3">
+ <i class="icon icofont-ui-flight font-size-3"></i>
+</figure>
+<span class="tabtext mt-2 mt-md-0 font-weight-semi-bold">
+Hello language test
+</span>
+</div>
+</a>
+</li>
+<li class="nav-item" role="bravo_boat">
+<a class="nav-link font-weight-medium  pl-md-5 pl-3" id="bravo_boat-tab" data-toggle="pill" href="#bravo_boat" role="tab" aria-controls="bravo_boat" aria-selected="true">
+<div class="d-flex flex-column flex-md-row  position-relative text-white align-items-center">
+<figure class="ie-height-40 d-md-block mr-md-3">
+<i class="icon icofont-ship font-size-3"></i>
+</figure>
+<span class="tabtext mt-2 mt-md-0 font-weight-semi-bold">
+Hello language test
+</span>
+</div>
+</a>
+</li>
+</ul>
+<div class="tab-content hero-tab-pane">
+<div class="tab-pane fade  active show " id="bravo_hotel" role="tabpanel" aria-labelledby="bravo_hotel-tab">
+<div class="p-3 gradient-overlay-half-white-gradient">
+<div class="card border-0 tab-shadow">
+<div class="card-body">
+<form action="https://mytravel.bookingcore.org/ja/hotel" class="form bravo_form d-flex mb-1 py-2" method="get">
+<div class="g-field-search">
+<div class="row d-block nav-select d-flex align-items-end">
+<div class="col-md-4 mb-4 mb-lg-0 text-left">
+<div class="item">
+<span class="d-block text-gray-1  font-weight-normal mb-0 text-left">
+Location
+</span>
+<div class="mb-4">
+<div class="input-group border-bottom border-width-2 border-color-1 py-2">
+<i class="flaticon-pin-1 d-flex align-items-center mr-2 text-primary font-weight-semi-bold font-size-22"></i>
+<div class="smart-search border-0 p-0 form-control  height-40">
+<input type="text" class="smart-search-location parent_text  font-weight-bold font-size-16 shadow-none hero-form font-weight-bold border-0 p-0" readonly placeholder="どこに行くの？" value="" data-onLoad="Loading..." data-default="[{&quot;id&quot;:3,&quot;title&quot;:&quot; California&quot;},{&quot;id&quot;:10,&quot;title&quot;:&quot; Germany&quot;},{&quot;id&quot;:9,&quot;title&quot;:&quot; London&quot;},{&quot;id&quot;:5,&quot;title&quot;:&quot; Los Angeles&quot;},{&quot;id&quot;:6,&quot;title&quot;:&quot; New Jersey&quot;},{&quot;id&quot;:2,&quot;title&quot;:&quot; New York, United States&quot;},{&quot;id&quot;:1,&quot;title&quot;:&quot; Paris&quot;},{&quot;id&quot;:7,&quot;title&quot;:&quot; San Francisco&quot;},{&quot;id&quot;:4,&quot;title&quot;:&quot; United States&quot;},{&quot;id&quot;:8,&quot;title&quot;:&quot; Virginia&quot;}]">
+<input type="hidden" class="child_id" name="location_id" value="">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 mb-4 mb-lg-0 text-left">
+ <div class="item">
+<span class="d-block text-gray-1 text-left font-weight-normal">
+Check In - Out
+</span>
+<div class="border-bottom border-width-2 border-color-1 mb-4 form-content">
+<div class="u-datepicker input-group py-2 flex-nowrap form-date-search">
+<div class="input-group-prepend">
+<span class="d-flex align-items-center mr-2 font-size-21">
+<i class="flaticon-calendar text-primary font-weight-semi-bold"></i>
+</span>
+</div>
+<div class="date-wrapper height-40 font-size-16 ml-1 shadow-none font-weight-bold form-control hero-form bg-transparent border-0 flatpickr-input p-0">
+<div class="render check-in-render">01/05/2023</div>
+<span> - </span>
+<div class="render check-out-render">01/06/2023</div>
+</div>
+<input type="hidden" class="check-in-input" value="01/05/2023" name="start">
+<input type="hidden" class="check-out-input" value="01/06/2023" name="end">
+<input type="text" class="check-in-out" name="date" value="2023-01-05 - 2023-01-06">
+</div>
+</div>
+</div> </div>
+<div class="col-md-4 mb-4 mb-lg-0 text-left">
+<div class="item">
+<div class="col dropdown-custom px-0 mb-4 form-select-guests">
+<span class="d-block text-gray-1 text-left font-weight-normal">Guests</span>
+<div class="flex-horizontal-center border-bottom border-width-2 border-color-1 py-2 d-flex  dropdown-toggle" data-toggle="dropdown">
+<i class="flaticon-add-group d-flex align-items-center mr-3 font-size-20 text-primary font-weight-semi-bold"></i>
+<div class="text-black font-size-16 font-weight-semi-bold mr-auto">
+<div class="render">
+<span class="adults"><span class="one ">1 アダルト</span> <span class=" d-none  multi" data-html=":count アダルト">1 アダルト</span></span>
+-
+<span class="children">
+<span class="one " data-html=":count 子供">0 子供</span>
+<span class="multi  d-none " data-html=":count 子供">0 子供</span>
+</span>
+</div>
+</div>
+</div>
+<div class="dropdown-menu select-guests-dropdown">
+<div class="dropdown-item-row">
+<div class="label">アダルト</div>
+<div class="val">
+<span class="btn-minus" data-input="adults"><i class="icon ion-md-remove"></i></span>
+<span class="count-display"><input type="number" name="adults" value="1" min="1"></span>
+<span class="btn-add" data-input="adults"><i class="icon ion-ios-add"></i></span>
+</div>
+</div>
+<div class="dropdown-item-row">
+<div class="label">子供</div>
+<div class="val">
+<span class="btn-minus" data-input="children"><i class="icon ion-md-remove"></i></span>
+<span class="count-display"> <input type="number" name="children" value="0" min="0"> </span>
+<span class="btn-add" data-input="children"><i class="icon ion-ios-add"></i></span>
+</div>
+</div>
+</div>
+</div>
+</div> </div>
+</div>
+</div>
+<div class="g-button-submit align-self-lg-end">
+<button type="submit" class="btn btn-primary btn-md border-radius-3 mb-xl-0 mb-lg-1 transition-3d-hover">
+<i class="flaticon-magnifying-glass font-size-20 mr-2"></i>サーチ
+</button>
+</div>
+</form> </div>
+</div>
+ </div>
+</div>
+<div class="tab-pane fade " id="bravo_tour" role="tabpanel" aria-labelledby="bravo_tour-tab">
+<div class="p-3 gradient-overlay-half-white-gradient">
+<div class="card border-0 tab-shadow">
+<div class="card-body">
+<form action="https://mytravel.bookingcore.org/ja/tour" class="form bravo_form d-flex mb-1 py-2" method="get">
+<div class="g-field-search">
+<div class="row d-block nav-select d-flex align-items-end">
+<div class="col-md-6 mb-4 mb-lg-0 text-left">
+<div class="item">
+<span class="d-block text-gray-1  font-weight-normal mb-0 text-left">
+Location
+</span>
+<div class="mb-4">
+<div class="input-group border-bottom border-width-2 border-color-1 py-2">
+<i class="flaticon-pin-1 d-flex align-items-center mr-2 text-primary font-weight-semi-bold font-size-22"></i>
+<div class="smart-search border-0 p-0 form-control  height-40">
+<input type="text" class="smart-search-location parent_text  font-weight-bold font-size-16 shadow-none hero-form font-weight-bold border-0 p-0" readonly placeholder="どこに行くの？" value="" data-onLoad="Loading..." data-default="[{&quot;id&quot;:3,&quot;title&quot;:&quot; California&quot;},{&quot;id&quot;:10,&quot;title&quot;:&quot; Germany&quot;},{&quot;id&quot;:9,&quot;title&quot;:&quot; London&quot;},{&quot;id&quot;:5,&quot;title&quot;:&quot; Los Angeles&quot;},{&quot;id&quot;:6,&quot;title&quot;:&quot; New Jersey&quot;},{&quot;id&quot;:2,&quot;title&quot;:&quot; New York, United States&quot;},{&quot;id&quot;:1,&quot;title&quot;:&quot; Paris&quot;},{&quot;id&quot;:7,&quot;title&quot;:&quot; San Francisco&quot;},{&quot;id&quot;:4,&quot;title&quot;:&quot; United States&quot;},{&quot;id&quot;:8,&quot;title&quot;:&quot; Virginia&quot;}]">
+<input type="hidden" class="child_id" name="location_id" value="">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 mb-4 mb-lg-0 text-left">
+<div class="item">
+<span class="d-block text-gray-1 text-left font-weight-normal">
+From - To
+</span>
+<div class="border-bottom border-width-2 border-color-1 mb-4 form-content">
+<div class="u-datepicker overflow-hidden input-group py-2 flex-nowrap form-date-search ">
+<div class="input-group-prepend">
+<span class="d-flex align-items-center mr-2 font-size-21">
+<i class="flaticon-calendar text-primary font-weight-semi-bold"></i>
+</span>
+</div>
+<div class="height-40 date-wrapper font-size-16 ml-1 shadow-none font-weight-bold form-control hero-form bg-transparent border-0 flatpickr-input p-0">
+<div class="render check-in-render">01/05/2023</div>
+<span> - </span>
+<div class="render check-out-render">01/06/2023</div>
+</div>
+<input type="hidden" class="check-in-input" value="01/05/2023" name="start">
+<input type="hidden" class="check-out-input" value="01/06/2023" name="end">
+<input type="text" class="check-in-out" name="date" value="2023-01-05 - 2023-01-06">
+</div>
+</div>
+</div> </div>
+</div>
+</div>
+<div class="g-button-submit align-self-lg-end">
+<button type="submit" class="btn btn-primary btn-md border-radius-3 mb-xl-0 mb-lg-1 transition-3d-hover">
+<i class="flaticon-magnifying-glass font-size-20 mr-2"></i>サーチ
+ </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-pane fade " id="bravo_event" role="tabpanel" aria-labelledby="bravo_event-tab">
+<div class="p-3 gradient-overlay-half-white-gradient">
+<div class="card border-0 tab-shadow">
+<div class="card-body">
+<form action="https://mytravel.bookingcore.org/ja/event" class="form bravo_form d-flex mb-1 py-2" method="get">
+<div class="g-field-search">
+<div class="row d-block nav-select d-flex align-items-end">
+<div class="col-md-6 mb-4 mb-lg-0 text-left">
+<div class="item">
+<span class="d-block text-gray-1  font-weight-normal mb-0 text-left">
+Location
+</span>
+<div class="mb-4">
+<div class="input-group border-bottom border-width-2 border-color-1 py-2">
+<i class="flaticon-pin-1 d-flex align-items-center mr-2 text-primary font-weight-semi-bold font-size-22"></i>
+<div class="smart-search border-0 p-0 form-control  height-40">
+<input type="text" class="smart-search-location parent_text  font-weight-bold font-size-16 shadow-none hero-form font-weight-bold border-0 p-0" readonly placeholder="どこに行くの？" value="" data-onLoad="Loading..." data-default="[{&quot;id&quot;:3,&quot;title&quot;:&quot; California&quot;},{&quot;id&quot;:10,&quot;title&quot;:&quot; Germany&quot;},{&quot;id&quot;:9,&quot;title&quot;:&quot; London&quot;},{&quot;id&quot;:5,&quot;title&quot;:&quot; Los Angeles&quot;},{&quot;id&quot;:6,&quot;title&quot;:&quot; New Jersey&quot;},{&quot;id&quot;:2,&quot;title&quot;:&quot; New York, United States&quot;},{&quot;id&quot;:1,&quot;title&quot;:&quot; Paris&quot;},{&quot;id&quot;:7,&quot;title&quot;:&quot; San Francisco&quot;},{&quot;id&quot;:4,&quot;title&quot;:&quot; United States&quot;},{&quot;id&quot;:8,&quot;title&quot;:&quot; Virginia&quot;}]">
+<input type="hidden" class="child_id" name="location_id" value="">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 mb-4 mb-lg-0 text-left">
+<div class="item">
+<span class="d-block text-gray-1 text-left font-weight-normal">
+From - To
+</span>
+<div class="border-bottom border-width-2 border-color-1 mb-4 form-content">
+<div class="u-datepicker overflow-hidden input-group py-2 flex-nowrap form-date-search">
+<div class="input-group-prepend">
+<span class="d-flex align-items-center mr-2 font-size-21">
+<i class="flaticon-calendar text-primary font-weight-semi-bold"></i>
+</span>
+</div>
+<div class="date-wrapper height-40 font-size-16 ml-1 shadow-none font-weight-bold form-control hero-form bg-transparent border-0 flatpickr-input p-0">
+<div class="render check-in-render">01/05/2023</div>
+<span> - </span>
+<div class="render check-out-render">01/06/2023</div>
+</div>
+<input type="hidden" class="check-in-input" value="01/05/2023" name="start">
+<input type="hidden" class="check-out-input" value="01/06/2023" name="end">
+<input type="text" class="check-in-out" name="date" value="2023-01-05 - 2023-01-06">
+</div>
+</div>
+</div> </div>
+</div>
+</div>
+<div class="g-button-submit align-self-lg-end">
+<button type="submit" class="btn btn-primary btn-md border-radius-3 mb-xl-0 mb-lg-1 transition-3d-hover">
+<i class="flaticon-magnifying-glass font-size-20 mr-2"></i>サーチ
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-pane fade " id="bravo_flight" role="tabpanel" aria-labelledby="bravo_flight-tab">
+<div class="p-3 gradient-overlay-half-white-gradient">
+<div class="card border-0 tab-shadow">
+<div class="card-body">
+<form action="https://mytravel.bookingcore.org/ja/flight" class="form bravo_form d-flex mb-1 py-2" method="get">
+<div class="g-field-search">
+<div class="row ">
+<div class="col-md-3 mb-4 mb-xl-0 ">
+<div class="item">
+
+<span class="d-block text-gray-1  font-weight-normal mb-0 text-left">
+From where
+</span>
+<div class="mb-4">
+<div class="input-group border-bottom-1 py-2">
+<i class="flaticon-pin-1 d-flex align-items-center mr-2 text-primary font-weight-semi-bold"></i>
+<div class="smart-search border-0 p-0 form-control  height-40  bg-transparent">
+<input type="text" class="smart-search-location parent_text  font-weight-bold font-size-16 shadow-none hero-form font-weight-bold border-0 p-0 " readonly placeholder="どこに行くの？" value="" data-onLoad="Loading..." data-default="[{&quot;id&quot;:3,&quot;title&quot;:&quot; California&quot;},{&quot;id&quot;:10,&quot;title&quot;:&quot; Germany&quot;},{&quot;id&quot;:9,&quot;title&quot;:&quot; London&quot;},{&quot;id&quot;:5,&quot;title&quot;:&quot; Los Angeles&quot;},{&quot;id&quot;:6,&quot;title&quot;:&quot; New Jersey&quot;},{&quot;id&quot;:2,&quot;title&quot;:&quot; New York, United States&quot;},{&quot;id&quot;:1,&quot;title&quot;:&quot; Paris&quot;},{&quot;id&quot;:7,&quot;title&quot;:&quot; San Francisco&quot;},{&quot;id&quot;:4,&quot;title&quot;:&quot; United States&quot;},{&quot;id&quot;:8,&quot;title&quot;:&quot; Virginia&quot;}]">
+<input type="hidden" class="child_id" name="from_where" value="">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div class="col-md-3 mb-4 mb-xl-0 ">
+<div class="item">
+
+<span class="d-block text-gray-1  font-weight-normal mb-0 text-left">
+To where
+</span>
+<div class="mb-4">
+<div class="input-group border-bottom-1 py-2">
+<i class="flaticon-pin-1 d-flex align-items-center mr-2 text-primary font-weight-semi-bold"></i>
+<div class="smart-search border-0 p-0 form-control  height-40  bg-transparent">
+<input type="text" class="smart-search-location parent_text  font-weight-bold font-size-16 shadow-none hero-form font-weight-bold border-0 p-0 " readonly placeholder="どこに行くの？" value="" data-onLoad="Loading..." data-default="[{&quot;id&quot;:3,&quot;title&quot;:&quot; California&quot;},{&quot;id&quot;:10,&quot;title&quot;:&quot; Germany&quot;},{&quot;id&quot;:9,&quot;title&quot;:&quot; London&quot;},{&quot;id&quot;:5,&quot;title&quot;:&quot; Los Angeles&quot;},{&quot;id&quot;:6,&quot;title&quot;:&quot; New Jersey&quot;},{&quot;id&quot;:2,&quot;title&quot;:&quot; New York, United States&quot;},{&quot;id&quot;:1,&quot;title&quot;:&quot; Paris&quot;},{&quot;id&quot;:7,&quot;title&quot;:&quot; San Francisco&quot;},{&quot;id&quot;:4,&quot;title&quot;:&quot; United States&quot;},{&quot;id&quot;:8,&quot;title&quot;:&quot; Virginia&quot;}]">
+<input type="hidden" class="child_id" name="to_where" value="">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div class="col-md-3 mb-4 mb-xl-0 ">
+<div class="item">
+<span class="d-block text-gray-1 text-left font-weight-normal">
+Depart
+</span>
+<div class="border-bottom-1 mb-4 form-content">
+<div class="u-datepicker input-group py-2 flex-nowrap form-date-search">
+<div class="input-group-prepend">
+<span class="d-flex align-items-center mr-2">
+<i class="flaticon-calendar text-primary font-weight-semi-bold"></i>
+</span>
+</div>
+<div class="date-wrapper height-40 font-size-16 ml-1 shadow-none font-weight-bold form-control hero-form bg-transparent border-0 flatpickr-input p-0">
+<div class="render check-in-render">01/05/2023</div>
+<span> - </span>
+<div class="render check-out-render">01/12/2023</div>
+</div>
+<input type="hidden" class="check-in-input" value="01/05/2023" name="start">
+<input type="hidden" class="check-out-input" value="01/12/2023" name="end">
+<input type="text" class="check-in-out" name="date" value="2023-01-05 - 2023-01-12">
+</div>
+</div>
+</div> </div>
+<div class="col-md-3 mb-4 mb-xl-0 ">
+<div class="item">
+<div class="dropdown-custom px-0 mb-4 custom-select-dropdown-parent">
+<span class="d-block text-gray-1 text-left font-weight-normal">Travelers</span>
+<div class="flex-horizontal-center border-bottom-1  py-2 d-flex  dropdown-toggle" data-toggle="dropdown">
+<i class="flaticon-plus d-flex align-items-center mr-2 text-primary font-weight-semi-bold"></i>
+<div class="text-black font-size-16 font-weight-semi-bold mr-auto height-40 d-flex align-items-center overflow-hidden">
+<div class="render">
+<span class="" id="seat_type_vip_render">
+<span class="one ">0 Vip</span>
+<span class=" d-none  multi" data-html=":count Vip">0Vip</span>
+</span>
+<span class="" id="seat_type_eco_render">
+<span class="one ">0 Economy</span>
+<span class=" d-none  multi" data-html=":count Economy">0Economy</span>
+</span>
+<span class="" id="seat_type_premium_render">
+<span class="one ">0 Premium</span>
+<span class=" d-none  multi" data-html=":count Premium">0Premium</span>
+</span>
+<span class="" id="seat_type_business_render">
+<span class="one ">0 Business</span>
+<span class=" d-none  multi" data-html=":count Business">0Business</span>
+</span>
+<span class="" id="seat_type_fist_class_render">
+<span class="one ">0 First Class</span>
+<span class=" d-none  multi" data-html=":count First Class">0First Class</span>
+</span>
+</div>
+</div>
+</div>
+<div class="dropdown-menu custom-select-dropdown">
+<div class="dropdown-item-row">
+<div class="label">Adults Vip</div>
+<div class="val">
+<span class="btn-minus" data-input="seat_type_vip" data-input-attr="id"><i class="icon ion-md-remove"></i></span>
+<span class="count-display"><input id="seat_type_vip" type="number" name="seat_type[vip]" value="0" min="0"></span>
+<span class="btn-add" data-input="seat_type_vip" data-input-attr="id"><i class="icon ion-ios-add"></i></span>
+</div>
+</div>
+<div class="dropdown-item-row">
+<div class="label">Adults Economy</div>
+<div class="val">
+<span class="btn-minus" data-input="seat_type_eco" data-input-attr="id"><i class="icon ion-md-remove"></i></span>
+<span class="count-display"><input id="seat_type_eco" type="number" name="seat_type[eco]" value="0" min="0"></span>
+<span class="btn-add" data-input="seat_type_eco" data-input-attr="id"><i class="icon ion-ios-add"></i></span>
+</div>
+</div>
+<div class="dropdown-item-row">
+<div class="label">Adults Premium</div>
+<div class="val">
+<span class="btn-minus" data-input="seat_type_premium" data-input-attr="id"><i class="icon ion-md-remove"></i></span>
+<span class="count-display"><input id="seat_type_premium" type="number" name="seat_type[premium]" value="0" min="0"></span>
+<span class="btn-add" data-input="seat_type_premium" data-input-attr="id"><i class="icon ion-ios-add"></i></span>
+</div>
+</div>
+<div class="dropdown-item-row">
+<div class="label">Adults Business</div>
+<div class="val">
+<span class="btn-minus" data-input="seat_type_business" data-input-attr="id"><i class="icon ion-md-remove"></i></span>
+<span class="count-display"><input id="seat_type_business" type="number" name="seat_type[business]" value="0" min="0"></span>
+<span class="btn-add" data-input="seat_type_business" data-input-attr="id"><i class="icon ion-ios-add"></i></span>
+</div>
+</div>
+<div class="dropdown-item-row">
+<div class="label">Adults First Class</div>
+<div class="val">
+<span class="btn-minus" data-input="seat_type_fist_class" data-input-attr="id"><i class="icon ion-md-remove"></i></span>
+<span class="count-display"><input id="seat_type_fist_class" type="number" name="seat_type[fist_class]" value="0" min="0"></span>
+<span class="btn-add" data-input="seat_type_fist_class" data-input-attr="id"><i class="icon ion-ios-add"></i></span>
+</div>
+</div>
+</div>
+</div>
+</div> </div>
+</div>
+</div>
+<div class="g-button-submit align-self-lg-end">
+<button class="btn btn-blue-1 width-lg-200 text-white border-radius-2 font-weight-bold btn-md mb-xl-0 mb-lg-1 transition-3d-hover w-100 w-md-auto" type="submit"><i class="flaticon-magnifying-glass mr-2"></i> サーチ</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-pane fade " id="bravo_boat" role="tabpanel" aria-labelledby="bravo_boat-tab">
+<div class="p-3 gradient-overlay-half-white-gradient">
+<div class="card border-0 tab-shadow">
+<div class="card-body">
+<form action="https://mytravel.bookingcore.org/ja/boat" class="form bravo_form d-flex mb-1 py-2" method="get">
+<div class="g-field-search">
+<div class="row d-block nav-select d-flex align-items-end">
+<div class="col-md-6 mb-4 mb-lg-0 text-left">
+<div class="item">
+<span class="d-block text-gray-1  font-weight-normal mb-0 text-left">
+Location
+</span>
+<div class="mb-4">
+<div class="input-group border-bottom border-width-2 border-color-1 py-2">
+<i class="flaticon-pin-1 d-flex align-items-center mr-2 text-primary font-weight-semi-bold font-size-22"></i>
+<div class="smart-search border-0 p-0 form-control  height-40">
+<input type="text" class="smart-search-location parent_text  font-weight-bold font-size-16 shadow-none hero-form font-weight-bold border-0 p-0" readonly placeholder="どこに行くの？" value="" data-onLoad="Loading..." data-default="[{&quot;id&quot;:3,&quot;title&quot;:&quot; California&quot;},{&quot;id&quot;:10,&quot;title&quot;:&quot; Germany&quot;},{&quot;id&quot;:9,&quot;title&quot;:&quot; London&quot;},{&quot;id&quot;:5,&quot;title&quot;:&quot; Los Angeles&quot;},{&quot;id&quot;:6,&quot;title&quot;:&quot; New Jersey&quot;},{&quot;id&quot;:2,&quot;title&quot;:&quot; New York, United States&quot;},{&quot;id&quot;:1,&quot;title&quot;:&quot; Paris&quot;},{&quot;id&quot;:7,&quot;title&quot;:&quot; San Francisco&quot;},{&quot;id&quot;:4,&quot;title&quot;:&quot; United States&quot;},{&quot;id&quot;:8,&quot;title&quot;:&quot; Virginia&quot;}]">
+<input type="hidden" class="child_id" name="location_id" value="">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 mb-4 mb-lg-0 text-left">
+<div class="item">
+<span class="d-block text-gray-1 text-left font-weight-normal">
+Start Date
+</span>
+<div class="border-bottom border-width-2 border-color-1 mb-4 form-content">
+<div class="u-datepicker overflow-hidden input-group py-2 flex-nowrap form-date-search is_single_picker">
+<div class="input-group-prepend">
+<span class="d-flex align-items-center mr-2 font-size-21">
+<i class="flaticon-calendar text-primary font-weight-semi-bold"></i>
+</span>
+</div>
+<div class="date-wrapper height-40 font-size-16 ml-1 shadow-none font-weight-bold form-control hero-form bg-transparent border-0 flatpickr-input p-0">
+<div class="render check-in-render">01/05/2023</div>
+</div>
+<input type="hidden" class="check-in-input" value="01/05/2023" name="start">
+<input type="text" class="check-in-out" name="date" value="2023-01-05">
+</div>
+</div>
+</div> </div>
+</div>
+</div>
+<div class="g-button-submit align-self-lg-end">
+<button type="submit" class="btn btn-primary btn-md border-radius-3 mb-xl-0 mb-lg-1 transition-3d-hover">
+<i class="flaticon-magnifying-glass font-size-20 mr-2"></i>サーチ
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bravo-list-locations destinantion-block destinantion-v1 border-bottom border-color-8 mt-6">
+<div class="container space-bottom-1">
+<div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mt-4">
+<h2 class="section-title text-black font-size-30 font-weight-bold mb-0">Top Destinations</h2>
+</div>
+<div class="row mb-1">
+<div class="col-md-6 mb-3 mb-md-4">
+<div class="min-height-350 bg-img-hero rounded-border p-5 gradient-overlay-half-bg-gradient transition-3d-hover shadow-hover-2 border-0 dropdown" style="background-image: url(uploads/mytravel/location/location-6.jpg);">
+<div class="w-100 d-flex justify-content-between mb-2">
+<div class="position-relative">
+<a href="ja/location/paris.html" class="destination text-white font-weight-bold font-size-21 pb-3 mb-3 text-lh-1 d-block">
+Paris
+</a>
+<div class="destination-dropdown v1">
+<div class="desc">
+ <a class="dropdown-item" href="ja/hotel4335.html?location_id=1" target="_blank">
+6 ホテル
+</a>
+<a class="dropdown-item" href="ja/tour4335.html?location_id=1" target="_blank">
+5 ツアー
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 mb-3 mb-md-4">
+<div class="min-height-350 bg-img-hero rounded-border p-5 gradient-overlay-half-bg-gradient transition-3d-hover shadow-hover-2 border-0 dropdown" style="background-image: url(uploads/mytravel/location/location-2.jpg);">
+<div class="w-100 d-flex justify-content-between mb-2">
+<div class="position-relative">
+<a href="ja/location/new-york-united-states.html" class="destination text-white font-weight-bold font-size-21 pb-3 mb-3 text-lh-1 d-block">
+New York, United States
+</a>
+<div class="destination-dropdown v1">
+<div class="desc">
+<a class="dropdown-item" href="ja/hoteld752.html?location_id=2" target="_blank">
+2 ホテル
+</a>
+<a class="dropdown-item" href="ja/tourd752.html?location_id=2" target="_blank">
+4 ツアー
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-xl-3 mb-3 mb-md-4">
+<div class="min-height-350 bg-img-hero rounded-border p-5 gradient-overlay-half-bg-gradient transition-3d-hover shadow-hover-2 border-0 dropdown" style="background-image: url(uploads/mytravel/location/location-3.jpg);">
+<div class="w-100 d-flex justify-content-between mb-2">
+<div class="position-relative">
+<a href="ja/location/california.html" class="destination text-white font-weight-bold font-size-21 pb-3 mb-3 text-lh-1 d-block">
+California
+</a>
+<div class="destination-dropdown v1">
+<div class="desc">
+<a class="dropdown-item" href="ja/hotel6456.html?location_id=3" target="_blank">
+1 ホテル
+</a>
+ <a class="dropdown-item" href="ja/tour6456.html?location_id=3" target="_blank">
+1 ツアー
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-xl-3 mb-3 mb-md-4">
+<div class="min-height-350 bg-img-hero rounded-border p-5 gradient-overlay-half-bg-gradient transition-3d-hover shadow-hover-2 border-0 dropdown" style="background-image: url(uploads/mytravel/location/location-4.jpg);">
+<div class="w-100 d-flex justify-content-between mb-2">
+<div class="position-relative">
+<a href="ja/location/united-states.html" class="destination text-white font-weight-bold font-size-21 pb-3 mb-3 text-lh-1 d-block">
+United States
+</a>
+<div class="destination-dropdown v1">
+<div class="desc">
+<a class="dropdown-item" href="ja/toureedc.html?location_id=4" target="_blank">
+1 ツアー
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-xl-3 mb-3 mb-md-4">
+<div class="min-height-350 bg-img-hero rounded-border p-5 gradient-overlay-half-bg-gradient transition-3d-hover shadow-hover-2 border-0 dropdown" style="background-image: url(uploads/mytravel/location/location-5.jpg);">
+<div class="w-100 d-flex justify-content-between mb-2">
+<div class="position-relative">
+<a href="ja/location/los-angeles.html" class="destination text-white font-weight-bold font-size-21 pb-3 mb-3 text-lh-1 d-block">
+Los Angeles
+</a>
+<div class="destination-dropdown v1">
+<div class="desc">
+<a class="dropdown-item" href="ja/hotel26e8.html?location_id=5" target="_blank">
+2 ホテル
+</a>
+<a class="dropdown-item" href="ja/tour26e8.html?location_id=5" target="_blank">
+1 ツアー
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-xl-3 mb-3 mb-md-4">
+<div class="min-height-350 bg-img-hero rounded-border p-5 gradient-overlay-half-bg-gradient transition-3d-hover shadow-hover-2 border-0 dropdown" style="background-image: url(uploads/mytravel/location/location-1.jpg);">
+<div class="w-100 d-flex justify-content-between mb-2">
+<div class="position-relative">
+<a href="ja/location/new-jersey.html" class="destination text-white font-weight-bold font-size-21 pb-3 mb-3 text-lh-1 d-block">
+New Jersey
+</a>
+<div class="destination-dropdown v1">
+<div class="desc">
+<a class="dropdown-item" href="ja/tour80cc.html?location_id=6" target="_blank">
+1 ツアー
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="bravo-list-all-service tabs-block tab-v1 ">
+<div class="container space-1">
+<div class="w-md-80 w-lg-50 text-center mx-md-auto my-3">
+<h2 class="section-title text-black font-size-30 font-weight-bold mb-0">Trending</h2>
+</div>
+<ul class="nav tab-nav-pill flex-nowrap pb-4 pb-lg-5 tab-nav justify-content-lg-center" role="tablist">
+<li class="nav-item" role="bravo_hotel">
+<a class="nav-link font-weight-medium  active " data-toggle="pill" href="#bravo_1672939443hotel-tab">
+<div class="d-flex flex-column flex-md-row  position-relative text-dark align-items-center">
+<span class="tabtext font-weight-semi-bold">
+ホテル
+</span>
+</div>
+</a>
+</li>
+<li class="nav-item" role="bravo_tour">
+<a class="nav-link font-weight-medium " data-toggle="pill" href="#bravo_1672939443tour-tab">
+<div class="d-flex flex-column flex-md-row  position-relative text-dark align-items-center">
+<span class="tabtext font-weight-semi-bold">
+Tour
+</span>
+</div>
+</a>
+</li>
+<li class="nav-item" role="bravo_event">
+<a class="nav-link font-weight-medium " data-toggle="pill" href="#bravo_1672939443event-tab">
+<div class="d-flex flex-column flex-md-row  position-relative text-dark align-items-center">
+<span class="tabtext font-weight-semi-bold">
+Event
+</span>
+</div>
+</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade  active show  bravo_hotel" id="bravo_1672939443hotel-tab">
+<div class="row">
+<div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 mt-2 item-loop ">
+<div class="position-relative">
+<a href="ja/hotel/hotel-stanford.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class='img-responsive card-img-top lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/space/space-5.jpg alt='Hotel Stanford'>
+</a>
+<div class="position-absolute top-0 right-0 pt-3 pr-3">
+<button type="button" class="btn btn-sm btn-icon text-white rounded-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="service-wishlist " data-id="1" data-type="hotel">
+<span class="flaticon-heart-1 font-size-20"></span>
+</span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/hotel/hotel-stanford.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> Arrondissement de Paris
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="card-body px-4 pt-2 pb-3">
+<div class="mb-2 hotel-star">
+<div class="d-inline-flex align-items-center font-size-13 text-lh-1 text-primary letter-spacing-3">
+<div class="green-lighter">
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+</div>
+</div>
+</div>
+<a href="ja/hotel/hotel-stanford.html" class="card-title font-size-17 font-weight-medium text-dark">Hotel Stanford</a>
+<div class="mt-2 mb-3">
+<span class="badge badge-pill badge-primary py-1 px-2 font-size-14 border-radius-3 font-weight-normal">5.0/5</span>
+<span class="font-size-14 text-gray-1 ml-2">(
+1 復習
+)
+</span>
+</div>
+<div class="mb-0">
+<span class="mr-1 font-size-14 text-gray-1">から</span>
+<span class="font-weight-bold">€332,30</span>
+<span class="font-size-14 text-gray-1">/night</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 mt-2 item-loop ">
+<div class="position-relative">
+<a href="ja/hotel/hotel-wbf-homachi.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class='img-responsive card-img-top lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/space/space-6.jpg alt='Hotel WBF Hommachi'>
+</a>
+<div class="position-absolute top-0 right-0 pt-3 pr-3">
+<button type="button" class="btn btn-sm btn-icon text-white rounded-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="service-wishlist " data-id="2" data-type="hotel">
+<span class="flaticon-heart-1 font-size-20"></span>
+</span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/hotel/hotel-wbf-homachi.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> Porte de Vanves
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="card-body px-4 pt-2 pb-3">
+<div class="mb-2 hotel-star">
+<div class="d-inline-flex align-items-center font-size-13 text-lh-1 text-primary letter-spacing-3">
+<div class="green-lighter">
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+</div>
+</div>
+</div>
+<a href="ja/hotel/hotel-wbf-homachi.html" class="card-title font-size-17 font-weight-medium text-dark">Hotel WBF Hommachi</a>
+<div class="mt-2 mb-3">
+<span class="badge badge-pill badge-primary py-1 px-2 font-size-14 border-radius-3 font-weight-normal">4.5/5</span>
+<span class="font-size-14 text-gray-1 ml-2">(
+2 復習
+)
+</span>
+</div>
+<div class="mb-0">
+<span class="mr-1 font-size-14 text-gray-1">から</span>
+<span class="font-weight-bold">€387,68</span>
+<span class="font-size-14 text-gray-1">/night</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 mt-2 item-loop ">
+<div class="position-relative">
+<a href="ja/hotel/castello-casole-hotel.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class='img-responsive card-img-top lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/space/space-7.jpg alt='Castello Casole Hotel'>
+</a>
+<div class="position-absolute top-0 right-0 pt-3 pr-3">
+<button type="button" class="btn btn-sm btn-icon text-white rounded-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="service-wishlist " data-id="3" data-type="hotel">
+<span class="flaticon-heart-1 font-size-20"></span>
+</span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/hotel/castello-casole-hotel.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> Petit-Montrouge
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="card-body px-4 pt-2 pb-3">
+<div class="mb-2 hotel-star">
+<div class="d-inline-flex align-items-center font-size-13 text-lh-1 text-primary letter-spacing-3">
+<div class="green-lighter">
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+</div>
+</div>
+</div>
+<a href="ja/hotel/castello-casole-hotel.html" class="card-title font-size-17 font-weight-medium text-dark">Castello Casole Hotel</a>
+<div class="mt-2 mb-3">
+<span class="badge badge-pill badge-primary py-1 px-2 font-size-14 border-radius-3 font-weight-normal">4.5/5</span>
+<span class="font-size-14 text-gray-1 ml-2">(
+2 復習
+)
+</span>
+</div>
+<div class="mb-0">
+<span class="mr-1 font-size-14 text-gray-1">から</span>
+<span class="font-weight-bold">€387,68</span>
+<span class="font-size-14 text-gray-1">/night</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 mt-2 item-loop ">
+<div class="position-relative">
+<a href="ja/hotel/redac-gateway-hotel.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class='img-responsive card-img-top lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/space/space-8.jpg alt='Redac Gateway Hotel'>
+</a>
+<div class="position-absolute top-0 right-0 pt-3 pr-3">
+<button type="button" class="btn btn-sm btn-icon text-white rounded-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="service-wishlist " data-id="4" data-type="hotel">
+<span class="flaticon-heart-1 font-size-20"></span>
+</span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/hotel/redac-gateway-hotel.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> Petit-Montrouge
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="card-body px-4 pt-2 pb-3">
+<div class="mb-2 hotel-star">
+<div class="d-inline-flex align-items-center font-size-13 text-lh-1 text-primary letter-spacing-3">
+<div class="green-lighter">
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+</div>
+</div>
+</div>
+<a href="ja/hotel/redac-gateway-hotel.html" class="card-title font-size-17 font-weight-medium text-dark">Redac Gateway Hotel</a>
+<div class="mt-2 mb-3">
+<span class="badge badge-pill badge-primary py-1 px-2 font-size-14 border-radius-3 font-weight-normal">4.3/5</span>
+<span class="font-size-14 text-gray-1 ml-2">(
+3 復習
+)
+</span>
+</div>
+<div class="mb-0">
+<span class="mr-1 font-size-14 text-gray-1">から</span>
+<span class="font-weight-bold">€553,83</span>
+<span class="font-size-14 text-gray-1">/night</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 mt-2 item-loop ">
+<div class="position-relative">
+<a href="ja/hotel/studio-allston-hotel.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class='img-responsive card-img-top lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/space/space-9.jpg alt='Studio Allston Hotel'>
+</a>
+<div class="position-absolute top-0 right-0 pt-3 pr-3">
+<button type="button" class="btn btn-sm btn-icon text-white rounded-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="service-wishlist " data-id="5" data-type="hotel">
+<span class="flaticon-heart-1 font-size-20"></span>
+</span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/hotel/studio-allston-hotel.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> New York
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="card-body px-4 pt-2 pb-3">
+<div class="mb-2 hotel-star">
+<div class="d-inline-flex align-items-center font-size-13 text-lh-1 text-primary letter-spacing-3">
+<div class="green-lighter">
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+</div>
+</div>
+</div>
+<a href="ja/hotel/studio-allston-hotel.html" class="card-title font-size-17 font-weight-medium text-dark">Studio Allston Hotel</a>
+<div class="mt-2 mb-3">
+<span class="badge badge-pill badge-primary py-1 px-2 font-size-14 border-radius-3 font-weight-normal">4.3/5</span>
+<span class="font-size-14 text-gray-1 ml-2">(
+4 復習
+)
+</span>
+</div>
+<div class="mb-0">
+<span class="mr-1 font-size-14 text-gray-1">から</span>
+<span class="font-weight-bold">€553,83</span>
+<span class="font-size-14 text-gray-1">/night</span>
+</div>
+</div>
+</div>
+ </div>
+<div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 mt-2 item-loop ">
+<div class="position-relative">
+<a href="ja/hotel/envision-hotel-biston.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class='img-responsive card-img-top lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/space/space-10.jpg alt='EnVision Hotel Boston'>
+</a>
+<div class="position-absolute top-0 right-0 pt-3 pr-3">
+<button type="button" class="btn btn-sm btn-icon text-white rounded-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="service-wishlist " data-id="6" data-type="hotel">
+<span class="flaticon-heart-1 font-size-20"></span>
+</span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/hotel/envision-hotel-biston.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> New York
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="card-body px-4 pt-2 pb-3">
+<div class="mb-2 hotel-star">
+<div class="d-inline-flex align-items-center font-size-13 text-lh-1 text-primary letter-spacing-3">
+<div class="green-lighter">
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+</div>
+</div>
+</div>
+<a href="ja/hotel/envision-hotel-biston.html" class="card-title font-size-17 font-weight-medium text-dark">EnVision Hotel Boston</a>
+<div class="mt-2 mb-3">
+<span class="badge badge-pill badge-primary py-1 px-2 font-size-14 border-radius-3 font-weight-normal">5.0/5</span>
+<span class="font-size-14 text-gray-1 ml-2">(
+3 復習
+)
+</span>
+</div>
+<div class="mb-0">
+<span class="mr-1 font-size-14 text-gray-1">から</span>
+<span class="font-weight-bold">€775,36</span>
+<span class="font-size-14 text-gray-1">/night</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 mt-2 item-loop ">
+<div class="position-relative">
+<a href="ja/hotel/crowne-plaza-hotel.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class='img-responsive card-img-top lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/space/space-11.jpg alt='Crowne Plaza Hotel'>
+</a>
+<div class="position-absolute top-0 right-0 pt-3 pr-3">
+<button type="button" class="btn btn-sm btn-icon text-white rounded-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="service-wishlist " data-id="7" data-type="hotel">
+<span class="flaticon-heart-1 font-size-20"></span>
+</span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/hotel/crowne-plaza-hotel.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> New York
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="card-body px-4 pt-2 pb-3">
+<div class="mb-2 hotel-star">
+<div class="d-inline-flex align-items-center font-size-13 text-lh-1 text-primary letter-spacing-3">
+<div class="green-lighter">
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+</div>
+</div>
+</div>
+<a href="ja/hotel/crowne-plaza-hotel.html" class="card-title font-size-17 font-weight-medium text-dark">Crowne Plaza Hotel</a>
+<div class="mt-2 mb-3">
+<span class="badge badge-pill badge-primary py-1 px-2 font-size-14 border-radius-3 font-weight-normal">4.2/5</span>
+<span class="font-size-14 text-gray-1 ml-2">(
+5 復習
+)
+</span>
+</div>
+<div class="mb-0">
+<span class="mr-1 font-size-14 text-gray-1">から</span>
+<span class="font-weight-bold">€996,89</span>
+<span class="font-size-14 text-gray-1">/night</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 mt-2 item-loop ">
+<div class="position-relative">
+<a href="ja/hotel/stewart-hotel.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class='img-responsive card-img-top lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/space/space-12.jpg alt='Stewart Hotel'>
+</a>
+<div class="position-absolute top-0 right-0 pt-3 pr-3">
+<button type="button" class="btn btn-sm btn-icon text-white rounded-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="service-wishlist " data-id="8" data-type="hotel">
+<span class="flaticon-heart-1 font-size-20"></span>
+</span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/hotel/stewart-hotel.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> New York
+</div>
+</a>
+ </div>
+</div>
+</div>
+<div class="card-body px-4 pt-2 pb-3">
+<div class="mb-2 hotel-star">
+<div class="d-inline-flex align-items-center font-size-13 text-lh-1 text-primary letter-spacing-3">
+<div class="green-lighter">
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+</div>
+</div>
+</div>
+<a href="ja/hotel/stewart-hotel.html" class="card-title font-size-17 font-weight-medium text-dark">Stewart Hotel</a>
+<div class="mt-2 mb-3">
+<span class="badge badge-pill badge-primary py-1 px-2 font-size-14 border-radius-3 font-weight-normal">4.3/5</span>
+<span class="font-size-14 text-gray-1 ml-2">(
+4 復習
+)
+</span>
+</div>
+<div class="mb-0">
+<span class="mr-1 font-size-14 text-gray-1">から</span>
+<span class="font-weight-bold">€996,89</span>
+<span class="font-size-14 text-gray-1">/night</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-pane fade  bravo_tour" id="bravo_1672939443tour-tab">
+<div class="row">
+<div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 item-loop h-100 ">
+<div class="position-relative mb-2">
+<a href="ja/tour/american-parks-trail.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="min-height-230 bg-img-hero card-img-top" src="uploads/mytravel/tour/tour-1.jpg" alt="American Parks Trail end Rapid City">
+</a>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+<span class="badge badge-pill bg-white text-danger px-3  py-2 font-size-14 font-weight-normal">61%</span>
+</div>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="1" data-type="tour" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<span class="text-gray-10 font-weight-normal font-size-14">Ligula</span>
+<h2 class="h5 text-white mb-0 font-weight-bold">
+<small class="mr-1 font-size-14">から</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+€2.215,31
+</small>
+€850,68
+</h2>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/paris.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> Paris
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="card-body px-3 py-2">
+<a href="ja/tour/american-parks-trail.html" class="d-block location">
+<div class="mb-1 d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-pin-1 mr-2 font-size-15"></i> Paris
+</div>
+</a>
+<a href="ja/tour/american-parks-trail.html" class="card-title font-size-17 font-weight-bold mb-0 text-dark">
+American Parks Trail end Rapid City
+</a>
+<div class="my-2 service-review review-4.5">
+<div class="d-inline-flex align-items-center font-size-17 text-lh-1 text-primary">
+<div class="list-star green-lighter mr-2">
+<ul class="booking-item-rating-stars">
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+</ul>
+<div class="booking-item-rating-stars-active" style="width: 90%">
+<ul class="booking-item-rating-stars">
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+</ul>
+</div>
+</div>
+<span class="text-secondary font-size-14 mt-1">
+4 復習
+</span>
+</div>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale">€2.215,31</span>
+<span class="text-price">€850,68</span>
+</div>
+</div>
+<div class="mb-1 d-flex align-items-center font-size-14 text-gray-1 duration">
+<i class="icon flaticon-clock-circular-outline mr-2 font-size-14"></i> 5 Hours
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 item-loop h-100 ">
+<div class="position-relative mb-2">
+<a href="ja/tour/new-york-museum-of-modern-art.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="min-height-230 bg-img-hero card-img-top" src="uploads/mytravel/tour/tour-2.jpg" alt="New York: Museum of Modern Art">
+</a>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+<span class="badge badge-pill bg-white text-primary px-4 mr-3 py-2 font-size-14 font-weight-normal">注目の</span>
+<span class="badge badge-pill bg-white text-danger px-3  py-2 font-size-14 font-weight-normal">66%</span>
+</div>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="2" data-type="tour" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<span class="text-gray-10 font-weight-normal font-size-14">City trips</span>
+<h2 class="h5 text-white mb-0 font-weight-bold">
+<small class="mr-1 font-size-14">から</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+€996,89
+</small>
+€333,40
+</h2>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/paris.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> Paris
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="card-body px-3 py-2">
+<a href="ja/tour/new-york-museum-of-modern-art.html" class="d-block location">
+<div class="mb-1 d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-pin-1 mr-2 font-size-15"></i> Paris
+</div>
+</a>
+<a href="ja/tour/new-york-museum-of-modern-art.html" class="card-title font-size-17 font-weight-bold mb-0 text-dark">
+New York: Museum of Modern Art
+</a>
+<div class="my-2 service-review review-4.5">
+<div class="d-inline-flex align-items-center font-size-17 text-lh-1 text-primary">
+<div class="list-star green-lighter mr-2">
+<ul class="booking-item-rating-stars">
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+</ul>
+<div class="booking-item-rating-stars-active" style="width: 90%">
+<ul class="booking-item-rating-stars">
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+</ul>
+</div>
+</div>
+<span class="text-secondary font-size-14 mt-1">
+2 復習
+</span>
+</div>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale">€996,89</span>
+<span class="text-price">€333,40</span>
+</div>
+</div>
+<div class="mb-1 d-flex align-items-center font-size-14 text-gray-1 duration">
+<i class="icon flaticon-clock-circular-outline mr-2 font-size-14"></i> 8 Hours
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 item-loop h-100 ">
+<div class="position-relative mb-2">
+<a href="ja/tour/los-angeles-to-san-francisco-express.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="min-height-230 bg-img-hero card-img-top" src="uploads/mytravel/tour/tour-3.jpg" alt="Los Angeles to San Francisco Express ">
+</a>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+<span class="badge badge-pill bg-white text-primary px-4 mr-3 py-2 font-size-14 font-weight-normal">注目の</span>
+<span class="badge badge-pill bg-white text-danger px-3  py-2 font-size-14 font-weight-normal">76%</span>
+</div>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="3" data-type="tour" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<span class="text-gray-10 font-weight-normal font-size-14">City trips</span>
+<h2 class="h5 text-white mb-0 font-weight-bold">
+<small class="mr-1 font-size-14">から</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+€1.661,48
+</small>
+€383,25
+</h2>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/paris.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> Paris
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="card-body px-3 py-2">
+<a href="ja/tour/los-angeles-to-san-francisco-express.html" class="d-block location">
+<div class="mb-1 d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-pin-1 mr-2 font-size-15"></i> Paris
+</div>
+</a>
+<a href="ja/tour/los-angeles-to-san-francisco-express.html" class="card-title font-size-17 font-weight-bold mb-0 text-dark">
+Los Angeles to San Francisco Express
+</a>
+<div class="my-2 service-review review-5.0">
+<div class="d-inline-flex align-items-center font-size-17 text-lh-1 text-primary">
+<div class="list-star green-lighter mr-2">
+<ul class="booking-item-rating-stars">
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+</ul>
+<div class="booking-item-rating-stars-active" style="width: 100%">
+ <ul class="booking-item-rating-stars">
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+</ul>
+</div>
+</div>
+<span class="text-secondary font-size-14 mt-1">
+2 復習
+</span>
+</div>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale">€1.661,48</span>
+<span class="text-price">€383,25</span>
+</div>
+</div>
+<div class="mb-1 d-flex align-items-center font-size-14 text-gray-1 duration">
+<i class="icon flaticon-clock-circular-outline mr-2 font-size-14"></i> 5 Hours
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 item-loop h-100 ">
+<div class="position-relative mb-2">
+<a href="ja/tour/paris-vacation-travel.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="min-height-230 bg-img-hero card-img-top" src="uploads/mytravel/tour/tour-4.jpg" alt="Paris Vacation Travel ">
+</a>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+<span class="badge badge-pill bg-white text-primary px-4 mr-3 py-2 font-size-14 font-weight-normal">注目の</span>
+<span class="badge badge-pill bg-white text-danger px-3  py-2 font-size-14 font-weight-normal">25%</span>
+</div>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="4" data-type="tour" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<span class="text-gray-10 font-weight-normal font-size-14">Escorted tour</span>
+<h2 class="h5 text-white mb-0 font-weight-bold">
+<small class="mr-1 font-size-14">から</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+€941,51
+</small>
+€702,25
+</h2>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/new-york-united-states.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> New York, United States
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="card-body px-3 py-2">
+<a href="ja/tour/paris-vacation-travel.html" class="d-block location">
+<div class="mb-1 d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-pin-1 mr-2 font-size-15"></i> New York, United States
+</div>
+</a>
+<a href="ja/tour/paris-vacation-travel.html" class="card-title font-size-17 font-weight-bold mb-0 text-dark">
+Paris Vacation Travel
+</a>
+<div class="my-2 service-review review-4.3">
+<div class="d-inline-flex align-items-center font-size-17 text-lh-1 text-primary">
+<div class="list-star green-lighter mr-2">
+<ul class="booking-item-rating-stars">
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+</ul>
+<div class="booking-item-rating-stars-active" style="width: 86%">
+<ul class="booking-item-rating-stars">
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+</ul>
+</div>
+</div>
+<span class="text-secondary font-size-14 mt-1">
+3 復習
+</span>
+</div>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale">€941,51</span>
+<span class="text-price">€702,25</span>
+</div>
+</div>
+<div class="mb-1 d-flex align-items-center font-size-14 text-gray-1 duration">
+<i class="icon flaticon-clock-circular-outline mr-2 font-size-14"></i> 1 Hour
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 item-loop h-100 ">
+<div class="position-relative mb-2">
+<a href="ja/tour/southwest-states.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="min-height-230 bg-img-hero card-img-top" src="uploads/mytravel/tour/tour-5.jpg" alt="Southwest States (Ex Los Angeles) ">
+</a>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+<span class="badge badge-pill bg-white text-danger px-3  py-2 font-size-14 font-weight-normal">45%</span>
+</div>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="5" data-type="tour" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<span class="text-gray-10 font-weight-normal font-size-14">Escorted tour</span>
+<h2 class="h5 text-white mb-0 font-weight-bold">
+<small class="mr-1 font-size-14">から</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+€2.104,55
+</small>
+€1.154,18
+</h2>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/new-york-united-states.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> New York, United States
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="card-body px-3 py-2">
+<a href="ja/tour/southwest-states.html" class="d-block location">
+<div class="mb-1 d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-pin-1 mr-2 font-size-15"></i> New York, United States
+</div>
+</a>
+<a href="ja/tour/southwest-states.html" class="card-title font-size-17 font-weight-bold mb-0 text-dark">
+Southwest States (Ex Los Angeles)
+</a>
+<div class="my-2 service-review review-4.0">
+<div class="d-inline-flex align-items-center font-size-17 text-lh-1 text-primary">
+<div class="list-star green-lighter mr-2">
+<ul class="booking-item-rating-stars">
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+</ul>
+<div class="booking-item-rating-stars-active" style="width: 80%">
+<ul class="booking-item-rating-stars">
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+</ul>
+</div>
+</div>
+<span class="text-secondary font-size-14 mt-1">
+3 復習
+</span>
+</div>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale">€2.104,55</span>
+<span class="text-price">€1.154,18</span>
+</div>
+</div>
+<div class="mb-1 d-flex align-items-center font-size-14 text-gray-1 duration">
+<i class="icon flaticon-clock-circular-outline mr-2 font-size-14"></i> 1 Hour
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 item-loop h-100 ">
+<div class="position-relative mb-2">
+<a href="ja/tour/eastern-discovery-start-new-orleans.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="min-height-230 bg-img-hero card-img-top" src="uploads/mytravel/tour/tour-6.jpg" alt="Eastern Discovery (Start New Orleans)">
+</a>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+<span class="badge badge-pill bg-white text-primary px-4 mr-3 py-2 font-size-14 font-weight-normal">注目の</span>
+<span class="badge badge-pill bg-white text-danger px-3  py-2 font-size-14 font-weight-normal">67%</span>
+</div>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="6" data-type="tour" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<span class="text-gray-10 font-weight-normal font-size-14">Ecotourism</span>
+<h2 class="h5 text-white mb-0 font-weight-bold">
+<small class="mr-1 font-size-14">から</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+€2.326,08
+</small>
+€754,31
+</h2>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/new-york-united-states.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> New York, United States
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="card-body px-3 py-2">
+<a href="ja/tour/eastern-discovery-start-new-orleans.html" class="d-block location">
+<div class="mb-1 d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-pin-1 mr-2 font-size-15"></i> New York, United States
+</div>
+</a>
+<a href="ja/tour/eastern-discovery-start-new-orleans.html" class="card-title font-size-17 font-weight-bold mb-0 text-dark">
+Eastern Discovery (Start New Orleans)
+</a>
+<div class="my-2 service-review review-4.5">
+<div class="d-inline-flex align-items-center font-size-17 text-lh-1 text-primary">
+<div class="list-star green-lighter mr-2">
+<ul class="booking-item-rating-stars">
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+</ul>
+<div class="booking-item-rating-stars-active" style="width: 90%">
+<ul class="booking-item-rating-stars">
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+</ul>
+</div>
+</div>
+<span class="text-secondary font-size-14 mt-1">
+2 復習
+</span>
+</div>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale">€2.326,08</span>
+<span class="text-price">€754,31</span>
+</div>
+</div>
+<div class="mb-1 d-flex align-items-center font-size-14 text-gray-1 duration">
+<i class="icon flaticon-clock-circular-outline mr-2 font-size-14"></i> 1 Hour
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 item-loop h-100 ">
+<div class="position-relative mb-2">
+<a href="ja/tour/eastern-discovery.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="min-height-230 bg-img-hero card-img-top" src="uploads/mytravel/tour/tour-7.jpg" alt="Eastern Discovery">
+</a>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+<span class="badge badge-pill bg-white text-danger px-3  py-2 font-size-14 font-weight-normal">26%</span>
+</div>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="7" data-type="tour" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<span class="text-gray-10 font-weight-normal font-size-14">Ecotourism</span>
+<h2 class="h5 text-white mb-0 font-weight-bold">
+<small class="mr-1 font-size-14">から</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+€2.326,08
+</small>
+€1.702,47
+</h2>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/new-york-united-states.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> New York, United States
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="card-body px-3 py-2">
+<a href="ja/tour/eastern-discovery.html" class="d-block location">
+<div class="mb-1 d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-pin-1 mr-2 font-size-15"></i> New York, United States
+</div>
+</a>
+<a href="ja/tour/eastern-discovery.html" class="card-title font-size-17 font-weight-bold mb-0 text-dark">
+Eastern Discovery
+ </a>
+<div class="my-2 service-review review-4.5">
+<div class="d-inline-flex align-items-center font-size-17 text-lh-1 text-primary">
+<div class="list-star green-lighter mr-2">
+<ul class="booking-item-rating-stars">
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+</ul>
+<div class="booking-item-rating-stars-active" style="width: 90%">
+<ul class="booking-item-rating-stars">
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+</ul>
+</div>
+</div>
+<span class="text-secondary font-size-14 mt-1">
+2 復習
+</span>
+</div>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale">€2.326,08</span>
+<span class="text-price">€1.702,47</span>
+</div>
+</div>
+<div class="mb-1 d-flex align-items-center font-size-14 text-gray-1 duration">
+<i class="icon flaticon-clock-circular-outline mr-2 font-size-14"></i> 9 Hours
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 item-loop h-100 ">
+<div class="position-relative mb-2">
+<a href="ja/tour/pure-luxe-in-punta-mita.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="min-height-230 bg-img-hero card-img-top" src="uploads/mytravel/tour/tour-8.jpg" alt="Pure Luxe in Punta Mita">
+</a>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+<span class="badge badge-pill bg-white text-danger px-3  py-2 font-size-14 font-weight-normal">42%</span>
+</div>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="8" data-type="tour" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<span class="text-gray-10 font-weight-normal font-size-14">City trips</span>
+<h2 class="h5 text-white mb-0 font-weight-bold">
+<small class="mr-1 font-size-14">から</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+€2.326,08
+</small>
+€1.348,02
+</h2>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+ <a href="ja/location/california.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> California
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="card-body px-3 py-2">
+<a href="ja/tour/pure-luxe-in-punta-mita.html" class="d-block location">
+<div class="mb-1 d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-pin-1 mr-2 font-size-15"></i> California
+</div>
+</a>
+<a href="ja/tour/pure-luxe-in-punta-mita.html" class="card-title font-size-17 font-weight-bold mb-0 text-dark">
+Pure Luxe in Punta Mita
+</a>
+<div class="my-2 service-review review-4.0">
+<div class="d-inline-flex align-items-center font-size-17 text-lh-1 text-primary">
+<div class="list-star green-lighter mr-2">
+<ul class="booking-item-rating-stars">
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+</ul>
+<div class="booking-item-rating-stars-active" style="width: 80%">
+<ul class="booking-item-rating-stars">
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+</ul>
+</div>
+</div>
+<span class="text-secondary font-size-14 mt-1">
+2 復習
+</span>
+</div>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale">€2.326,08</span>
+<span class="text-price">€1.348,02</span>
+</div>
+</div>
+<div class="mb-1 d-flex align-items-center font-size-14 text-gray-1 duration">
+<i class="icon flaticon-clock-circular-outline mr-2 font-size-14"></i> 3 Hours
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-pane fade  bravo_event" id="bravo_1672939443event-tab">
+<div class="row">
+<div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="item-loop relative ">
+<div class="thumb-image ">
+<a href="ja/event/andante-allegro-event-design.html">
+<img class='img-responsive lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/event/event-1.jpg alt='Andante &amp; Allegro Event Design'>
+</a>
+<div class="service-wishlist " data-id="1" data-type="event">
+<i class="fa fa-heart-o"></i>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/paris.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> Paris
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="item-content">
+<div class="location">
+Paris
+</div>
+<div class="item-title">
+<a href="ja/event/andante-allegro-event-design.html">
+Andante &amp; Allegro Event Design
+</a>
+</div>
+<div class="service-review">
+<span class="rate">
+4.5/5 <span class="rate-text">優秀な</span>
+</span>
+<span class="review">
+2 復習
+</span>
+</div>
+<div class="start-time">
+Start Time: 20:00
+</div>
+<div class="info">
+<div class="duration">
+1H
+</div>
+<div class="g-price">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale"></span>
+<span class="text-price">€2.215,31</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="item-loop relative ">
+<div class="thumb-image ">
+<a href="ja/event/painted-desert-event-designs.html">
+<img class='img-responsive lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/event/event-2.jpg alt='Painted Desert Event Designs'>
+</a>
+<div class="service-wishlist " data-id="2" data-type="event">
+<i class="fa fa-heart-o"></i>
+</div>
+<div class="sale_info">84%</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/paris.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> Paris
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 left-0 pt-3 pl-3 featured">
+<span class="badge font-weight-normal badge-pill px-4 mr-3 py-2">注目の</span>
+</div>
+<div class="item-content">
+<div class="location">
+Paris
+</div>
+<div class="item-title">
+<a href="ja/event/painted-desert-event-designs.html">
+Painted Desert Event Designs
+</a>
+</div>
+<div class="service-review">
+<span class="rate">
+4.3/5 <span class="rate-text">とても良い</span>
+</span>
+<span class="review">
+3 復習
+</span>
+</div>
+<div class="start-time">
+Start Time: 19:00
+</div>
+<div class="info">
+<div class="duration">
+2H
+</div>
+<div class="g-price">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale">€996,89</span>
+<span class="text-price">€153,96</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="item-loop relative ">
+<div class="thumb-image ">
+<a href="ja/event/bamboo-grove-event-planning.html">
+<img class='img-responsive lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/event/event-3.jpg alt='Bamboo Grove Event Planning'>
+</a>
+<div class="service-wishlist " data-id="3" data-type="event">
+<i class="fa fa-heart-o"></i>
+</div>
+<div class="sale_info">71%</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/paris.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> Paris
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 left-0 pt-3 pl-3 featured">
+<span class="badge font-weight-normal badge-pill px-4 mr-3 py-2">注目の</span>
+</div>
+<div class="item-content">
+<div class="location">
+Paris
+</div>
+<div class="item-title">
+<a href="ja/event/bamboo-grove-event-planning.html">
+Bamboo Grove Event Planning
+</a>
+</div>
+<div class="service-review">
+<span class="rate">
+4.8/5 <span class="rate-text">優秀な</span>
+</span>
+<span class="review">
+4 復習
+</span>
+</div>
+<div class="start-time">
+Start Time: 19:00
+</div>
+<div class="info">
+<div class="duration">
+3H
+</div>
+<div class="g-price">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale">€1.661,48</span>
+<span class="text-price">€471,86</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="item-loop relative ">
+<div class="thumb-image ">
+<a href="ja/event/aspen-glade-weddings-events.html">
+<img class='img-responsive lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/event/event-4.jpg alt='Aspen Glade Weddings &amp; Events'>
+</a>
+<div class="service-wishlist " data-id="4" data-type="event">
+<i class="fa fa-heart-o"></i>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/new-york-united-states.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> New York, United States
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 left-0 pt-3 pl-3 featured">
+<span class="badge font-weight-normal badge-pill px-4 mr-3 py-2">注目の</span>
+</div>
+<div class="item-content">
+<div class="location">
+New York, United States
+</div>
+<div class="item-title">
+<a href="ja/event/aspen-glade-weddings-events.html">
+Aspen Glade Weddings &amp; Events
+</a>
+</div>
+<div class="service-review">
+<span class="rate">
+4.7/5 <span class="rate-text">優秀な</span>
+</span>
+<span class="review">
+3 復習
+</span>
+</div>
+<div class="start-time">
+Start Time: 17:00
+</div>
+<div class="info">
+<div class="duration">
+4H
+</div>
+<div class="g-price">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale"></span>
+<span class="text-price">€941,51</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="item-loop relative ">
+<div class="thumb-image ">
+<a href="ja/event/southwest-states.html">
+<img class='img-responsive lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/event/event-5.jpg alt='Southwest States (Ex Los Angeles) '>
+</a>
+<div class="service-wishlist " data-id="5" data-type="event">
+<i class="fa fa-heart-o"></i>
+</div>
+<div class="sale_info">5%</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/new-york-united-states.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> New York, United States
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="item-content">
+<div class="location">
+New York, United States
+</div>
+<div class="item-title">
+<a href="ja/event/southwest-states.html">
+Southwest States (Ex Los Angeles)
+</a>
+</div>
+<div class="service-review">
+<span class="rate">
+5.0/5 <span class="rate-text">優秀な</span>
+</span>
+<span class="review">
+4 復習
+</span>
+</div>
+<div class="start-time">
+Start Time: 18:00
+ </div>
+<div class="info">
+<div class="duration">
+6H
+</div>
+<div class="g-price">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale">€2.104,55</span>
+<span class="text-price">€1.989,35</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="item-loop relative ">
+<div class="thumb-image ">
+<a href="ja/event/spanish-moss-event-design.html">
+<img class='img-responsive lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/event/event-6.jpg alt='Spanish Moss Event Design'>
+</a>
+<div class="service-wishlist " data-id="6" data-type="event">
+<i class="fa fa-heart-o"></i>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/new-york-united-states.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> New York, United States
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 left-0 pt-3 pl-3 featured">
+<span class="badge font-weight-normal badge-pill px-4 mr-3 py-2">注目の</span>
+</div>
+<div class="item-content">
+<div class="location">
+New York, United States
+</div>
+<div class="item-title">
+<a href="ja/event/spanish-moss-event-design.html">
+Spanish Moss Event Design
+</a>
+</div>
+<div class="service-review">
+<span class="rate">
+4.5/5 <span class="rate-text">優秀な</span>
+</span>
+<span class="review">
+2 復習
+</span>
+</div>
+<div class="start-time">
+Start Time: 19:00
+</div>
+<div class="info">
+<div class="duration">
+6H
+</div>
+<div class="g-price">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale"></span>
+<span class="text-price">€664,59</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="item-loop relative ">
+<div class="thumb-image ">
+<a href="ja/event/eastern-discovery.html">
+<img class='img-responsive lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/event/event-7.jpg alt='Eastern Discovery'>
+</a>
+<div class="service-wishlist " data-id="7" data-type="event">
+<i class="fa fa-heart-o"></i>
+</div>
+<div class="sale_info">17%</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/new-york-united-states.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> New York, United States
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="item-content">
+<div class="location">
+New York, United States
+</div>
+<div class="item-title">
+<a href="ja/event/eastern-discovery.html">
+Eastern Discovery
+</a>
+</div>
+<div class="service-review">
+<span class="rate">
+4.7/5 <span class="rate-text">優秀な</span>
+</span>
+<span class="review">
+3 復習
+</span>
+</div>
+<div class="start-time">
+Start Time: 15:00
+</div>
+<div class="info">
+<div class="duration">
+8H
+</div>
+<div class="g-price">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale">€2.326,08</span>
+<span class="text-price">€1.910,71</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="item-loop relative ">
+<div class="thumb-image ">
+<a href="ja/event/pink-crescent-moon-events.html">
+<img class='img-responsive lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/event/event-8.jpg alt='Pink Crescent Moon Events'>
+</a>
+<div class="service-wishlist " data-id="8" data-type="event">
+<i class="fa fa-heart-o"></i>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/california.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> California
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="item-content">
+<div class="location">
+California
+</div>
+<div class="item-title">
+<a href="ja/event/pink-crescent-moon-events.html">
+Pink Crescent Moon Events
+</a>
+</div>
+<div class="service-review">
+<span class="rate">
+5.0/5 <span class="rate-text">優秀な</span>
+</span>
+<span class="review">
+2 復習
+</span>
+</div>
+<div class="start-time">
+Start Time: 21:00
+</div>
+<div class="info">
+<div class="duration">
+3H
+</div>
+<div class="g-price">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale"></span>
+<span class="text-price">€775,36</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class=" bravo-call-to-action banner-block banner-v1 bg-img-hero space-3 style_1" style="background-image: url(uploads/mytravel/general/call-to-action-bg-1.jpg) !important;">
+<div class="container">
+<div class="mx-auto text-center mt-xl-5 mb-xl-2 px-3 px-md-0">
+<h6 class="text-white font-size-40 font-weight-bold mb-1">Travel Tips</h6>
+<p class="text-white font-size-18 font-weight-normal mb-4 pb-1 px-md-3 px-lg-0">
+Northern Ireland’s is now contingent. Britain is getting a divorce Northern Ireland is being offered a trial separation for Britain there is a one
+</p>
+<a class="btn btn-outline-white border-width-2 rounded-xs min-width-200 font-weight-normal transition-3d-hover" href="#">
+Get Inspired
+</a>
+</div>
+</div>
+</div>
+<div class="bravo-box-category-tour border-bottom border-color-8">
+<div class="container">
+<div class="title font-weight-bold font-size-xs-20 font-size-30 mb-0 text-lh-sm">
+Top activity
+</div>
+<div class="desc">
+One way to vertically center is to use my-auto
+</div>
+<div class="list-item owl-carousel">
+<div class="item">
+<a href="ja/tour75c2.html?cat_id%5B%5D=4">
+<img src="uploads/mytravel/tour/box-tour-1.png" alt="Ligula">
+<span class="text-title">Ligula</span>
+</a>
+</div>
+<div class="item">
+<a href="ja/toure28b.html?cat_id%5B%5D=3">
+<img src="uploads/mytravel/tour/box-tour-2.png" alt="Escorted tour">
+<span class="text-title">Escorted tour</span>
+</a>
+</div>
+<div class="item">
+<a href="ja/tour09c3.html?cat_id%5B%5D=2">
+<img src="uploads/mytravel/tour/box-tour-3.png" alt="Ecotourism">
+<span class="text-title">Ecotourism</span>
+</a>
+</div>
+<div class="item">
+<a href="ja/tour0e98.html?cat_id%5B%5D=1">
+<img src="uploads/mytravel/tour/box-tour-4.png" alt="City trips">
+<span class="text-title">City trips</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="bravo-list-tour product-card-block product-card-v2 border-bottom border-color-8">
+<div class="container space-1">
+<div class="d-flex justify-content-between mb-3 pt-md-3 mt-1 pb-md-3 mb-md-2 align-items-end">
+<div class="font-weight-bold font-size-xs-20 font-size-30 mb-0 text-lh-sm">
+Trending Tour
+<small class="font-size-xs-14 font-size-14 mb-0 text-lh-sm d-block mt-1">
+One way to vertically center is to use my-auto
+</small>
+</div>
+<a href="ja/tour.html" class="font-weight-bold d-flex text-lh-1 mb-md-2 ml-2">もっと
+<i class="flaticon-right-arrow ml-2"></i>
+</a>
+</div>
+<div class="row">
+<div class="col-md-6 col-lg-3 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 item-loop h-100 ">
+<div class="position-relative mb-2">
+<a href="ja/tour/american-parks-trail.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="min-height-230 bg-img-hero card-img-top" src="uploads/mytravel/tour/tour-1.jpg" alt="American Parks Trail end Rapid City">
+</a>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+<span class="badge badge-pill bg-white text-danger px-3  py-2 font-size-14 font-weight-normal">61%</span>
+</div>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="1" data-type="tour" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<span class="text-gray-10 font-weight-normal font-size-14">Ligula</span>
+<h2 class="h5 text-white mb-0 font-weight-bold">
+<small class="mr-1 font-size-14">から</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+€2.215,31
+</small>
+€850,68
+</h2>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/paris.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> Paris
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="card-body px-3 py-2">
+<a href="ja/tour/american-parks-trail.html" class="d-block location">
+<div class="mb-1 d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-pin-1 mr-2 font-size-15"></i> Paris
+</div>
+</a>
+<a href="ja/tour/american-parks-trail.html" class="card-title font-size-17 font-weight-bold mb-0 text-dark">
+American Parks Trail end Rapid City
+</a>
+<div class="my-2 service-review review-4.5">
+<div class="d-inline-flex align-items-center font-size-17 text-lh-1 text-primary">
+<div class="list-star green-lighter mr-2">
+<ul class="booking-item-rating-stars">
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+</ul>
+<div class="booking-item-rating-stars-active" style="width: 90%">
+<ul class="booking-item-rating-stars">
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+</ul>
+</div>
+</div>
+<span class="text-secondary font-size-14 mt-1">
+4 復習
+</span>
+</div>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale">€2.215,31</span>
+<span class="text-price">€850,68</span>
+</div>
+</div>
+<div class="mb-1 d-flex align-items-center font-size-14 text-gray-1 duration">
+<i class="icon flaticon-clock-circular-outline mr-2 font-size-14"></i> 5 Hours
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 item-loop h-100 ">
+<div class="position-relative mb-2">
+<a href="ja/tour/new-york-museum-of-modern-art.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="min-height-230 bg-img-hero card-img-top" src="uploads/mytravel/tour/tour-2.jpg" alt="New York: Museum of Modern Art">
+</a>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+<span class="badge badge-pill bg-white text-primary px-4 mr-3 py-2 font-size-14 font-weight-normal">注目の</span>
+<span class="badge badge-pill bg-white text-danger px-3  py-2 font-size-14 font-weight-normal">66%</span>
+</div>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="2" data-type="tour" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<span class="text-gray-10 font-weight-normal font-size-14">City trips</span>
+<h2 class="h5 text-white mb-0 font-weight-bold">
+<small class="mr-1 font-size-14">から</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+€996,89
+</small>
+€333,40
+</h2>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/paris.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> Paris
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="card-body px-3 py-2">
+<a href="ja/tour/new-york-museum-of-modern-art.html" class="d-block location">
+<div class="mb-1 d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-pin-1 mr-2 font-size-15"></i> Paris
+</div>
+</a>
+<a href="ja/tour/new-york-museum-of-modern-art.html" class="card-title font-size-17 font-weight-bold mb-0 text-dark">
+New York: Museum of Modern Art
+</a>
+<div class="my-2 service-review review-4.5">
+<div class="d-inline-flex align-items-center font-size-17 text-lh-1 text-primary">
+<div class="list-star green-lighter mr-2">
+<ul class="booking-item-rating-stars">
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+</ul>
+<div class="booking-item-rating-stars-active" style="width: 90%">
+<ul class="booking-item-rating-stars">
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+</ul>
+</div>
+</div>
+<span class="text-secondary font-size-14 mt-1">
+2 復習
+</span>
+</div>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale">€996,89</span>
+<span class="text-price">€333,40</span>
+</div>
+</div>
+<div class="mb-1 d-flex align-items-center font-size-14 text-gray-1 duration">
+<i class="icon flaticon-clock-circular-outline mr-2 font-size-14"></i> 8 Hours
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 item-loop h-100 ">
+<div class="position-relative mb-2">
+<a href="ja/tour/los-angeles-to-san-francisco-express.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="min-height-230 bg-img-hero card-img-top" src="uploads/mytravel/tour/tour-3.jpg" alt="Los Angeles to San Francisco Express ">
+</a>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+<span class="badge badge-pill bg-white text-primary px-4 mr-3 py-2 font-size-14 font-weight-normal">注目の</span>
+<span class="badge badge-pill bg-white text-danger px-3  py-2 font-size-14 font-weight-normal">76%</span>
+</div>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="3" data-type="tour" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<span class="text-gray-10 font-weight-normal font-size-14">City trips</span>
+<h2 class="h5 text-white mb-0 font-weight-bold">
+<small class="mr-1 font-size-14">から</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+€1.661,48
+</small>
+€383,25
+</h2>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/paris.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> Paris
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="card-body px-3 py-2">
+<a href="ja/tour/los-angeles-to-san-francisco-express.html" class="d-block location">
+<div class="mb-1 d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-pin-1 mr-2 font-size-15"></i> Paris
+</div>
+</a>
+<a href="ja/tour/los-angeles-to-san-francisco-express.html" class="card-title font-size-17 font-weight-bold mb-0 text-dark">
+Los Angeles to San Francisco Express
+</a>
+<div class="my-2 service-review review-5.0">
+<div class="d-inline-flex align-items-center font-size-17 text-lh-1 text-primary">
+<div class="list-star green-lighter mr-2">
+<ul class="booking-item-rating-stars">
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+</ul>
+<div class="booking-item-rating-stars-active" style="width: 100%">
+<ul class="booking-item-rating-stars">
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+</ul>
+</div>
+</div>
+<span class="text-secondary font-size-14 mt-1">
+2 復習
+</span>
+</div>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale">€1.661,48</span>
+<span class="text-price">€383,25</span>
+</div>
+</div>
+<div class="mb-1 d-flex align-items-center font-size-14 text-gray-1 duration">
+<i class="icon flaticon-clock-circular-outline mr-2 font-size-14"></i> 5 Hours
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 item-loop h-100 ">
+<div class="position-relative mb-2">
+<a href="ja/tour/paris-vacation-travel.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="min-height-230 bg-img-hero card-img-top" src="uploads/mytravel/tour/tour-4.jpg" alt="Paris Vacation Travel ">
+</a>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+<span class="badge badge-pill bg-white text-primary px-4 mr-3 py-2 font-size-14 font-weight-normal">注目の</span>
+<span class="badge badge-pill bg-white text-danger px-3  py-2 font-size-14 font-weight-normal">25%</span>
+</div>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="4" data-type="tour" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<span class="text-gray-10 font-weight-normal font-size-14">Escorted tour</span>
+<h2 class="h5 text-white mb-0 font-weight-bold">
+<small class="mr-1 font-size-14">から</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+€941,51
+</small>
+€702,25
+</h2>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/new-york-united-states.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> New York, United States
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="card-body px-3 py-2">
+<a href="ja/tour/paris-vacation-travel.html" class="d-block location">
+<div class="mb-1 d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-pin-1 mr-2 font-size-15"></i> New York, United States
+</div>
+</a>
+<a href="ja/tour/paris-vacation-travel.html" class="card-title font-size-17 font-weight-bold mb-0 text-dark">
+Paris Vacation Travel
+</a>
+<div class="my-2 service-review review-4.3">
+<div class="d-inline-flex align-items-center font-size-17 text-lh-1 text-primary">
+<div class="list-star green-lighter mr-2">
+<ul class="booking-item-rating-stars">
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+</ul>
+<div class="booking-item-rating-stars-active" style="width: 86%">
+<ul class="booking-item-rating-stars">
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+</ul>
+</div>
+</div>
+<span class="text-secondary font-size-14 mt-1">
+3 復習
+</span>
+</div>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale">€941,51</span>
+<span class="text-price">€702,25</span>
+</div>
+</div>
+<div class="mb-1 d-flex align-items-center font-size-14 text-gray-1 duration">
+<i class="icon flaticon-clock-circular-outline mr-2 font-size-14"></i> 1 Hour
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="bravo-list-hotel product-card-block product-card-v2 border-bottom border-color-8">
+<div class="container space-1">
+<div class="d-flex justify-content-between mb-3 pt-md-3 mt-1 pb-md-3 mb-md-2 align-items-end">
+<div class="font-weight-bold font-size-xs-20 font-size-30 mb-0 text-lh-sm">
+Recommended Hotels
+<small class="font-size-xs-14 font-size-14 mb-0 text-lh-sm d-block mt-1">
+One way to vertically center is to use my-auto
+</small>
+</div>
+<a href="ja/hotel.html" class="font-weight-bold d-flex text-lh-1 mb-md-2 ml-2">もっと
+<i class="flaticon-right-arrow ml-2"></i>
+</a>
+</div>
+<div class="row">
+<div class="col-md-6 col-lg-3 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 mt-2 item-loop ">
+<div class="position-relative">
+<a href="ja/hotel/hotel-stanford.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class='img-responsive card-img-top lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/space/space-5.jpg alt='Hotel Stanford'>
+</a>
+<div class="position-absolute top-0 right-0 pt-3 pr-3">
+<button type="button" class="btn btn-sm btn-icon text-white rounded-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="service-wishlist " data-id="1" data-type="hotel">
+<span class="flaticon-heart-1 font-size-20"></span>
+</span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/hotel/hotel-stanford.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> Arrondissement de Paris
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="card-body px-4 pt-2 pb-3">
+<div class="mb-2 hotel-star">
+<div class="d-inline-flex align-items-center font-size-13 text-lh-1 text-primary letter-spacing-3">
+<div class="green-lighter">
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+</div>
+</div>
+</div>
+<a href="ja/hotel/hotel-stanford.html" class="card-title font-size-17 font-weight-medium text-dark">Hotel Stanford</a>
+<div class="mt-2 mb-3">
+<span class="badge badge-pill badge-primary py-1 px-2 font-size-14 border-radius-3 font-weight-normal">5.0/5</span>
+<span class="font-size-14 text-gray-1 ml-2">(
+1 復習
+)
+</span>
+</div>
+<div class="mb-0">
+<span class="mr-1 font-size-14 text-gray-1">から</span>
+<span class="font-weight-bold">€332,30</span>
+<span class="font-size-14 text-gray-1">/night</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 mt-2 item-loop ">
+<div class="position-relative">
+<a href="ja/hotel/hotel-wbf-homachi.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class='img-responsive card-img-top lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/space/space-6.jpg alt='Hotel WBF Hommachi'>
+</a>
+<div class="position-absolute top-0 right-0 pt-3 pr-3">
+<button type="button" class="btn btn-sm btn-icon text-white rounded-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="service-wishlist " data-id="2" data-type="hotel">
+<span class="flaticon-heart-1 font-size-20"></span>
+</span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/hotel/hotel-wbf-homachi.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> Porte de Vanves
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="card-body px-4 pt-2 pb-3">
+<div class="mb-2 hotel-star">
+<div class="d-inline-flex align-items-center font-size-13 text-lh-1 text-primary letter-spacing-3">
+<div class="green-lighter">
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+</div>
+</div>
+</div>
+<a href="ja/hotel/hotel-wbf-homachi.html" class="card-title font-size-17 font-weight-medium text-dark">Hotel WBF Hommachi</a>
+<div class="mt-2 mb-3">
+<span class="badge badge-pill badge-primary py-1 px-2 font-size-14 border-radius-3 font-weight-normal">4.5/5</span>
+<span class="font-size-14 text-gray-1 ml-2">(
+2 復習
+)
+</span>
+</div>
+<div class="mb-0">
+<span class="mr-1 font-size-14 text-gray-1">から</span>
+<span class="font-weight-bold">€387,68</span>
+<span class="font-size-14 text-gray-1">/night</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 mt-2 item-loop ">
+<div class="position-relative">
+<a href="ja/hotel/castello-casole-hotel.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class='img-responsive card-img-top lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/space/space-7.jpg alt='Castello Casole Hotel'>
+</a>
+<div class="position-absolute top-0 right-0 pt-3 pr-3">
+<button type="button" class="btn btn-sm btn-icon text-white rounded-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="service-wishlist " data-id="3" data-type="hotel">
+<span class="flaticon-heart-1 font-size-20"></span>
+</span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/hotel/castello-casole-hotel.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> Petit-Montrouge
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="card-body px-4 pt-2 pb-3">
+<div class="mb-2 hotel-star">
+<div class="d-inline-flex align-items-center font-size-13 text-lh-1 text-primary letter-spacing-3">
+<div class="green-lighter">
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+</div>
+</div>
+</div>
+<a href="ja/hotel/castello-casole-hotel.html" class="card-title font-size-17 font-weight-medium text-dark">Castello Casole Hotel</a>
+<div class="mt-2 mb-3">
+<span class="badge badge-pill badge-primary py-1 px-2 font-size-14 border-radius-3 font-weight-normal">4.5/5</span>
+<span class="font-size-14 text-gray-1 ml-2">(
+2 復習
+)
+</span>
+</div>
+<div class="mb-0">
+<span class="mr-1 font-size-14 text-gray-1">から</span>
+<span class="font-weight-bold">€387,68</span>
+<span class="font-size-14 text-gray-1">/night</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 mt-2 item-loop ">
+<div class="position-relative">
+<a href="ja/hotel/redac-gateway-hotel.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class='img-responsive card-img-top lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/space/space-8.jpg alt='Redac Gateway Hotel'>
+</a>
+ <div class="position-absolute top-0 right-0 pt-3 pr-3">
+<button type="button" class="btn btn-sm btn-icon text-white rounded-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="service-wishlist " data-id="4" data-type="hotel">
+<span class="flaticon-heart-1 font-size-20"></span>
+</span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/hotel/redac-gateway-hotel.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> Petit-Montrouge
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="card-body px-4 pt-2 pb-3">
+<div class="mb-2 hotel-star">
+<div class="d-inline-flex align-items-center font-size-13 text-lh-1 text-primary letter-spacing-3">
+<div class="green-lighter">
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+<small class="fa fa-star"></small>
+</div>
+</div>
+</div>
+<a href="ja/hotel/redac-gateway-hotel.html" class="card-title font-size-17 font-weight-medium text-dark">Redac Gateway Hotel</a>
+<div class="mt-2 mb-3">
+<span class="badge badge-pill badge-primary py-1 px-2 font-size-14 border-radius-3 font-weight-normal">4.3/5</span>
+<span class="font-size-14 text-gray-1 ml-2">(
+3 復習
+)
+</span>
+</div>
+<div class="mb-0">
+<span class="mr-1 font-size-14 text-gray-1">から</span>
+<span class="font-weight-bold">€553,83</span>
+<span class="font-size-14 text-gray-1">/night</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="bravo-list-space product-card-block product-card-v2 border-bottom border-color-8">
+<div class="container space-1">
+<div class="d-flex justify-content-between mb-3 pt-md-3 mt-1 pb-md-3 mb-md-2 align-items-end">
+<div class="font-weight-bold font-size-xs-20 font-size-30 mb-0 text-lh-sm">
+Trending Space
+<small class="font-size-xs-14 font-size-14 mb-0 text-lh-sm d-block mt-1">
+One way to vertically center is to use my-auto
+</small>
+</div>
+<a href="index.html" class="font-weight-bold d-flex text-lh-1 mb-md-2 ml-2">もっと
+<i class="flaticon-right-arrow ml-2"></i>
+</a>
+</div>
+<div class="row">
+<div class="col-md-6 col-lg-3 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 item-loop ">
+<div class="position-relative">
+<a href="index.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="card-img-top" src="uploads/mytravel/space/space-1.jpg" alt="LUXURY STUDIO">
+</a>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="1" data-type="space" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<a href="index.html">
+<span class="text-white font-weight-bold font-size-17">LUXURY STUDIO</span>
+</a>
+<div class="text-white my-2">
+<small class="mr-1 font-size-14">から</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+</small>
+<span class="font-weight-bold font-size-19">€332,30</span>
+<span class="mr-1 font-size-14">
+/day
+</span>
+</div>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/new-york-united-states.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> New York, United States
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+<span class="badge badge-pill bg-white text-primary px-4 mr-3 py-2 font-size-14 font-weight-normal">注目の</span>
+</div>
+<div class="card-body px-3 py-3 border-bottom">
+<a href="index.html" class="d-block location">
+<div class="d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> New York, United States
+</div>
+</a>
+<a href="index.html" class="d-none title">
+<span class="font-weight-bold font-size-17">LUXURY STUDIO</span>
+</a>
+<div class="mt-1 service-review">
+<span class="py-1 font-size-14 border-radius-3 font-weight-normal pagination-v2-arrow-color rate">
+4.0/5 <span class="rate-text">とても良い</span>
+</span>
+<span class="font-size-14 text-gray-1 ml-2 review">
+3 復習
+</span>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale"></span>
+<span class="text-price">€332,30</span>
+</div>
+</div>
+</div>
+<div class="px-3 pt-3 pb-2 type-attribute">
+<div class="row">
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="flaticon-plans font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+168 m<sup>2</sup>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="flaticon-bathtub font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+10 <small>bathrooms</small>
+</div>
+</li>
+</ul>
+</div>
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="flaticon-door font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+5 <small>People</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="flaticon-bed-1 font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+5 <small>Beds</small>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 item-loop ">
+<div class="position-relative">
+<a href="index.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="card-img-top" src="uploads/mytravel/space/space-2.jpg" alt="LUXURY APARTMENT">
+</a>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="2" data-type="space" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<a href="index.html">
+<span class="text-white font-weight-bold font-size-17">LUXURY APARTMENT</span>
+</a>
+<div class="text-white my-2">
+<small class="mr-1 font-size-14">から</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+</small>
+<span class="font-weight-bold font-size-19">€996,89</span>
+<span class="mr-1 font-size-14">
+/day
+</span>
+</div>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/california.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> California
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+</div>
+<div class="card-body px-3 py-3 border-bottom">
+<a href="index.html" class="d-block location">
+<div class="d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> California
+</div>
+</a>
+<a href="index.html" class="d-none title">
+<span class="font-weight-bold font-size-17">LUXURY APARTMENT</span>
+</a>
+<div class="mt-1 service-review">
+<span class="py-1 font-size-14 border-radius-3 font-weight-normal pagination-v2-arrow-color rate">
+4.3/5 <span class="rate-text">とても良い</span>
+</span>
+<span class="font-size-14 text-gray-1 ml-2 review">
+3 復習
+</span>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale"></span>
+<span class="text-price">€996,89</span>
+</div>
+</div>
+</div>
+<div class="px-3 pt-3 pb-2 type-attribute">
+<div class="row">
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="flaticon-plans font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+187 m<sup>2</sup>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="flaticon-bathtub font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+9 <small>bathrooms</small>
+</div>
+</li>
+</ul>
+</div>
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="flaticon-door font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+8 <small>People</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="flaticon-bed-1 font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+4 <small>Beds</small>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 item-loop ">
+<div class="position-relative">
+<a href="index.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="card-img-top" src="uploads/mytravel/space/space-3.jpg" alt="BEAUTIFUL LOFT">
+</a>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="3" data-type="space" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<a href="index.html">
+<span class="text-white font-weight-bold font-size-17">BEAUTIFUL LOFT</span>
+</a>
+<div class="text-white my-2">
+<small class="mr-1 font-size-14">から</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+</small>
+<span class="font-weight-bold font-size-19">€719,98</span>
+<span class="mr-1 font-size-14">
+/day
+</span>
+</div>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/california.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> California
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+<span class="badge badge-pill bg-white text-primary px-4 mr-3 py-2 font-size-14 font-weight-normal">注目の</span>
+</div>
+<div class="card-body px-3 py-3 border-bottom">
+<a href="index.html" class="d-block location">
+<div class="d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> California
+</div>
+</a>
+<a href="index.html" class="d-none title">
+<span class="font-weight-bold font-size-17">BEAUTIFUL LOFT</span>
+</a>
+<div class="mt-1 service-review">
+<span class="py-1 font-size-14 border-radius-3 font-weight-normal pagination-v2-arrow-color rate">
+4.5/5 <span class="rate-text">優秀な</span>
+</span>
+<span class="font-size-14 text-gray-1 ml-2 review">
+2 復習
+</span>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale"></span>
+<span class="text-price">€719,98</span>
+</div>
+</div>
+</div>
+<div class="px-3 pt-3 pb-2 type-attribute">
+<div class="row">
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="flaticon-plans font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+121 m<sup>2</sup>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="flaticon-bathtub font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+2 <small>bathrooms</small>
+</div>
+</li>
+</ul>
+</div>
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+ <small class="flaticon-door font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+6 <small>People</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="flaticon-bed-1 font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+3 <small>Beds</small>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 item-loop ">
+<div class="position-relative">
+<a href="index.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="card-img-top" src="uploads/mytravel/space/space-4.jpg" alt="BEST OF WEST VILLAGE">
+</a>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="4" data-type="space" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<a href="index.html">
+<span class="text-white font-weight-bold font-size-17">BEST OF WEST VILLAGE</span>
+</a>
+<div class="text-white my-2">
+<small class="mr-1 font-size-14">から</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+</small>
+<span class="font-weight-bold font-size-19">€886,13</span>
+<span class="mr-1 font-size-14">
+/day
+</span>
+</div>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/united-states.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> United States
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+<span class="badge badge-pill bg-white text-primary px-4 mr-3 py-2 font-size-14 font-weight-normal">注目の</span>
+</div>
+<div class="card-body px-3 py-3 border-bottom">
+<a href="index.html" class="d-block location">
+<div class="d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> United States
+</div>
+</a>
+<a href="index.html" class="d-none title">
+<span class="font-weight-bold font-size-17">BEST OF WEST VILLAGE</span>
+</a>
+<div class="mt-1 service-review">
+<span class="py-1 font-size-14 border-radius-3 font-weight-normal pagination-v2-arrow-color rate">
+4.7/5 <span class="rate-text">優秀な</span>
+</span>
+<span class="font-size-14 text-gray-1 ml-2 review">
+3 復習
+</span>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale"></span>
+<span class="text-price">€886,13</span>
+</div>
+</div>
+</div>
+<div class="px-3 pt-3 pb-2 type-attribute">
+<div class="row">
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="flaticon-plans font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+143 m<sup>2</sup>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="flaticon-bathtub font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+3 <small>bathrooms</small>
+</div>
+</li>
+</ul>
+</div>
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="flaticon-door font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+10 <small>People</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="flaticon-bed-1 font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+8 <small>Beds</small>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="bravo-testimonial testimonial-block testimonial-v1 border-bottom border-color-8">
+<div class="container space-1">
+<div class="w-md-80 w-lg-50 text-center mx-md-auto my-3">
+<h2 class="section-title text-black font-size-30 font-weight-bold mb-0">
+Our Happy
+</h2>
+</div>
+
+<div class="travel-slick-carousel u-slick u-slick--equal-height u-slick-bordered-primary u-slick--gutters-3 mb-4 pb-1" data-slides-show="3" data-center-mode="true" data-autoplay="true" data-speed="3000" data-pagi-classes="text-center u-slick__pagination mb-0 mt-n6" data-responsive='[ { "breakpoint": 992, "settings": { "slidesToShow": 2 } }, { "breakpoint": 768, "settings": { "slidesToShow": 1 } } ]'>
+<div class="item my-10">
+
+<div class="card rounded-xs border-color-7 w-100">
+<div class="card-body p-5">
+<div class="d-flex justify-content-between align-items-baseline">
+<div class="mb-5">
+<h6 class="font-size-17 font-weight-bold text-gray-6 mb-0">Ali Tufan </h6>
+<span class="text-blue-lighter-1 font-size-normal">Client</span>
+ </div>
+<figure id="quote1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56px" height="48px" class="injected-svg js-svg-injector" data-parent="#quote1">
+<text kerning="auto" font-family="Lato" fill="rgb(235, 240, 247)" font-weight="bold" font-size="150px" x="0px" y="109.401px">“</text>
+</svg>
+</figure>
+</div>
+<p class="mb-0 text-gray-1 font-italic text-lh-inherit">
+This is the 3rd time I’ve used Travelo website and telling you the truth their services are always realiable and it only takes few minutes to plan and finalize
+</p>
+</div>
+<div class="card-img z-index-2 mb-3">
+<div class="ml-3">
+<img class="img-fluid rounded-circle" src="uploads/mytravel/general/avatar.jpg" alt="Ali Tufan ">
+</div>
+</div>
+</div>
+
+</div>
+<div class="item my-10">
+
+<div class="card rounded-xs border-color-7 w-100">
+<div class="card-body p-5">
+<div class="d-flex justify-content-between align-items-baseline">
+<div class="mb-5">
+<h6 class="font-size-17 font-weight-bold text-gray-6 mb-0">Augusta Silva</h6>
+<span class="text-blue-lighter-1 font-size-normal">Client</span>
+</div>
+<figure id="quote1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56px" height="48px" class="injected-svg js-svg-injector" data-parent="#quote1">
+<text kerning="auto" font-family="Lato" fill="rgb(235, 240, 247)" font-weight="bold" font-size="150px" x="0px" y="109.401px">“</text>
+</svg>
+</figure>
+</div>
+<p class="mb-0 text-gray-1 font-italic text-lh-inherit">
+This is the 3rd time I’ve used Travelo website and telling you the truth their services are always realiable and it only takes few minutes to plan and finalize
+</p>
+</div>
+<div class="card-img z-index-2 mb-3">
+<div class="ml-3">
+<img class="img-fluid rounded-circle" src="uploads/mytravel/general/avatar-2.jpg" alt="Augusta Silva">
+</div>
+</div>
+</div>
+
+</div>
+<div class="item my-10">
+
+<div class="card rounded-xs border-color-7 w-100">
+<div class="card-body p-5">
+<div class="d-flex justify-content-between align-items-baseline">
+<div class="mb-5">
+<h6 class="font-size-17 font-weight-bold text-gray-6 mb-0">Jessica Brown</h6>
+<span class="text-blue-lighter-1 font-size-normal">Client</span>
+</div>
+<figure id="quote1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56px" height="48px" class="injected-svg js-svg-injector" data-parent="#quote1">
+<text kerning="auto" font-family="Lato" fill="rgb(235, 240, 247)" font-weight="bold" font-size="150px" x="0px" y="109.401px">“</text>
+</svg>
+</figure>
+</div>
+<p class="mb-0 text-gray-1 font-italic text-lh-inherit">
+This is the 3rd time I’ve used Travelo website and telling you the truth their services are always realiable and it only takes few minutes to plan and finalize
+</p>
+</div>
+<div class="card-img z-index-2 mb-3">
+<div class="ml-3">
+<img class="img-fluid rounded-circle" src="uploads/mytravel/general/avatar-3.jpg" alt="Jessica Brown">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+<div class="bravo-list-car product-card-block product-card-v2 border-bottom border-color-8">
+<div class="container space-1">
+<div class="d-flex justify-content-between mb-3 pt-md-3 mt-1 pb-md-3 mb-md-2 align-items-end">
+<div class="font-weight-bold font-size-xs-20 font-size-30 mb-0 text-lh-sm">
+Trending Car
+<small class="font-size-xs-14 font-size-14 mb-0 text-lh-sm d-block mt-1">
+One way to vertically center is to use my-auto
+</small>
+</div>
+<a href="index.html" class="font-weight-bold d-flex text-lh-1 mb-md-2 ml-2">もっと
+<i class="flaticon-right-arrow ml-2"></i>
+</a>
+</div>
+<div class="row">
+<div class="col-md-6 col-lg-3 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 item-loop w-100 ">
+<div class="position-relative">
+<a href="index.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="card-img-top" src="uploads/mytravel/car/car-1.jpg" alt="BMW-X6-facelift">
+</a>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="1" data-type="car" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<a href="index.html">
+<span class="text-white font-weight-bold font-size-17">BMW-X6-facelift</span>
+</a>
+<div class="text-white my-2">
+<small class="mr-1 font-size-14">から</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+€553,83
+</small>
+<span class="font-weight-bold font-size-19">€320,11</span>
+</div>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/paris.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+ <i class="icon flaticon-pin-1 mr-2 font-size-20"></i> Paris
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+<span class="badge badge-pill bg-white text-primary px-4 mr-3 py-2 font-size-14 font-weight-normal">注目の</span>
+<span class="badge badge-pill bg-white text-danger px-3  py-2 font-size-14 font-weight-normal">42%</span>
+</div>
+<div class="card-body px-3 py-3 border-bottom">
+<a href="index.html" class="d-block location">
+<div class="d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> Paris
+</div>
+</a>
+<a href="index.html" class="d-none title">
+<span class="font-weight-bold font-size-17">BMW-X6-facelift</span>
+</a>
+<div class="mt-1 service-review">
+<span class="py-1 font-size-14 border-radius-3 font-weight-normal pagination-v2-arrow-color rate">
+5.0/5 <span class="rate-text">優秀な</span>
+</span>
+<span class="font-size-14 text-gray-1 ml-2 review">
+2 復習
+</span>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale">€553,83</span>
+<span class="text-price">€320,11</span>
+</div>
+</div>
+</div>
+<div class="px-3 pt-3 pb-2 type-attribute">
+<div class="row">
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class=" field-icon icon-passenger font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+6 <small>Seats</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-gear font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+Auto
+</div>
+</li>
+</ul>
+</div>
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-baggage font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+6 <small>Baggage</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-door font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+4 <small>Door</small>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 item-loop w-100 ">
+<div class="position-relative">
+<a href="index.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="card-img-top" src="uploads/mytravel/car/car-2.jpg" alt="2019 Honda Clarity">
+</a>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="2" data-type="car" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<a href="index.html">
+<span class="text-white font-weight-bold font-size-17">2019 Honda Clarity</span>
+</a>
+<div class="text-white my-2">
+<small class="mr-1 font-size-14">から</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+</small>
+<span class="font-weight-bold font-size-19">€332,30</span>
+</div>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/paris.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> Paris
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+</div>
+<div class="card-body px-3 py-3 border-bottom">
+<a href="index.html" class="d-block location">
+<div class="d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> Paris
+</div>
+</a>
+<a href="index.html" class="d-none title">
+<span class="font-weight-bold font-size-17">2019 Honda Clarity</span>
+</a>
+<div class="mt-1 service-review">
+<span class="py-1 font-size-14 border-radius-3 font-weight-normal pagination-v2-arrow-color rate">
+4.5/5 <span class="rate-text">優秀な</span>
+</span>
+<span class="font-size-14 text-gray-1 ml-2 review">
+4 復習
+</span>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale"></span>
+<span class="text-price">€332,30</span>
+</div>
+</div>
+</div>
+<div class="px-3 pt-3 pb-2 type-attribute">
+<div class="row">
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class=" field-icon icon-passenger font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+6 <small>Seats</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-gear font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+Auto
+</div>
+</li>
+</ul>
+</div>
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-baggage font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+9 <small>Baggage</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-door font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+4 <small>Door</small>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 item-loop w-100 ">
+<div class="position-relative">
+<a href="index.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="card-img-top" src="uploads/mytravel/car/car-2.jpg" alt="2019 Honda Clarity">
+</a>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="3" data-type="car" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<a href="index.html">
+<span class="text-white font-weight-bold font-size-17">2019 Honda Clarity</span>
+</a>
+<div class="text-white my-2">
+<small class="mr-1 font-size-14">から</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+</small>
+<span class="font-weight-bold font-size-19">€332,30</span>
+</div>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/california.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> California
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+</div>
+<div class="card-body px-3 py-3 border-bottom">
+<a href="index.html" class="d-block location">
+<div class="d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> California
+</div>
+</a>
+<a href="index.html" class="d-none title">
+<span class="font-weight-bold font-size-17">2019 Honda Clarity</span>
+</a>
+<div class="mt-1 service-review">
+<span class="py-1 font-size-14 border-radius-3 font-weight-normal pagination-v2-arrow-color rate">
+4.5/5 <span class="rate-text">優秀な</span>
+</span>
+<span class="font-size-14 text-gray-1 ml-2 review">
+2 復習
+</span>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale"></span>
+<span class="text-price">€332,30</span>
+</div>
+</div>
+</div>
+<div class="px-3 pt-3 pb-2 type-attribute">
+<div class="row">
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class=" field-icon icon-passenger font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+8 <small>Seats</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-gear font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+Auto
+</div>
+</li>
+</ul>
+</div>
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-baggage font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+5 <small>Baggage</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-door font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+4 <small>Door</small>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 item-loop w-100 ">
+<div class="position-relative">
+<a href="index.html" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="card-img-top" src="uploads/mytravel/car/car-3.jpg" alt="2019 BMW M6 Gran Coupe">
+</a>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="4" data-type="car" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<a href="index.html">
+ <span class="text-white font-weight-bold font-size-17">2019 BMW M6 Gran Coupe</span>
+</a>
+<div class="text-white my-2">
+<small class="mr-1 font-size-14">から</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+</small>
+<span class="font-weight-bold font-size-19">€332,30</span>
+</div>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/paris.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> Paris
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+</div>
+<div class="card-body px-3 py-3 border-bottom">
+<a href="index.html" class="d-block location">
+<div class="d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-placeholder mr-2 font-size-20"></i> Paris
+</div>
+</a>
+<a href="index.html" class="d-none title">
+<span class="font-weight-bold font-size-17">2019 BMW M6 Gran Coupe</span>
+</a>
+<div class="mt-1 service-review">
+<span class="py-1 font-size-14 border-radius-3 font-weight-normal pagination-v2-arrow-color rate">
+5.0/5 <span class="rate-text">優秀な</span>
+</span>
+<span class="font-size-14 text-gray-1 ml-2 review">
+1 復習
+</span>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale"></span>
+<span class="text-price">€332,30</span>
+</div>
+</div>
+</div>
+<div class="px-3 pt-3 pb-2 type-attribute">
+<div class="row">
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class=" field-icon icon-passenger font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+6 <small>Seats</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-gear font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+Auto
+</div>
+</li>
+</ul>
+</div>
+<div class="col-6">
+<ul class="list-unstyled mb-0">
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-baggage font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+5 <small>Baggage</small>
+</div>
+</li>
+<li class="media mb-2 text-gray-1 align-items-center">
+<small class="mr-2">
+<small class="field-icon icon-door font-size-16"></small>
+</small>
+<div class="media-body font-size-1">
+4 <small>Door</small>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="bravo-list-event product-card-block product-card-v2 border-bottom border-color-8">
+<div class="container space-1">
+<div class="d-flex justify-content-between mb-3 pt-md-3 mt-1 pb-md-3 mb-md-2 align-items-end">
+<div class="font-weight-bold font-size-xs-20 font-size-30 mb-0 text-lh-sm">
+Popular Event
+<small class="font-size-xs-14 font-size-14 mb-0 text-lh-sm d-block mt-1">
+One way to vertically center is to use my-auto
+</small>
+</div>
+<a href="ja/event.html" class="font-weight-bold d-flex text-lh-1 mb-md-2 ml-2">もっと
+<i class="flaticon-right-arrow ml-2"></i>
+</a>
+</div>
+<div class="row">
+<div class="col-md-6 col-lg-3 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="item-loop relative ">
+<div class="thumb-image ">
+<a href="ja/event/andante-allegro-event-design.html">
+<img class='img-responsive lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/event/event-1.jpg alt='Andante &amp; Allegro Event Design'>
+</a>
+<div class="service-wishlist " data-id="1" data-type="event">
+<i class="fa fa-heart-o"></i>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/paris.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> Paris
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="item-content">
+<div class="location">
+Paris
+</div>
+<div class="item-title">
+<a href="ja/event/andante-allegro-event-design.html">
+Andante &amp; Allegro Event Design
+</a>
+</div>
+<div class="service-review">
+<span class="rate">
+4.5/5 <span class="rate-text">優秀な</span>
+</span>
+<span class="review">
+2 復習
+</span>
+</div>
+<div class="start-time">
+Start Time: 20:00
+</div>
+<div class="info">
+<div class="duration">
+1H
+</div>
+<div class="g-price">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale"></span>
+<span class="text-price">€2.215,31</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="item-loop relative ">
+<div class="thumb-image ">
+<a href="ja/event/painted-desert-event-designs.html">
+<img class='img-responsive lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/event/event-2.jpg alt='Painted Desert Event Designs'>
+</a>
+<div class="service-wishlist " data-id="2" data-type="event">
+<i class="fa fa-heart-o"></i>
+</div>
+<div class="sale_info">84%</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/paris.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> Paris
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 left-0 pt-3 pl-3 featured">
+<span class="badge font-weight-normal badge-pill px-4 mr-3 py-2">注目の</span>
+</div>
+<div class="item-content">
+<div class="location">
+Paris
+</div>
+<div class="item-title">
+<a href="ja/event/painted-desert-event-designs.html">
+Painted Desert Event Designs
+</a>
+</div>
+<div class="service-review">
+<span class="rate">
+4.3/5 <span class="rate-text">とても良い</span>
+</span>
+<span class="review">
+3 復習
+</span>
+</div>
+<div class="start-time">
+Start Time: 19:00
+</div>
+<div class="info">
+<div class="duration">
+2H
+</div>
+<div class="g-price">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale">€996,89</span>
+<span class="text-price">€153,96</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="item-loop relative ">
+<div class="thumb-image ">
+<a href="ja/event/bamboo-grove-event-planning.html">
+<img class='img-responsive lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/event/event-3.jpg alt='Bamboo Grove Event Planning'>
+</a>
+<div class="service-wishlist " data-id="3" data-type="event">
+<i class="fa fa-heart-o"></i>
+</div>
+<div class="sale_info">71%</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/paris.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> Paris
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 left-0 pt-3 pl-3 featured">
+<span class="badge font-weight-normal badge-pill px-4 mr-3 py-2">注目の</span>
+</div>
+<div class="item-content">
+<div class="location">
+Paris
+</div>
+<div class="item-title">
+<a href="ja/event/bamboo-grove-event-planning.html">
+Bamboo Grove Event Planning
+</a>
+</div>
+<div class="service-review">
+<span class="rate">
+4.8/5 <span class="rate-text">優秀な</span>
+</span>
+<span class="review">
+4 復習
+</span>
+</div>
+<div class="start-time">
+Start Time: 19:00
+</div>
+<div class="info">
+<div class="duration">
+3H
+</div>
+<div class="g-price">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale">€1.661,48</span>
+<span class="text-price">€471,86</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 col-xl-3 mb-3 mb-md-4 pb-1">
+<div class="item-loop relative ">
+<div class="thumb-image ">
+<a href="ja/event/aspen-glade-weddings-events.html">
+<img class='img-responsive lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/event/event-4.jpg alt='Aspen Glade Weddings &amp; Events'>
+</a>
+<div class="service-wishlist " data-id="4" data-type="event">
+<i class="fa fa-heart-o"></i>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="ja/location/new-york-united-states.html" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> New York, United States
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="position-absolute top-0 left-0 pt-3 pl-3 featured">
+<span class="badge font-weight-normal badge-pill px-4 mr-3 py-2">注目の</span>
+</div>
+<div class="item-content">
+<div class="location">
+New York, United States
+</div>
+<div class="item-title">
+<a href="ja/event/aspen-glade-weddings-events.html">
+Aspen Glade Weddings &amp; Events
+</a>
+</div>
+<div class="service-review">
+<span class="rate">
+4.7/5 <span class="rate-text">優秀な</span>
+</span>
+<span class="review">
+3 復習
+</span>
+</div>
+<div class="start-time">
+Start Time: 17:00
+</div>
+<div class="info">
+<div class="duration">
+4H
+</div>
+<div class="g-price">
+<div class="prefix">
+<span class="fr_text">から</span>
+</div>
+<div class="price">
+<span class="onsale"></span>
+<span class="text-price">€941,51</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="bravo-featured-item style_2  border-bottom ">
+<div class="container text-center space-1">
+<div class="w-md-80 w-lg-50 text-center mx-md-auto pb-1 pt-3">
+<h2 class="section-title text-black font-size-30 font-weight-bold">Why Choose</h2>
+</div>
+<div class="row">
+<div class="col-md-4">
+<i class="flaticon-price  text-primary font-size-80 mb-3"></i>
+<h5 class="font-size-17 text-dark font-weight-bold mb-2">
+<a href="#">Competitive Pricing</a></h5>
+<p class="text-gray-1 px-xl-2 px-uw-7">With 500+ suppliers and the purchasing power of 300 million members, mytravel.com can save you more!</p>
+</div>
+<div class="col-md-4">
+<i class="flaticon-medal text-primary font-size-80 mb-3"></i>
+<h5 class="font-size-17 text-dark font-weight-bold mb-2">
+<a href="#">Award-Winning Service</a></h5>
+<p class="text-gray-1 px-xl-2 px-uw-7">Travel worry-free knowing that we&#039;re here if you needus, 24 hours a day</p>
+</div>
+<div class="col-md-4">
+<i class="flaticon-global-1 text-primary font-size-80 mb-3"></i>
+<h5 class="font-size-17 text-dark font-weight-bold mb-2">
+<a href="#">Worldwide Coverage</a></h5>
+<p class="text-gray-1 px-xl-2 px-uw-7">Over 1,200,000 hotels in more than 200 countries and regions &amp; flights to over 5,000 cities</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bravo-list-news">
+<div class="deals-carousel-block deals-carousel-v1 border-color-8">
+<div class="container space-1">
+<h2 class="section-title text-center mb-5 mt-3">Today&#039;s Top Deals</h2>
+<div class="travel-slick-carousel u-slick u-slick--gutters-3" data-slides-show="3" data-arrows-classes="d-none d-lg-inline-block u-slick__arrow-classic u-slick__arrow-classic--v2 u-slick__arrow-centered--y rounded-circle" data-arrow-left-classes="flaticon-back u-slick__arrow-classic-inner u-slick__arrow-classic-inner--left ml-xl-n8" data-arrow-right-classes="flaticon-next u-slick__arrow-classic-inner u-slick__arrow-classic-inner--right mr-xl-n8" data-pagi-classes="d-lg-none text-center u-slick__pagination mt-4" data-responsive='[ { "breakpoint": 1025, "settings": { "slidesToShow": 3 } }, { "breakpoint": 992, "settings": { "slidesToShow": 2 } }, { "breakpoint": 768, "settings": { "slidesToShow": 1 } }, { "breakpoint": 554, "settings": { "slidesToShow": 1 } } ]'>
+<div class="col-lg-4 col-md-6">
+<div class="item mb-4">
+<a class="d-block rounded-xs overflow-hidden mb-3" href="ja/news/the-day-on-paris.html">
+<img class='img-fluid w-100 lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/news/news-1.jpg alt='The day on Paris'>
+</a>
+<h6 class="font-size-17 pt-xl-1 font-weight-bold font-weight-bold mb-1 text-gray-6">
+<a href="ja/news/the-day-on-paris.html">
+The day on Paris
+</a>
+</h6>
+<a class="text-gray-1" href="ja/news/the-day-on-paris.html">
+<span> From the iconic to the unexpected, the city of San Francisco never ceases to...</span>
+</a>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="item mb-4">
+<a class="d-block rounded-xs overflow-hidden mb-3" href="ja/news/pure-luxe-in-punta-mita.html">
+<img class='img-fluid w-100 lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/news/news-2.jpg alt='Pure Luxe in Punta Mita'>
+</a>
+<h6 class="font-size-17 pt-xl-1 font-weight-bold font-weight-bold mb-1 text-gray-6">
+<a href="ja/news/pure-luxe-in-punta-mita.html">
+Pure Luxe in Punta Mita
+</a>
+</h6>
+<a class="text-gray-1" href="ja/news/pure-luxe-in-punta-mita.html">
+<span> From the iconic to the unexpected, the city of San Francisco never ceases to...</span>
+</a>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="item mb-4">
+<a class="d-block rounded-xs overflow-hidden mb-3" href="ja/news/all-aboard-the-rocky-mountaineer.html">
+<img class='img-fluid w-100 lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/news/news-3.jpg alt='All Aboard the Rocky Mountaineer'>
+</a>
+<h6 class="font-size-17 pt-xl-1 font-weight-bold font-weight-bold mb-1 text-gray-6">
+<a href="ja/news/all-aboard-the-rocky-mountaineer.html">
+All Aboard the Rocky Mountaineer
+</a>
+</h6>
+<a class="text-gray-1" href="ja/news/all-aboard-the-rocky-mountaineer.html">
+<span> From the iconic to the unexpected, the city of San Francisco never ceases to...</span>
+</a>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="item mb-4">
+<a class="d-block rounded-xs overflow-hidden mb-3" href="ja/news/city-spotlight-philadelphia.html">
+<img class='img-fluid w-100 lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/news/news-4.jpg alt='City Spotlight: Philadelphia'>
+</a>
+<h6 class="font-size-17 pt-xl-1 font-weight-bold font-weight-bold mb-1 text-gray-6">
+<a href="ja/news/city-spotlight-philadelphia.html">
+City Spotlight: Philadelphia
+</a>
+</h6>
+<a class="text-gray-1" href="ja/news/city-spotlight-philadelphia.html">
+<span> From the iconic to the unexpected, the city of San Francisco never ceases to...</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bravo_footer mt-4 border-top">
+<div class="main-footer">
+<div class="container">
+<div class="row justify-content-xl-between">
+<div class="col-12 col-lg-4 col-xl-3dot1 mb-6 mb-md-10 mb-xl-0">
+<div class="d-md-flex d-lg-block">
+<div class="mb-5 mr-md-7 mr-lg-0">
+<h4 class="h6 mb-4 font-weight-bold">Need My Travel Help?</h4>
+<a href="tel:8420666888999">
+</a><div class="d-flex align-items-center"><a href="tel:8420666888999">
+</a><div class="mr-4"><a href="tel:8420666888999">
+<i class="fa fa-phone font-size-50"></i>
+</a></div><a href="tel:8420666888999">
+</a><div><a href="tel:8420666888999">
+</a><div class="mb-2 h6 font-weight-normal text-gray-1"><a href="tel:8420666888999">Got Questions ? Call us 24/7</a></div><a href="tel:8420666888999">
+<small class="d-block font-size-16 font-weight-normal text-primary">Call Us: <span class="text-primary font-weight-semi-bold">(+84) 666-888-999</span></small>
+</a></div><a href="tel:8420666888999">
+</a></div><a href="tel:8420666888999">
+</a>
+</div>
+<div class="ml-md-6 ml-lg-0">
+<div class="mb-4">
+<h4 class="h6 font-weight-bold mb-2 font-size-17">Contact Info</h4>
+<address class="pr-4">
+<span class="mb-2 h6 font-weight-normal text-gray-1">
+PO Box CT16122 Collins Street West, Victoria 8007,Australia.
+</span>
+</address>
+</div>
+<ul class="list-inline mb-0"><li class="list-inline-item mr-2">
+<a class="btn btn-icon btn-social btn-bg-transparent" href="#">
+<span class="fa fa-facebook-f btn-icon__inner"></span>
+</a>
+</li>
+<li class="list-inline-item mr-2">
+<a class="btn btn-icon btn-social btn-bg-transparent" href="#">
+<span class="fa fa-twitter btn-icon__inner"></span>
+</a>
+</li>
+<li class="list-inline-item mr-2">
+<a class="btn btn-icon btn-social btn-bg-transparent" href="#">
+<span class="fa fa-instagram btn-icon__inner"></span>
+</a>
+</li>
+<li class="list-inline-item mr-2">
+<a class="btn btn-icon btn-social btn-bg-transparent" href="#">
+<span class="fa fa-linkedin btn-icon__inner"></span>
+</a>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-1dot8 mb-6 mb-md-10 mb-xl-0">
+<div class="nav-footer">
+<h4 class="h6 font-weight-bold mb-2 mb-xl-4">Company</h4>
+<ul class="list-group list-group-flush list-group-borderless mb-0"><li><a class="text-decoration-on-hover list-group-item list-group-item-action" href="#">About us</a></li>
+<li><a class="text-decoration-on-hover list-group-item list-group-item-action" href="#">Careers</a></li>
+<li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Terms of Use</a></li>
+<li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Privacy Statement</a></li>
+<li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Give Us Feedbacks</a></li>
+</ul>
+</div>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-1dot8 mb-6 mb-md-10 mb-xl-0">
+<div class="nav-footer">
+<h4 class="h6 font-weight-bold mb-2 mb-xl-4">Other Services</h4>
+<ul class="list-group list-group-flush list-group-borderless mb-0"><li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Investor Relations</a></li>
+<li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Rewards Program</a></li>
+<li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">PointsPLUS</a></li>
+<li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Partners</a></li>
+<li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">List My Hotel</a></li>
+</ul>
+</div>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-1dot8 mb-6 mb-md-10 mb-xl-0">
+<div class="nav-footer">
+<h4 class="h6 font-weight-bold mb-2 mb-xl-4">Support</h4>
+<ul class="list-group list-group-flush list-group-borderless mb-0"><li>
+<a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Account</a>
+</li>
+<li>
+<a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Legal</a>
+</li>
+<li>
+<a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Contact</a>
+</li>
+<li>
+ <a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Affiliate Program</a>
+</li>
+<li>
+<a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Privacy Policy</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-12 col-md-6 col-lg col-xl-3dot1">
+<div class="mb-4 mb-xl-2">
+<h4 class="h6 font-weight-bold mb-2 mb-xl-4">Mailing List</h4>
+<p class="m-0 text-gray-1">Sign up for our mailing list to get latest updates and offers.</p>
+</div>
+<form action="https://mytravel.bookingcore.org/ja/newsletter/subscribe" class="subcribe-form bravo-subscribe-form bravo-form">
+<input type="hidden" name="_token" value="40Pg4KM1lQroJUlA4Gjyj0zTK2kc09l1KxuZtXkt"> <div class="input-group">
+<input type="text" name="email" class="form-control height-54 font-size-14 border-radius-3 border-width-2 border-color-8 email-input" placeholder="あなたのメール">
+<div class="input-group-append ml-3">
+<button type="submit" class="btn-submit btn btn-sea-green border-radius-3 height-54 min-width-112 font-size-14">申し込む
+<i class="fa fa-spinner fa-pulse fa-fw"></i>
+</button>
+</div>
+</div>
+<div class="form-mess"></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="border-top border-bottom border-color-8 space-1">
+<div class="container">
+<div class="sub-footer d-flex align-items-center justify-content-between">
+<a class="d-inline-flex align-items-center" href="index.html" aria-label="MyTravel">
+<img class=' lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/general/logo.svg alt=''>
+<span class="brand brand-dark">MyTravel</span>
+</a>
+<div class="footer-select bravo_topbar d-flex align-items-center">
+<div class="mr-3">
+<div class="position-relative px-3 u-header__login-form dropdown-connector-xl u-header__topbar-divider currency-select">
+<div class="d-flex align-items-center text-white py-3 dropdown">
+<span class="d-inline-block font-size-14 mr-1 dropdown-nav-link " data-toggle="dropdown">
+<span class="flag-icon flag-icon-jp"></span>
+Japanese
+</span>
+<ul class="dropdown-menu dropdown-menu-user text-left width-auto">
+<li>
+<a href="index.html?set_lang=en" class="d-flex">
+<span class="flag-icon flag-icon-gb mr-2"></span>
+English
+</a>
+</li>
+<li>
+<a href="egy.html?set_lang=egy" class="d-flex">
+<span class="flag-icon flag-icon-eg mr-2"></span>
+Egyptian
+</a>
+</li>
+<li>
+<a href="ko.html?set_lang=ko" class="d-flex">
+<span class="flag-icon flag-icon-kr mr-2"></span>
+kr
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="position-relative px-3 u-header__login-form dropdown-connector-xl u-header__topbar-divider currency-select">
+<div class="d-flex align-items-center text-white py-3 dropdown">
+<span class="d-inline-block font-size-14 mr-1 dropdown-nav-link " data-toggle="dropdown">
+EUR
+EUR
+</span>
+<ul class="dropdown-menu text-left width-auto min-width-100">
+<li>
+<a href="ja.html?set_currency=jpy">
+JPY
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="copy-right">
+<div class="container context">
+<div class="row">
+<div class="col-md-12">
+© 2021 MyTravel. All rights reserved
+<div class="f-visa">
+MyTravel
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a class="travel-go-to u-go-to-modern" href="#" data-position='{"bottom": 15, "right": 15 }' data-type="fixed" data-offset-top="400" data-compensation="#header" data-show-effect="slideInUp" data-hide-effect="slideOutDown">
+<span class="flaticon-arrow u-go-to-modern__inner"></span>
+</a>
+<div class="modal fade login" id="login" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content relative">
+<div class="modal-header">
+<h4 class="modal-title">ログイン</h4>
+<span class="c-pointer" data-dismiss="modal" aria-label="Close">
+<i class="input-icon field-icon fa">
+<img src="images/ico_close.svg" alt="close">
+</i>
+</span>
+</div>
+<div class="modal-body relative">
+<form class="bravo-form-login" method="POST" action="https://mytravel.bookingcore.org/ja/login">
+<input type="hidden" name="redirect" value="">
+<input type="hidden" name="_token" value="40Pg4KM1lQroJUlA4Gjyj0zTK2kc09l1KxuZtXkt"> <div class="form-group">
+<input type="text" class="form-control" name="email" autocomplete="off" placeholder="電子メールアドレス">
+<i class="input-icon icofont-mail"></i>
+<span class="invalid-feedback error error-email"></span>
+</div>
+<div class="form-group">
+<input type="password" class="form-control" name="password" autocomplete="off" placeholder="パスワード">
+<i class="input-icon icofont-ui-password"></i>
+<span class="invalid-feedback error error-password"></span>
+</div>
+<div class="form-group">
+<div class="d-flex justify-content-between">
+<label for="remember-me" class="mb0">
+<input type="checkbox" name="remember" id="remember-me" value="1"> 私を覚えてますか <span class="checkmark fcheckbox"></span>
+</label>
+<a href="ja/forgot-password.html">パスワードをお忘れですか？</a>
+</div>
+</div>
+<div class="error message-error invalid-feedback"></div>
+<div class="form-group">
+<button class="btn btn-primary form-submit" type="submit">
+ログイン
+<span class="spinner-grow spinner-grow-sm icon-loading" role="status" aria-hidden="true"></span>
+</button>
+</div>
+<div class="advanced">
+<p class="text-center f14 c-grey">or continue with</p>
+<div class="row">
+<div class="col-xs-12 col-sm-4">
+<a href="https://www.facebook.com/v3.3/dialog/oauth?client_id=22&amp;redirect_uri=https%3A%2F%2Fmytravel.bookingcore.org%2Fsocial-callback%2Ffacebook&amp;scope=email&amp;response_type=code&amp;state=LrzZ2feFS03oio71tp3XnxvwVGIAK94tgyeXYpSC" class="btn btn_login_fb_link" data-channel="facebook">
+<i class="input-icon fa fa-facebook"></i>
+Facebook
+</a>
+</div>
+</div>
+</div>
+<div class="c-grey font-medium f14 text-center"> アカウントを持っていないのですか？ <a href="#" data-target="#register" data-toggle="modal">サインアップ</a></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade login" id="register" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content relative">
+<div class="modal-header">
+<h4 class="modal-title">サインアップ</h4>
+<span class="c-pointer" data-dismiss="modal" aria-label="Close">
+<i class="input-icon field-icon fa">
+<img src="images/ico_close.svg" alt="close">
+</i>
+</span>
+</div>
+<div class="modal-body">
+<form class="form bravo-form-register" method="post" action="https://mytravel.bookingcore.org/ja/register">
+<input type="hidden" name="_token" value="40Pg4KM1lQroJUlA4Gjyj0zTK2kc09l1KxuZtXkt"> <div class="row">
+<div class="col-lg-6 col-md-12">
+<div class="form-group">
+<input type="text" class="form-control" name="first_name" autocomplete="off" placeholder="ファーストネーム">
+<i class="input-icon field-icon icofont-waiter-alt"></i>
+<span class="invalid-feedback error error-first_name"></span>
+</div>
+</div>
+<div class="col-lg-6 col-md-12">
+<div class="form-group">
+<input type="text" class="form-control" name="last_name" autocomplete="off" placeholder="苗字">
+<i class="input-icon field-icon icofont-waiter-alt"></i>
+<span class="invalid-feedback error error-last_name"></span>
+</div>
+</div>
+</div>
+<div class="form-group">
+<input type="text" class="form-control" name="phone" autocomplete="off" placeholder="Phone">
+<i class="input-icon field-icon icofont-ui-touch-phone"></i>
+<span class="invalid-feedback error error-phone"></span>
+</div>
+<div class="form-group">
+<input type="email" class="form-control" name="email" autocomplete="off" placeholder="電子メールアドレス">
+<i class="input-icon field-icon icofont-mail"></i>
+<span class="invalid-feedback error error-email"></span>
+</div>
+<div class="form-group">
+<input type="password" class="form-control" name="password" autocomplete="off" placeholder="パスワード">
+<i class="input-icon field-icon icofont-ui-password"></i>
+<span class="invalid-feedback error error-password"></span>
+</div>
+<div class="form-group">
+<label for="term">
+<input id="term" type="checkbox" name="term" class="mr5">
+私は読み、受け入れます<a href='#' target='_blank'>利用規約とプライバシーポリシー</a>
+<span class="checkmark fcheckbox"></span>
+</label>
+<div><span class="invalid-feedback error error-term"></span></div>
+</div>
+<div class="error message-error invalid-feedback"></div>
+<div class="form-group">
+<button type="submit" class="btn btn-primary form-submit">
+サインアップ
+<span class="spinner-grow spinner-grow-sm icon-loading" role="status" aria-hidden="true"></span>
+</button>
+</div>
+<div class="advanced">
+<p class="text-center f14 c-grey">or continue with</p>
+<div class="row">
+<div class="col-xs-12 col-sm-4">
+<a href="https://www.facebook.com/v3.3/dialog/oauth?client_id=22&amp;redirect_uri=https%3A%2F%2Fmytravel.bookingcore.org%2Fsocial-callback%2Ffacebook&amp;scope=email&amp;response_type=code&amp;state=zk2BKvl08JBt4vIb4EzE7l4G1tvETPWYDUqjmFht" class="btn btn_login_fb_link" data-channel="facebook">
+<i class="input-icon fa fa-facebook"></i>
+Facebook
+</a>
+</div>
+</div>
+</div>
+<div class="c-grey f14 text-center">
+すでにアカウントをお持ちですか？
+<a href="#" data-target="#login" data-toggle="modal">ログイン</a>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div><link rel="stylesheet" href="libs/flags/css/flag-icon.min.css">
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="libs/lazy-load/intersection-observer.js"></script>
+<script async src="libs/lazy-load/lazyload.min.js"></script>
+<script>
+    // Set the options to make LazyLoad self-initialize
+    window.lazyLoadOptions = {
+        elements_selector: ".lazy",
+        // ... more custom settings?
+    };
+
+    // Listen to the initialization event and get the instance of LazyLoad
+    window.addEventListener('LazyLoad::Initialized', function (event) {
+        window.lazyLoadInstance = event.detail.instance;
+    }, false);
+</script>
+<script src="libs/jquery-3.6.0.min.js"></script>
+<script src="themes/mytravel/libs/jquery-migrate/jquery-migrate.min.js"></script>
+<script src="themes/mytravel/libs/header.js"></script>
+<script>
+    $(document).on('ready', function () {
+        $.MyTravelHeader.init($('#header'));
+    });
+</script>
+<script src="libs/lodash.min.js"></script>
+<script src="libs/vue/vue.min.js"></script>
+<script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="libs/bootbox/bootbox.min.js"></script>
+<script src="themes/mytravel/libs/fancybox/jquery.fancybox.min.js"></script>
+<script src="themes/mytravel/libs/slick/slick.js"></script>
+<script src="libs/carousel-2/owl.carousel.min.js"></script>
+<script type="text/javascript" src="libs/daterange/moment.min.js"></script>
+<script type="text/javascript" src="libs/daterange/daterangepicker.min.js"></script>
+<script src="libs/select2/js/select2.min.js"></script>
+<script src="themes/mytravel/js/functions265f.js?_ver=2.0.0"></script>
+<script src="themes/mytravel/libs/custombox/custombox.min.js"></script>
+<script src="themes/mytravel/libs/custombox/custombox.legacy.min.js"></script>
+<script src="themes/mytravel/libs/custombox/window.modal.js"></script>
+<script src="libs/pusher.min.js"></script>
+<script src="themes/mytravel/js/home265f.js?_ver=2.0.0"></script>
+</div>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W7B5HJJ');</script>
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7B5HJJ"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+<div id="fb-root"></div>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            xfbml            : true,
+            version          : 'v3.3'
+        });
+    };
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = '../connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+
+<div class="fb-customerchat" attribution=setup_tool page_id="2280007165584589">
+</div>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115740936-4"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-115740936-4');
+</script>
+<style>
+    .bravo-buy-button{
+        text-align: center;
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        background-color: #0072bc;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding: 10px 20px 8px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        font-weight: 600;
+        z-index: 99;
+    }
+    .bravo-buy-button:hover{
+        text-decoration: none;
+        color: #fff;
+    }
+    .bravo-buy-button .tf-text{
+        background-image: url('landing/img/logoen.png');
+        width: 66px;
+        height: 12px;
+        display: inline-block;
+        background-repeat: no-repeat;
+
+    }
+</style>
+<a class="sticky-button bravo-buy-button" target="_blank" href="https://codecanyon.net/item/mytravel-ultimate-laravel-booking-system/32680572">
+<span>Buy on <span class="tf-text"></span> for $59</span>
+</a>
+</body>
+
+<!-- Mirrored from mytravel.bookingcore.org/ja by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2023 17:39:31 GMT -->
+</html>

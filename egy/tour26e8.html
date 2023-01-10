@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="egy" class="">
+
+<!-- Mirrored from mytravel.bookingcore.org/egy/tour?location_id=5 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2023 17:48:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="csrf-token" content="40Pg4KM1lQroJUlA4Gjyj0zTK2kc09l1KxuZtXkt">
+<link rel="icon" type="image/png" href="https://mytravel.bookingcore.org/uploads/mytravel/general/favicon.png" />
+<title>Search for tour - My Travel</title>
+<meta name="description" content="" />
+<meta property="og:url" content="https://mytravel.bookingcore.org/egy/tour" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Search for tour" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="https://mytravel.bookingcore.org/uploads/mytravel/tour/banner-search.jpg" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Search for tour">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://mytravel.bookingcore.org/uploads/mytravel/tour/banner-search.jpg">
+<link rel="canonical" href="https://mytravel.bookingcore.org/egy/tour" />
+<link href="https://mytravel.bookingcore.org/libs/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="https://mytravel.bookingcore.org/libs/font-awesome/css/font-awesome.css" rel="stylesheet">
+<link href="https://mytravel.bookingcore.org/libs/ionicons/css/ionicons.min.css" rel="stylesheet">
+<link href="https://mytravel.bookingcore.org/libs/icofont/icofont.min.css" rel="stylesheet">
+<link href="https://mytravel.bookingcore.org/libs/select2/css/select2.min.css" rel="stylesheet">
+<link href="https://mytravel.bookingcore.org/themes/mytravel/libs/fancybox/jquery.fancybox.css" rel="stylesheet">
+<link href="https://mytravel.bookingcore.org/themes/mytravel/libs/slick/slick.css" rel="stylesheet">
+<link href="https://mytravel.bookingcore.org/themes/mytravel/libs/custombox/custombox.min.css" rel="stylesheet">
+<link href="https://mytravel.bookingcore.org/themes/mytravel/dist/frontend/css/notification.css" rel="newest stylesheet">
+<link href="https://mytravel.bookingcore.org/themes/mytravel/dist/frontend/css/app.css?_ver=2.0.0" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://mytravel.bookingcore.org/libs/daterange/daterangepicker.css">
+
+<link rel="dns-prefetch" href="http://fonts.gstatic.com/">
+
+<link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&amp;display=swap" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,200,300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://mytravel.bookingcore.org/themes/mytravel/libs/bootstrap-select/dist/css/bootstrap-select.min.css">
+<link href="https://mytravel.bookingcore.org/libs/ion_rangeslider/css/ion.rangeSlider.css" rel="stylesheet">
+<script>
+    var bookingCore = {
+        url:'https://mytravel.bookingcore.org/egy',
+        url_root:'https://mytravel.bookingcore.org',
+        admin_url:'https://mytravel.bookingcore.org/admin',
+        booking_decimals:0,
+        thousand_separator:'.',
+        decimal_separator:',',
+        currency_position:'right_space',
+        currency_symbol:'¥',
+        currency_rate:'0.00917113',
+        date_format:'MM/DD/YYYY',
+        map_provider:'gmap',
+        map_gmap_key:'',
+        map_options:{
+            map_lat_default:'',
+            map_lng_default:'',
+            map_clustering:'on',
+            map_fit_bounds:'on',
+        },
+        routes:{
+            login:'https://mytravel.bookingcore.org/egy/login',
+            register:'https://mytravel.bookingcore.org/egy/register',
+            checkout:'https://mytravel.bookingcore.org/egy/booking/doCheckout'
+        },
+        module:{
+            hotel:'https://mytravel.bookingcore.org/egy/hotel',
+            car:'https://mytravel.bookingcore.org/egy/car',
+            tour:'https://mytravel.bookingcore.org/egy/tour',
+            space:'https://mytravel.bookingcore.org/egy/space',
+            flight:"https://mytravel.bookingcore.org/egy/flight"
+        },
+        currentUser: 0,
+        isAdmin : 0,
+        rtl: true,
+        markAsRead:'https://mytravel.bookingcore.org/egy/notify/markAsRead',
+        markAllAsRead:'https://mytravel.bookingcore.org/egy/notify/markAllAsRead',
+        loadNotify : 'https://mytravel.bookingcore.org/egy/notify/notifications',
+        pusher_api_key : '',
+        pusher_cluster : '',
+        language: 'egy',
+    };
+        var i18n = {
+        warning:"تحذير",
+        success:"Success",
+        confirm_delete:"تريد ان تحذف؟",
+        confirm:"أكد",
+        cancel:"إلغاء",
+    };
+    var daterangepickerLocale = {
+        "applyLabel": "تطبيق",
+        "cancelLabel": "إلغاء",
+        "fromLabel": "من",
+        "toLabel": "To",
+        "customRangeLabel": "مخصص",
+        "weekLabel": "W",
+        "first_day_of_week": 1,
+        "daysOfWeek": [
+            "Su",
+            "Mo",
+            "Tu",
+            "We",
+            "Th",
+            "Fr",
+            "Sa"
+        ],
+        "monthNames": [
+            "يناير",
+            "فبراير",
+            "مارس",
+            "أبريل",
+            "مايو",
+            "يونيو",
+            "يوليو",
+            "أغسطس",
+            "سبتمبر",
+            "إكتوبر",
+            "نوفمبر",
+            "ديسمبر"
+        ],
+    };
+</script>
+
+<link href="https://mytravel.bookingcore.org/themes/mytravel/dist/frontend/module/tour/css/tour.css?_ver=2.0.0" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://mytravel.bookingcore.org/themes/mytravel/libs/ion_rangeslider/css/ion.rangeSlider.min.css" />
+<link href="https://mytravel.bookingcore.org/egy/custom-css" rel="stylesheet">
+<link href="https://mytravel.bookingcore.org/libs/carousel-2/owl.carousel.css" rel="stylesheet">
+<link href="https://mytravel.bookingcore.org/themes/mytravel/dist/frontend/css/rtl.css?_v=2.0.0" rel="stylesheet">
+</head>
+<body dir="rtl" class="frontend-page    is-rtl  ">
+<div class="bravo_wrap">
+<header id="header" class="            header-white u-header u-header--dark-nav-links-xl u-header--show-hide-xl u-header--static-xl border-bottom
+        " data-header-fix-moment="500" data-header-fix-effect="slide">
+<div class="u-header__section u-header__shadow-on-show-hide">
+<div class="bravo_topbar u-header__hide-content u-header__topbar u-header__topbar-lg border-bottom   border-color-8 ">
+<div class="container">
+<div class="d-flex align-items-center">
+<div class="list-inline u-header__topbar-nav-divider mb-0 topbar_left_text font-size-14   list-inline-dark ">
+<div class="socials">
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-linkedin"></i></a>
+<a href="#"><i class="fa fa-google-plus"></i></a>
+</div>
+<span class="line"></span>
+<a href="https://mytravel.bookingcore.org/cdn-cgi/l/email-protection#c0a3afaeb4a1a3b480adb9b4b2a1b6a5aceea3afad"><span class="__cf_email__" data-cfemail="1e7d71706a7f7d6a5e73676a6c7f687b72307d7173">[email&#160;protected]</span></a>
+</div>
+<div class="ml-auto d-flex align-items-center">
+<div class="d-flex align-items-center text-white px-3">
+<i class="flaticon-phone-call mr-2 ml-1 font-size-18"></i>
+<span class="d-inline-block font-size-14 mr-1">(+84) 666-888-999</span>
+</div>
+<div class="position-relative px-3 u-header__login-form dropdown-connector-xl u-header__topbar-divider currency-select">
+<div class="d-flex align-items-center text-white py-3 dropdown">
+<span class="d-inline-block font-size-14 mr-1 dropdown-nav-link " data-toggle="dropdown">
+JPY
+</span>
+<ul class="dropdown-menu text-left width-auto min-width-100">
+<li>
+<a href="https://mytravel.bookingcore.org/egy/tour?location_id=5&amp;set_currency=eur">
+EUR
+</a>
+</li>
+<li>
+<a href="https://mytravel.bookingcore.org/egy/tour?location_id=5&amp;set_currency=eur">
+EUR
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="position-relative px-3 u-header__login-form dropdown-connector-xl u-header__topbar-divider currency-select">
+<div class="d-flex align-items-center text-white py-3 dropdown">
+<span class="d-inline-block font-size-14 mr-1 dropdown-nav-link " data-toggle="dropdown">
+<span class="flag-icon flag-icon-eg"></span>
+Egyptian
+</span>
+<ul class="dropdown-menu dropdown-menu-user text-left width-auto">
+<li>
+<a href="https://mytravel.bookingcore.org/egy/tour?location_id=5&amp;set_lang=en" class="d-flex">
+<span class="flag-icon flag-icon-gb mr-2"></span>
+English
+</a>
+</li>
+<li>
+<a href="https://mytravel.bookingcore.org/egy/tour?location_id=5&amp;set_lang=ja" class="d-flex">
+<span class="flag-icon flag-icon-jp mr-2"></span>
+Japanese
+</a>
+</li>
+<li>
+<a href="https://mytravel.bookingcore.org/egy/tour?location_id=5&amp;set_lang=ko" class="d-flex">
+<span class="flag-icon flag-icon-kr mr-2"></span>
+kr
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="position-relative px-3 u-header__login-form dropdown-connector-xl u-header__topbar-divider">
+<a href="javascript:;" class="d-flex align-items-center text-white py-3" data-toggle="modal" data-target="#login">
+<i class="flaticon-user mr-2 ml-1 font-size-18"></i>
+<span class="d-inline-block font-size-14 mr-1">Sign in or Register</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bravo_header">
+<div class="container">
+<div class="content">
+<div class="header-left">
+ <a href="https://mytravel.bookingcore.org/egy" class="bravo-logo navbar-brand u-header__navbar-brand-default u-header__navbar-brand-center u-header__navbar-brand-text-white mr-0 mr-xl-5">
+<img src="https://mytravel.bookingcore.org/uploads/mytravel/general/logo_white.svg" alt="My Travel">
+<span class="u-header__navbar-brand-text">MyTravel</span>
+</a>
+<a class="bravo-logo navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-on-scroll" href="https://mytravel.bookingcore.org/egy">
+<img src="https://mytravel.bookingcore.org/uploads/mytravel/general/logo.svg" alt="My Travel">
+<span class="u-header__navbar-brand-text">MyTravel</span>
+</a>
+<div class="bravo-menu">
+<ul class="main-menu menu-generated"><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/">Home <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/">Home Page</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/page/home-v2">Home v2</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/page/home-hotel">Home Hotel</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/page/home-tour">Home Tour</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/page/home-space">Home Space</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/page/home-event">Home Event</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/page/home-car">Home Car</a></li></ul></li><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/egy/hotel">Hotel <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/hotel">Hotel List</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/hotel?_layout=map">Hotel Map</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/hotel/parian-holiday-villas">Hotel Detail</a></li></ul></li><li class=" active active  depth-0"><a target="" href="https://mytravel.bookingcore.org/egy/tour">Tours <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" active depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/tour">Tour List</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/tour?_layout=map">Tour Map</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/tour/paris-vacation-travel">Tour Detail</a></li></ul></li><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/egy/space">Space <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/space">Space List</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/space?_layout=map">Space Map</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/space/stay-greenwich-village">Space Detail</a></li></ul></li><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/egy/car">Car <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/car">Car List</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/car?_layout=map">Car Map</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/car/vinfast-lux-a20-plus">Car Detail</a></li></ul></li><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/egy/event">Event <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/event">Event List</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/event?_layout=map">Event Map</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/event/aspen-glade-weddings-events">Event Detail</a></li></ul></li><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/egy/flight">Flight</a></li><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/egy/boat">Boat <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/boat">Boat List</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/boat?_layout=map">Boat Map</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/boat/blue-moon-yc-300">Boat Detail</a></li></ul></li><li class=" depth-0"><a target="" href="#">Pages <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/plan">Plan</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/news">News List</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/news/morning-in-the-northern-sea">News Detail</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/location/paris">Location Detail</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/page/become-a-vendor">Become a vendor</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/contact">Contact</a></li></ul></li></ul> </div>
+</div>
+<div class="header-right">
+<button class="bravo-more-menu">
+<i class="fa fa-bars"></i>
+</button>
+</div>
+</div>
+</div>
+<div class="bravo-menu-mobile" style="display:none;">
+<div class="user-profile">
+<div class="b-close"><i class="icofont-scroll-left"></i></div>
+<div class="avatar"></div>
+<ul>
+<li>
+<a href="#login" data-toggle="modal" data-target="#login" class="login">تسجيل الدخول</a>
+</li>
+<li>
+<a href="#register" data-toggle="modal" data-target="#register" class="signup">إنشاء حساب</a>
+</li>
+</ul>
+<ul class="multi-lang">
+<li class="dropdown">
+<a href="#" data-toggle="dropdown" class="is_login">
+JPY
+<i class="fa fa-angle-down"></i>
+</a>
+<ul class="dropdown-menu text-left width-auto">
+<li>
+<a href="https://mytravel.bookingcore.org/egy/tour?location_id=5&amp;set_currency=eur" class="is_login">
+EUR
+</a>
+</li>
+<li>
+<a href="https://mytravel.bookingcore.org/egy/tour?location_id=5&amp;set_currency=eur" class="is_login">
+EUR
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="multi-lang">
+<li class="dropdown">
+<a href="#" data-toggle="dropdown" class="is_login">
+<span class="flag-icon flag-icon-eg"></span>
+Egyptian
+<i class="fa fa-angle-down"></i>
+</a>
+<ul class="dropdown-menu text-left">
+<li>
+<a href="https://mytravel.bookingcore.org/egy/tour?location_id=5&amp;set_lang=en" class="is_login">
+<span class="flag-icon flag-icon-gb"></span>
+English
+</a>
+</li>
+<li>
+<a href="https://mytravel.bookingcore.org/egy/tour?location_id=5&amp;set_lang=ja" class="is_login">
+<span class="flag-icon flag-icon-jp"></span>
+Japanese
+</a>
+</li>
+<li>
+<a href="https://mytravel.bookingcore.org/egy/tour?location_id=5&amp;set_lang=ko" class="is_login">
+<span class="flag-icon flag-icon-kr"></span>
+kr
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="g-menu">
+<ul class="main-menu menu-generated"><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/">Home <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/">Home Page</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/page/home-v2">Home v2</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/page/home-hotel">Home Hotel</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/page/home-tour">Home Tour</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/page/home-space">Home Space</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/page/home-event">Home Event</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/page/home-car">Home Car</a></li></ul></li><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/egy/hotel">Hotel <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/hotel">Hotel List</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/hotel?_layout=map">Hotel Map</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/hotel/parian-holiday-villas">Hotel Detail</a></li></ul></li><li class=" active active  depth-0"><a target="" href="https://mytravel.bookingcore.org/egy/tour">Tours <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" active depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/tour">Tour List</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/tour?_layout=map">Tour Map</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/tour/paris-vacation-travel">Tour Detail</a></li></ul></li><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/egy/space">Space <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/space">Space List</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/space?_layout=map">Space Map</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/space/stay-greenwich-village">Space Detail</a></li></ul></li><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/egy/car">Car <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/car">Car List</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/car?_layout=map">Car Map</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/car/vinfast-lux-a20-plus">Car Detail</a></li></ul></li><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/egy/event">Event <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/event">Event List</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/event?_layout=map">Event Map</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/event/aspen-glade-weddings-events">Event Detail</a></li></ul></li><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/egy/flight">Flight</a></li><li class=" depth-0"><a target="" href="https://mytravel.bookingcore.org/egy/boat">Boat <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/boat">Boat List</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/boat?_layout=map">Boat Map</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/boat/blue-moon-yc-300">Boat Detail</a></li></ul></li><li class=" depth-0"><a target="" href="#">Pages <i class="caret fa fa-angle-down"></i></a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/plan">Plan</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/news">News List</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/news/morning-in-the-northern-sea">News Detail</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/location/paris">Location Detail</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/page/become-a-vendor">Become a vendor</a></li><li class=" depth-1"><a target="" href="https://mytravel.bookingcore.org/egy/contact">Contact</a></li></ul></li></ul> </div>
+</div>
+</div>
+</div>
+</header>
+<div class="bravo_search_tour mt-7">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 col-xl-3 col-md-12">
+<div class="bravo_filter navbar-expand-lg navbar-expand-lg-collapse-block">
+<button class="btn d-lg-none mb-5 p-0 collapsed" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+<i class="fa fa-caret-square-o-down text-primary font-size-20 card-btn-arrow ml-0 font-weight-normal"></i>
+<span class="text-primary ml-2">Filter Search</span>
+</button>
+<div id="sidebar" class="navbar-expand-lg navbar-expand-lg-collapse-block collapse">
+<div class="item pb-4 mb-2">
+<div class="sidebar border border-color-1 rounded-xs">
+<div class="p-4 mb-1">
+<form action="https://mytravel.bookingcore.org/egy/tour" class="bravo_form" method="get">
+<div class="item">
+<span class="d-block text-gray-1  font-weight-normal mb-0 text-left">
+Location
+</span>
+<div class="mb-4">
+<div class="input-group border-bottom border-width-2 border-color-1 py-2">
+<i class="flaticon-pin-1 d-flex align-items-center mr-2 text-primary font-weight-semi-bold font-size-22"></i>
+<div class="smart-search border-0 p-0 form-control  height-40">
+<input type="text" class="smart-search-location parent_text  font-weight-bold font-size-16 shadow-none hero-form font-weight-bold border-0 p-0" readonly placeholder="ما هى وجهتك؟" value="Los Angeles" data-onLoad="يحمل" data-default="[{&quot;id&quot;:1,&quot;title&quot;:&quot; Paris&quot;},{&quot;id&quot;:2,&quot;title&quot;:&quot; New York, United States&quot;},{&quot;id&quot;:3,&quot;title&quot;:&quot; California&quot;},{&quot;id&quot;:4,&quot;title&quot;:&quot; United States&quot;},{&quot;id&quot;:5,&quot;title&quot;:&quot; Los Angeles&quot;},{&quot;id&quot;:6,&quot;title&quot;:&quot; New Jersey&quot;},{&quot;id&quot;:7,&quot;title&quot;:&quot; San Francisco&quot;},{&quot;id&quot;:8,&quot;title&quot;:&quot; Virginia&quot;},{&quot;id&quot;:9,&quot;title&quot;:&quot; London&quot;},{&quot;id&quot;:10,&quot;title&quot;:&quot; Germany&quot;}]">
+<input type="hidden" class="child_id" name="location_id" value="5">
+</div>
+</div>
+</div>
+</div>
+<div class="item">
+<span class="d-block text-gray-1 text-left font-weight-normal">
+From - To
+</span>
+<div class="border-bottom border-width-2 border-color-1 mb-4 form-content">
+<div class="u-datepicker overflow-hidden input-group py-2 flex-nowrap form-date-search ">
+<div class="input-group-prepend">
+<span class="d-flex align-items-center mr-2 font-size-21">
+<i class="flaticon-calendar text-primary font-weight-semi-bold"></i>
+</span>
+</div>
+<div class="height-40 date-wrapper font-size-16 ml-1 shadow-none font-weight-bold form-control hero-form bg-transparent border-0 flatpickr-input p-0">
+<div class="render check-in-render">01/05/2023</div>
+<span> - </span>
+<div class="render check-out-render">01/06/2023</div>
+</div>
+<input type="hidden" class="check-in-input" value="01/05/2023" name="start">
+<input type="hidden" class="check-out-input" value="01/06/2023" name="end">
+<input type="text" class="check-in-out" name="date" value="2023-01-05 - 2023-01-06">
+</div>
+</div>
+</div> <div class="text-center">
+<button type="submit" class="btn btn-primary height-60 w-100 font-weight-bold mb-xl-0 mb-lg-1 transition-3d-hover">
+<i class="flaticon-magnifying-glass mr-2 font-size-17"></i>بحث
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="item pb-4 mb-2">
+<a href="https://mytravel.bookingcore.org/egy/tour?_layout=map" class="d-block border border-color-1 rounded-xs">
+<img src="https://mytravel.bookingcore.org/themes/mytravel/images/map.jpg" alt="" width="100%">
+</a>
+</div>
+<form action="https://mytravel.bookingcore.org/egy/tour" class="bravo_form_filter">
+<input type="hidden" name="location_id" value="5">
+<div class="sidenav border border-color-8 rounded-xs">
+<div id="bravo-filter-price" class="accordion shadow-none bravo-filter-price border-bottom">
+<div class="border-0">
+<div class="card-collapse">
+<h3 class="mb-0">
+<button type="button" class="btn btn-link btn-block card-btn py-2  text-lh-3 collapsed" data-toggle="collapse" data-target="#context-filter-price" aria-expanded="false" aria-controls="context-filter-price">
+<span class="row align-items-center">
+<span class="col-9">
+<span class="d-block font-size-lg-15 font-size-17 font-weight-bold text-dark">Price Range (¥)</span>
+</span>
+<span class="col-3 text-right">
+<span class="card-btn-arrow">
+<span class="fa fa-chevron-down small"></span>
+</span>
+</span>
+</span>
+</button>
+</h3>
+</div>
+<div id="context-filter-price" class="collapse show" data-parent="#bravo-filter-price">
+<div class="card-body pt-0 ">
+<div class="pb-3 mb-1 d-flex text-lh-1">
+<span>¥</span>
+<span id="rangeSliderMinResult"></span>
+<span class="mx-0dot5"> — </span>
+<span>¥</span>
+<span id="rangeSliderMaxResult"></span>
+</div>
+<input class="filter-price" type="text" name="price_range" data-extra-classes="u-range-slider height-35" data-type="double" data-grid="false" data-hide-from-to="true" data-min="32275" data-max="173807" data-from="32275" data-to="173807" data-prefix="¥" data-result-min="#rangeSliderMinResult" data-result-max="#rangeSliderMaxResult">
+ </div>
+</div>
+</div>
+</div>
+<div class="accordion rounded-0 shadow-none border-bottom">
+<div class="border-0">
+<div class="card-collapse">
+<h3 class="mb-0">
+<button type="button" class="btn btn-link btn-block card-btn py-2  text-lh-3 collapsed" data-toggle="collapse" data-target="#review_score">
+<span class="row align-items-center">
+<span class="col-9">
+<span class="d-block font-size-lg-15 font-size-17 font-weight-bold text-dark text-lh-1dot4">التقييمات</span>
+</span>
+<span class="col-3 text-right">
+<span class="card-btn-arrow">
+<span class="fa fa-chevron-down small"></span>
+</span>
+</span>
+</span>
+</button>
+</h3>
+</div>
+<div id="review_score" class="collapse show">
+<div class="card-body pt-0 mt-1 ">
+<div class="form-group font-size-14 text-lh-md text-secondary mb-3">
+<div class="custom-control custom-checkbox">
+<input class="custom-control-input" id="review_score5" name="review_score[]" type="checkbox" value="5">
+<label class="custom-control-label text-lh-inherit text-color-1" for="review_score5">
+<div class="d-inline-flex align-items-center font-size-13 text-lh-1 text-primary">
+<div class="green-lighter ml-1 letter-spacing-2">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+</div>
+</div>
+</label>
+</div>
+</div>
+<div class="form-group font-size-14 text-lh-md text-secondary mb-3">
+<div class="custom-control custom-checkbox">
+<input class="custom-control-input" id="review_score4" name="review_score[]" type="checkbox" value="4">
+<label class="custom-control-label text-lh-inherit text-color-1" for="review_score4">
+<div class="d-inline-flex align-items-center font-size-13 text-lh-1 text-primary">
+<div class="green-lighter ml-1 letter-spacing-2">
+<i class="fa fa-star"></i>
+ <i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+</div>
+</div>
+</label>
+</div>
+</div>
+<div class="form-group font-size-14 text-lh-md text-secondary mb-3">
+<div class="custom-control custom-checkbox">
+<input class="custom-control-input" id="review_score3" name="review_score[]" type="checkbox" value="3">
+<label class="custom-control-label text-lh-inherit text-color-1" for="review_score3">
+<div class="d-inline-flex align-items-center font-size-13 text-lh-1 text-primary">
+<div class="green-lighter ml-1 letter-spacing-2">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+</div>
+</div>
+</label>
+</div>
+</div>
+<div class="form-group font-size-14 text-lh-md text-secondary mb-3">
+<div class="custom-control custom-checkbox">
+<input class="custom-control-input" id="review_score2" name="review_score[]" type="checkbox" value="2">
+<label class="custom-control-label text-lh-inherit text-color-1" for="review_score2">
+<div class="d-inline-flex align-items-center font-size-13 text-lh-1 text-primary">
+<div class="green-lighter ml-1 letter-spacing-2">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+</div>
+</div>
+</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="attr_1" class="accordion rounded-0 shadow-none">
+<div class="border-0">
+<div class="card-collapse" id="cityCategoryHeadingOne">
+<h3 class="mb-0">
+ <button type="button" class="btn btn-link btn-block card-btn py-2 text-lh-3 collapsed" data-toggle="collapse" data-target="#attr_more_1" aria-expanded="false" aria-controls="attr_more_1">
+<span class="row align-items-center">
+<span class="col-9">
+<span class="font-weight-bold font-size-17 text-dark mb-3">Travel Styles</span>
+</span>
+<span class="col-3 text-right">
+<span class="card-btn-arrow">
+<span class="fa fa-chevron-down small"></span>
+</span>
+</span>
+</span>
+</button>
+</h3>
+</div>
+<div id="attr_more_1" class="collapse show" aria-labelledby="cityCategoryHeadingOne" data-parent="#attr_1">
+<div class="card-body pt-0 mt-1  pb-4">
+<div class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-3">
+<div class="custom-control custom-checkbox">
+<input id="term_1" class="custom-control-input" type="checkbox" name="terms[]" value="1">
+<label class="custom-control-label" for="term_1">Cultural</label>
+</div>
+<span>0</span>
+</div>
+<div class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-3">
+<div class="custom-control custom-checkbox">
+<input id="term_2" class="custom-control-input" type="checkbox" name="terms[]" value="2">
+<label class="custom-control-label" for="term_2">Nature & Adventure</label>
+</div>
+<span>0</span>
+</div>
+<div class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-3">
+<div class="custom-control custom-checkbox">
+<input id="term_3" class="custom-control-input" type="checkbox" name="terms[]" value="3">
+<label class="custom-control-label" for="term_3">Marine</label>
+</div>
+<span>0</span>
+</div>
+ <div class="collapse" id="more_term_1">
+<div class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-3">
+<div class="custom-control custom-checkbox">
+<input id="term_4" class="custom-control-input" type="checkbox" name="terms[]" value="4">
+<label class="custom-control-label" for="term_4">Independent</label>
+</div>
+<span>0</span>
+</div>
+<div class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-3">
+<div class="custom-control custom-checkbox">
+<input id="term_5" class="custom-control-input" type="checkbox" name="terms[]" value="5">
+<label class="custom-control-label" for="term_5">Activities</label>
+</div>
+<span>0</span>
+</div>
+<div class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-3">
+<div class="custom-control custom-checkbox">
+<input id="term_6" class="custom-control-input" type="checkbox" name="terms[]" value="6">
+<label class="custom-control-label" for="term_6">Festival & Events</label>
+</div>
+<span>0</span>
+</div>
+<div class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-3">
+<div class="custom-control custom-checkbox">
+<input id="term_7" class="custom-control-input" type="checkbox" name="terms[]" value="7">
+<label class="custom-control-label" for="term_7">Special Interest</label>
+</div>
+<span>0</span>
+</div>
+</div>
+<a class="link link-collapse small font-size-1 mt-2" data-toggle="collapse" href="#more_term_1" role="button" aria-expanded="false" aria-controls="more_term_1">
+<span class="link-collapse__default font-size-14">Show all</span>
+<span class="link-collapse__active font-size-14">Show less</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div id="attr_2" class="accordion rounded-0 shadow-none">
+<div class="border-0">
+<div class="card-collapse" id="cityCategoryHeadingOne">
+<h3 class="mb-0">
+<button type="button" class="btn btn-link btn-block card-btn py-2 text-lh-3 collapsed" data-toggle="collapse" data-target="#attr_more_2" aria-expanded="false" aria-controls="attr_more_2">
+<span class="row align-items-center">
+<span class="col-9">
+<span class="font-weight-bold font-size-17 text-dark mb-3">Facilities</span>
+</span>
+<span class="col-3 text-right">
+<span class="card-btn-arrow">
+<span class="fa fa-chevron-down small"></span>
+</span>
+</span>
+</span>
+</button>
+</h3>
+</div>
+<div id="attr_more_2" class="collapse show" aria-labelledby="cityCategoryHeadingOne" data-parent="#attr_2">
+<div class="card-body pt-0 mt-1  pb-4">
+<div class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-3">
+<div class="custom-control custom-checkbox">
+<input id="term_8" class="custom-control-input" type="checkbox" name="terms[]" value="8">
+<label class="custom-control-label" for="term_8">Wifi</label>
+</div>
+<span>0</span>
+</div>
+<div class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-3">
+<div class="custom-control custom-checkbox">
+<input id="term_9" class="custom-control-input" type="checkbox" name="terms[]" value="9">
+<label class="custom-control-label" for="term_9">Gymnasium</label>
+</div>
+<span>0</span>
+</div>
+<div class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-3">
+<div class="custom-control custom-checkbox">
+<input id="term_10" class="custom-control-input" type="checkbox" name="terms[]" value="10">
+<label class="custom-control-label" for="term_10">Mountain Bike</label>
+</div>
+<span>0</span>
+</div>
+<div class="collapse" id="more_term_2">
+<div class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-3">
+<div class="custom-control custom-checkbox">
+<input id="term_11" class="custom-control-input" type="checkbox" name="terms[]" value="11">
+<label class="custom-control-label" for="term_11">Satellite Office</label>
+</div>
+<span>0</span>
+</div>
+<div class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-3">
+<div class="custom-control custom-checkbox">
+<input id="term_12" class="custom-control-input" type="checkbox" name="terms[]" value="12">
+<label class="custom-control-label" for="term_12">Staff Lounge</label>
+</div>
+<span>0</span>
+</div>
+ <div class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-3">
+<div class="custom-control custom-checkbox">
+<input id="term_13" class="custom-control-input" type="checkbox" name="terms[]" value="13">
+<label class="custom-control-label" for="term_13">Golf Cages</label>
+</div>
+<span>0</span>
+</div>
+<div class="form-group d-flex align-items-center justify-content-between font-size-1 text-lh-md text-secondary mb-3">
+<div class="custom-control custom-checkbox">
+<input id="term_14" class="custom-control-input" type="checkbox" name="terms[]" value="14">
+<label class="custom-control-label" for="term_14">Aerobics Room</label>
+</div>
+<span>0</span>
+</div>
+</div>
+<a class="link link-collapse small font-size-1 mt-2" data-toggle="collapse" href="#more_term_2" role="button" aria-expanded="false" aria-controls="more_term_2">
+<span class="link-collapse__default font-size-14">Show all</span>
+<span class="link-collapse__active font-size-14">Show less</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="col-lg-8 col-xl-9 col-md-12">
+<div class="bravo-list-item">
+<div class="d-flex justify-content-between align-items-center mb-4 topbar-search">
+<h3 class="font-size-21 font-weight-bold mb-0 text-lh-1">
+1 جولة سياحية
+</h3>
+<div class="control">
+<div class="item">
+<a href="https://mytravel.bookingcore.org/egy/tour?_layout=map">إظهار على الخريطة</a>
+</div>
+<div class="item">
+<div class="item-title">
+ترتيب حسب :
+</div>
+<div class="dropdown">
+<span class=" dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+موصى به
+</span>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+<a class="dropdown-item" href="https://mytravel.bookingcore.org/egy/tour?location_id=5&amp;orderby=">موصى به</a>
+<a class="dropdown-item" href="https://mytravel.bookingcore.org/egy/tour?location_id=5&amp;orderby=price_low_high">Price (Low to high)</a>
+<a class="dropdown-item" href="https://mytravel.bookingcore.org/egy/tour?location_id=5&amp;orderby=price_high_low">Price (High to low)</a>
+<a class="dropdown-item" href="https://mytravel.bookingcore.org/egy/tour?location_id=5&amp;orderby=rate_high_low">Rating (High to low)</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="list-item">
+<div class="row">
+<div class="col-md-6 col-xl-4 mb-3 mb-md-4 pb-1">
+<div class="card transition-3d-hover shadow-hover-2 item-loop h-100 ">
+<div class="position-relative mb-2">
+<a href="https://mytravel.bookingcore.org/egy/tour/giverny-and-versailles-small-group-day-trip" class="d-block gradient-overlay-half-bg-gradient-v5">
+<img class="min-height-230 bg-img-hero card-img-top" src="https://mytravel.bookingcore.org/uploads/mytravel/tour/tour-10.jpg" alt="Giverny and Versailles Small Group Day Trip">
+</a>
+<div class="position-absolute top-0 left-0 pt-4 pl-3 featured">
+<span class="badge badge-pill bg-white text-danger px-3  py-2 font-size-14 font-weight-normal">31%</span>
+</div>
+<div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
+<button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist " data-id="10" data-type="tour" data-toggle="tooltip" data-placement="top" title="" data-original-title="Save for later">
+<span class="flaticon-valentine-heart font-size-20"></span>
+</button>
+</div>
+<div class="position-absolute bottom-0 left-0 right-0 text-content">
+<div class="px-3 pb-2">
+<span class="text-gray-10 font-weight-normal font-size-14">Ligula</span>
+<h2 class="h5 text-white mb-0 font-weight-bold">
+<small class="mr-1 font-size-14">من</small>
+<small class="mr-1 font-size-13 text-decoration-line-through">
+228.979 ¥
+</small>
+156.905 ¥
+</h2>
+</div>
+</div>
+<div class="location d-none position-absolute bottom-0 left-0 right-0">
+<div class="px-4 pb-3">
+<a href="https://mytravel.bookingcore.org/egy/location/los-angeles" class="d-block">
+<div class="d-flex align-items-center font-size-14 text-white">
+<i class="icon flaticon-pin-1 mr-2 font-size-20"></i> Los Angeles
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="card-body px-3 py-2">
+<a href="https://mytravel.bookingcore.org/egy/tour/giverny-and-versailles-small-group-day-trip" class="d-block location">
+<div class="mb-1 d-flex align-items-center font-size-14 text-gray-1">
+<i class="icon flaticon-pin-1 mr-2 font-size-15"></i> Los Angeles
+</div>
+</a>
+<a href="https://mytravel.bookingcore.org/egy/tour/giverny-and-versailles-small-group-day-trip" class="card-title font-size-17 font-weight-bold mb-0 text-dark">
+Giverny and Versailles Small Group Day Trip
+</a>
+<div class="my-2 service-review review-5.0">
+<div class="d-inline-flex align-items-center font-size-17 text-lh-1 text-primary">
+<div class="list-star green-lighter mr-2">
+<ul class="booking-item-rating-stars">
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+<li><i class="fa fa-star-o"></i></li>
+</ul>
+<div class="booking-item-rating-stars-active" style="width: 100%">
+<ul class="booking-item-rating-stars">
+ <li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+<li><i class="fa fa-star"></i></li>
+</ul>
+</div>
+</div>
+<span class="text-secondary font-size-14 mt-1">
+4 تقييمات
+</span>
+</div>
+</div>
+<div class="g-price d-none">
+<div class="prefix">
+<span class="fr_text">من</span>
+</div>
+<div class="price">
+<span class="onsale">228.979 ¥</span>
+<span class="text-price">156.905 ¥</span>
+</div>
+</div>
+<div class="mb-1 d-flex align-items-center font-size-14 text-gray-1 duration">
+<i class="icon flaticon-clock-circular-outline mr-2 font-size-14"></i> 6 ساعات
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center text-md-left font-size-14 mb-3 text-lh-1">عرض 1 - 1 من 1 الجولات السياحية</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bravo_footer mt-4 border-top">
+<div class="main-footer">
+<div class="container">
+<div class="row justify-content-xl-between">
+<div class="col-12 col-lg-4 col-xl-3dot1 mb-6 mb-md-10 mb-xl-0">
+<div class="d-md-flex d-lg-block">
+<div class="mb-5 mr-md-7 mr-lg-0">
+<h4 class="h6 mb-4 font-weight-bold">Need My Travel Help?</h4>
+<a href="tel:8420666888999">
+</a><div class="d-flex align-items-center"><a href="tel:8420666888999">
+</a><div class="mr-4"><a href="tel:8420666888999">
+<i class="fa fa-phone font-size-50"></i>
+</a></div><a href="tel:8420666888999">
+</a><div><a href="tel:8420666888999">
+</a><div class="mb-2 h6 font-weight-normal text-gray-1"><a href="tel:8420666888999">Got Questions ? Call us 24/7</a></div><a href="tel:8420666888999">
+<small class="d-block font-size-16 font-weight-normal text-primary">Call Us: <span class="text-primary font-weight-semi-bold">(+84) 666-888-999</span></small>
+</a></div><a href="tel:8420666888999">
+</a></div><a href="tel:8420666888999">
+</a>
+</div>
+<div class="ml-md-6 ml-lg-0">
+<div class="mb-4">
+<h4 class="h6 font-weight-bold mb-2 font-size-17">Contact Info</h4>
+<address class="pr-4">
+<span class="mb-2 h6 font-weight-normal text-gray-1">
+PO Box CT16122 Collins Street West, Victoria 8007,Australia.
+</span>
+</address>
+</div>
+<ul class="list-inline mb-0"><li class="list-inline-item mr-2">
+<a class="btn btn-icon btn-social btn-bg-transparent" href="#">
+<span class="fa fa-facebook-f btn-icon__inner"></span>
+</a>
+</li>
+<li class="list-inline-item mr-2">
+<a class="btn btn-icon btn-social btn-bg-transparent" href="#">
+<span class="fa fa-twitter btn-icon__inner"></span>
+</a>
+</li>
+<li class="list-inline-item mr-2">
+<a class="btn btn-icon btn-social btn-bg-transparent" href="#">
+<span class="fa fa-instagram btn-icon__inner"></span>
+</a>
+</li>
+<li class="list-inline-item mr-2">
+<a class="btn btn-icon btn-social btn-bg-transparent" href="#">
+<span class="fa fa-linkedin btn-icon__inner"></span>
+</a>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-1dot8 mb-6 mb-md-10 mb-xl-0">
+<div class="nav-footer">
+<h4 class="h6 font-weight-bold mb-2 mb-xl-4">Company</h4>
+<ul class="list-group list-group-flush list-group-borderless mb-0"><li><a class="text-decoration-on-hover list-group-item list-group-item-action" href="#">About us</a></li>
+<li><a class="text-decoration-on-hover list-group-item list-group-item-action" href="#">Careers</a></li>
+<li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Terms of Use</a></li>
+<li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Privacy Statement</a></li>
+<li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Give Us Feedbacks</a></li>
+</ul>
+</div>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-1dot8 mb-6 mb-md-10 mb-xl-0">
+<div class="nav-footer">
+<h4 class="h6 font-weight-bold mb-2 mb-xl-4">Other Services</h4>
+<ul class="list-group list-group-flush list-group-borderless mb-0"><li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Investor Relations</a></li>
+<li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Rewards Program</a></li>
+<li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">PointsPLUS</a></li>
+<li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Partners</a></li>
+<li><a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">List My Hotel</a></li>
+</ul>
+</div>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-1dot8 mb-6 mb-md-10 mb-xl-0">
+<div class="nav-footer">
+<h4 class="h6 font-weight-bold mb-2 mb-xl-4">Support</h4>
+<ul class="list-group list-group-flush list-group-borderless mb-0"><li>
+<a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Account</a>
+</li>
+<li>
+<a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Legal</a>
+</li>
+<li>
+<a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Contact</a>
+</li>
+<li>
+<a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Affiliate Program</a>
+</li>
+<li>
+<a class="list-group-item list-group-item-action text-decoration-on-hover" href="#">Privacy Policy</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-12 col-md-6 col-lg col-xl-3dot1">
+<div class="mb-4 mb-xl-2">
+<h4 class="h6 font-weight-bold mb-2 mb-xl-4">Mailing List</h4>
+<p class="m-0 text-gray-1">Sign up for our mailing list to get latest updates and offers.</p>
+</div>
+<form action="https://mytravel.bookingcore.org/egy/newsletter/subscribe" class="subcribe-form bravo-subscribe-form bravo-form">
+<input type="hidden" name="_token" value="40Pg4KM1lQroJUlA4Gjyj0zTK2kc09l1KxuZtXkt"> <div class="input-group">
+<input type="text" name="email" class="form-control height-54 font-size-14 border-radius-3 border-width-2 border-color-8 email-input" placeholder="البريد الإلكترونى الخاص بك">
+<div class="input-group-append ml-3">
+<button type="submit" class="btn-submit btn btn-sea-green border-radius-3 height-54 min-width-112 font-size-14">إشترك
+<i class="fa fa-spinner fa-pulse fa-fw"></i>
+</button>
+</div>
+</div>
+<div class="form-mess"></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="border-top border-bottom border-color-8 space-1">
+<div class="container">
+<div class="sub-footer d-flex align-items-center justify-content-between">
+<a class="d-inline-flex align-items-center" href="https://mytravel.bookingcore.org/" aria-label="MyTravel">
+<img class=' lazy' data-src=https://mytravel.bookingcore.org/uploads/mytravel/general/logo.svg alt=''>
+<span class="brand brand-dark">MyTravel</span>
+</a>
+<div class="footer-select bravo_topbar d-flex align-items-center">
+<div class="mr-3">
+<div class="position-relative px-3 u-header__login-form dropdown-connector-xl u-header__topbar-divider currency-select">
+<div class="d-flex align-items-center text-white py-3 dropdown">
+<span class="d-inline-block font-size-14 mr-1 dropdown-nav-link " data-toggle="dropdown">
+<span class="flag-icon flag-icon-eg"></span>
+Egyptian
+</span>
+<ul class="dropdown-menu dropdown-menu-user text-left width-auto">
+<li>
+<a href="https://mytravel.bookingcore.org/egy/tour?location_id=5&amp;set_lang=en" class="d-flex">
+<span class="flag-icon flag-icon-gb mr-2"></span>
+English
+</a>
+</li>
+<li>
+<a href="https://mytravel.bookingcore.org/egy/tour?location_id=5&amp;set_lang=ja" class="d-flex">
+<span class="flag-icon flag-icon-jp mr-2"></span>
+Japanese
+</a>
+</li>
+<li>
+<a href="https://mytravel.bookingcore.org/egy/tour?location_id=5&amp;set_lang=ko" class="d-flex">
+<span class="flag-icon flag-icon-kr mr-2"></span>
+kr
+</a>
+</li>
+</ul>
+</div>
+</div>
+ </div>
+<div class="position-relative px-3 u-header__login-form dropdown-connector-xl u-header__topbar-divider currency-select">
+<div class="d-flex align-items-center text-white py-3 dropdown">
+<span class="d-inline-block font-size-14 mr-1 dropdown-nav-link " data-toggle="dropdown">
+JPY
+</span>
+<ul class="dropdown-menu text-left width-auto min-width-100">
+<li>
+<a href="https://mytravel.bookingcore.org/egy/tour?location_id=5&amp;set_currency=eur">
+EUR
+</a>
+</li>
+<li>
+<a href="https://mytravel.bookingcore.org/egy/tour?location_id=5&amp;set_currency=eur">
+EUR
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="copy-right">
+<div class="container context">
+<div class="row">
+<div class="col-md-12">
+© 2021 MyTravel. All rights reserved
+<div class="f-visa">
+MyTravel
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a class="travel-go-to u-go-to-modern" href="#" data-position='{"bottom": 15, "right": 15 }' data-type="fixed" data-offset-top="400" data-compensation="#header" data-show-effect="slideInUp" data-hide-effect="slideOutDown">
+<span class="flaticon-arrow u-go-to-modern__inner"></span>
+</a>
+<div class="modal fade login" id="login" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content relative">
+<div class="modal-header">
+<h4 class="modal-title">سجل</h4>
+<span class="c-pointer" data-dismiss="modal" aria-label="Close">
+<i class="input-icon field-icon fa">
+<img src="https://mytravel.bookingcore.org/images/ico_close.svg" alt="close">
+</i>
+</span>
+</div>
+<div class="modal-body relative">
+<form class="bravo-form-login" method="POST" action="https://mytravel.bookingcore.org/egy/login">
+<input type="hidden" name="redirect" value="">
+<input type="hidden" name="_token" value="40Pg4KM1lQroJUlA4Gjyj0zTK2kc09l1KxuZtXkt"> <div class="form-group">
+<input type="text" class="form-control" name="email" autocomplete="off" placeholder="عنوان البريد الإلكتروني">
+<i class="input-icon icofont-mail"></i>
+<span class="invalid-feedback error error-email"></span>
+</div>
+<div class="form-group">
+<input type="password" class="form-control" name="password" autocomplete="off" placeholder="كلمة السر">
+<i class="input-icon icofont-ui-password"></i>
+<span class="invalid-feedback error error-password"></span>
+</div>
+<div class="form-group">
+<div class="d-flex justify-content-between">
+<label for="remember-me" class="mb0">
+<input type="checkbox" name="remember" id="remember-me" value="1"> تذكرنى <span class="checkmark fcheckbox"></span>
+</label>
+<a href="https://mytravel.bookingcore.org/egy/forgot-password">نسيت كلمة السر؟</a>
+</div>
+</div>
+<div class="error message-error invalid-feedback"></div>
+<div class="form-group">
+<button class="btn btn-primary form-submit" type="submit">
+تسجيل الدخول
+<span class="spinner-grow spinner-grow-sm icon-loading" role="status" aria-hidden="true"></span>
+</button>
+</div>
+<div class="advanced">
+<p class="text-center f14 c-grey">او سجل ب</p>
+<div class="row">
+<div class="col-xs-12 col-sm-4">
+<a href="https://mytravel.bookingcore.org/social-login/facebook" class="btn btn_login_fb_link" data-channel="facebook">
+<i class="input-icon fa fa-facebook"></i>
+فيسبوك
+</a>
+</div>
+</div>
+</div>
+<div class="c-grey font-medium f14 text-center"> ليس لديك حساب؟ <a href="#" data-target="#register" data-toggle="modal">إنشاء حساب</a></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade login" id="register" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content relative">
+<div class="modal-header">
+<h4 class="modal-title">إنشاء حساب</h4>
+<span class="c-pointer" data-dismiss="modal" aria-label="Close">
+<i class="input-icon field-icon fa">
+<img src="https://mytravel.bookingcore.org/images/ico_close.svg" alt="close">
+</i>
+</span>
+</div>
+<div class="modal-body">
+<form class="form bravo-form-register" method="post" action="https://mytravel.bookingcore.org/egy/register">
+<input type="hidden" name="_token" value="40Pg4KM1lQroJUlA4Gjyj0zTK2kc09l1KxuZtXkt"> <div class="row">
+<div class="col-lg-6 col-md-12">
+<div class="form-group">
+<input type="text" class="form-control" name="first_name" autocomplete="off" placeholder="الأسم الأول">
+<i class="input-icon field-icon icofont-waiter-alt"></i>
+<span class="invalid-feedback error error-first_name"></span>
+</div>
+</div>
+<div class="col-lg-6 col-md-12">
+<div class="form-group">
+<input type="text" class="form-control" name="last_name" autocomplete="off" placeholder="الأسم الأخير">
+<i class="input-icon field-icon icofont-waiter-alt"></i>
+<span class="invalid-feedback error error-last_name"></span>
+</div>
+</div>
+</div>
+<div class="form-group">
+<input type="text" class="form-control" name="phone" autocomplete="off" placeholder="التليفون">
+<i class="input-icon field-icon icofont-ui-touch-phone"></i>
+<span class="invalid-feedback error error-phone"></span>
+</div>
+<div class="form-group">
+<input type="email" class="form-control" name="email" autocomplete="off" placeholder="عنوان البريد الإلكتروني">
+<i class="input-icon field-icon icofont-mail"></i>
+<span class="invalid-feedback error error-email"></span>
+</div>
+<div class="form-group">
+<input type="password" class="form-control" name="password" autocomplete="off" placeholder="كلمة السر">
+<i class="input-icon field-icon icofont-ui-password"></i>
+<span class="invalid-feedback error error-password"></span>
+</div>
+<div class="form-group">
+<label for="term">
+<input id="term" type="checkbox" name="term" class="mr5">
+لقد قرأت وقبلت الشروط <a href='https://triplinoo.com/egy/page/privacy-and-cookies-policy' target='_blank'>سياسة الخصوصية</a>
+<span class="checkmark fcheckbox"></span>
+</label>
+<div><span class="invalid-feedback error error-term"></span></div>
+</div>
+<div class="error message-error invalid-feedback"></div>
+<div class="form-group">
+<button type="submit" class="btn btn-primary form-submit">
+إنشاء حساب
+<span class="spinner-grow spinner-grow-sm icon-loading" role="status" aria-hidden="true"></span>
+</button>
+</div>
+<div class="advanced">
+<p class="text-center f14 c-grey">او سجل ب</p>
+<div class="row">
+<div class="col-xs-12 col-sm-4">
+<a href="https://mytravel.bookingcore.org/social-login/facebook" class="btn btn_login_fb_link" data-channel="facebook">
+<i class="input-icon fa fa-facebook"></i>
+فيسبوك
+</a>
+</div>
+</div>
+</div>
+<div class="c-grey f14 text-center">
+هل لديك حساب لدينا؟
+<a href="#" data-target="#login" data-toggle="modal">سجل</a>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div><link rel="stylesheet" href="https://mytravel.bookingcore.org/libs/flags/css/flag-icon.min.css">
+<script data-cfasync="false" src="https://mytravel.bookingcore.org/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://mytravel.bookingcore.org/libs/lazy-load/intersection-observer.js"></script>
+<script async src="https://mytravel.bookingcore.org/libs/lazy-load/lazyload.min.js"></script>
+<script>
+    // Set the options to make LazyLoad self-initialize
+    window.lazyLoadOptions = {
+        elements_selector: ".lazy",
+        // ... more custom settings?
+    };
+
+    // Listen to the initialization event and get the instance of LazyLoad
+    window.addEventListener('LazyLoad::Initialized', function (event) {
+        window.lazyLoadInstance = event.detail.instance;
+    }, false);
+</script>
+<script src="https://mytravel.bookingcore.org/libs/jquery-3.6.0.min.js"></script>
+<script src="https://mytravel.bookingcore.org/themes/mytravel/libs/jquery-migrate/jquery-migrate.min.js"></script>
+<script src="https://mytravel.bookingcore.org/themes/mytravel/libs/header.js"></script>
+<script>
+    $(document).on('ready', function () {
+        $.MyTravelHeader.init($('#header'));
+    });
+</script>
+<script src="https://mytravel.bookingcore.org/libs/lodash.min.js"></script>
+<script src="https://mytravel.bookingcore.org/libs/vue/vue.min.js"></script>
+<script src="https://mytravel.bookingcore.org/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://mytravel.bookingcore.org/libs/bootbox/bootbox.min.js"></script>
+<script src="https://mytravel.bookingcore.org/themes/mytravel/libs/fancybox/jquery.fancybox.min.js"></script>
+<script src="https://mytravel.bookingcore.org/themes/mytravel/libs/slick/slick.js"></script>
+<script src="https://mytravel.bookingcore.org/libs/carousel-2/owl.carousel.min.js"></script>
+<script type="text/javascript" src="https://mytravel.bookingcore.org/libs/daterange/moment.min.js"></script>
+<script type="text/javascript" src="https://mytravel.bookingcore.org/libs/daterange/daterangepicker.min.js"></script>
+<script src="https://mytravel.bookingcore.org/libs/select2/js/select2.min.js"></script>
+<script src="https://mytravel.bookingcore.org/themes/mytravel/js/functions.js?_ver=2.0.0"></script>
+<script src="https://mytravel.bookingcore.org/themes/mytravel/libs/custombox/custombox.min.js"></script>
+<script src="https://mytravel.bookingcore.org/themes/mytravel/libs/custombox/custombox.legacy.min.js"></script>
+<script src="https://mytravel.bookingcore.org/themes/mytravel/libs/custombox/window.modal.js"></script>
+<script src="https://mytravel.bookingcore.org/libs/pusher.min.js"></script>
+<script src="https://mytravel.bookingcore.org/themes/mytravel/js/home.js?_ver=2.0.0"></script>
+<script type="text/javascript" src="https://mytravel.bookingcore.org/themes/mytravel/libs/ion_rangeslider/js/ion.rangeSlider.min.js"></script>
+<script type="text/javascript" src="https://mytravel.bookingcore.org/themes/mytravel/module/tour/js/tour.js?_ver=2.0.0"></script>
+</div>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W7B5HJJ');</script>
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7B5HJJ"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+<div id="fb-root"></div>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            xfbml            : true,
+            version          : 'v3.3'
+        });
+    };
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+
+<div class="fb-customerchat" attribution=setup_tool page_id="2280007165584589">
+</div>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115740936-4"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-115740936-4');
+</script>
+<style>
+    .bravo-buy-button{
+        text-align: center;
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        background-color: #0072bc;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding: 10px 20px 8px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        font-weight: 600;
+        z-index: 99;
+    }
+    .bravo-buy-button:hover{
+        text-decoration: none;
+        color: #fff;
+    }
+    .bravo-buy-button .tf-text{
+        background-image: url('https://mytravel.bookingcore.org/landing/img/logoen.png');
+        width: 66px;
+        height: 12px;
+        display: inline-block;
+        background-repeat: no-repeat;
+
+    }
+</style>
+<a class="sticky-button bravo-buy-button" target="_blank" href="https://codecanyon.net/item/mytravel-ultimate-laravel-booking-system/32680572">
+<span>Buy on <span class="tf-text"></span> for $59</span>
+</a>
+</body>
+
+<!-- Mirrored from mytravel.bookingcore.org/egy/tour?location_id=5 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jan 2023 17:48:32 GMT -->
+</html>
